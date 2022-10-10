@@ -15,9 +15,9 @@ Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and C
 
 ![image](https://user-images.githubusercontent.com/33771500/187170501-f78beb93-08d6-47f1-8fa7-bb8798b685a5.png)
 
-- [**Defender for Cloud secure score**](secure-score-security-controls.md) **continually assesses** your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
-- [**Defender for Cloud recommendations**](security-policy-concept.md) **secures** your workloads with step-by-step actions that protect your workloads from known security risks.
-- [**Defender for Cloud alerts**](alerts-overview.md) **defends** your workloads in real-time so you can react immediately and prevent security events from developing.
+- Defender for Cloud secure score **Continually Assesses** your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
+- Defender for Cloud recommendations **Secures** your workloads with step-by-step actions that protect your workloads from known security risks.
+- Defender for Cloud alerts **Defends** your workloads in real-time so you can react immediately and prevent security events from developing.
 
 Defender for Cloud secure score continually assesses your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
 Defender for Cloud recommendations secures your workloads with step-by-step actions that protect your workloads from known security risks.
