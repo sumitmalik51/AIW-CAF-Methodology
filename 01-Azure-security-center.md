@@ -120,15 +120,15 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 1. On the Microsoft Defender for Cloud overview page you can see your secure score.
 
-    ![](images/securescore.png "secure score")
+    ![](images/securescore1.png "secure score")
 
 1. Click on **secure posture**.
 
-    ![](images/securityposture.png "security posture")
+    ![](images/posture.png "security posture")
 
 1. Here you can get an overview of your security secure, unhealthy resources, and recomdations.
 
-    ![](images/overviewsecurityposture.png "overview security posture")
+    ![](images/securescore2.png "overview security posture")
 
 ## Task 4: Improving your Secure Posture 
 
@@ -140,6 +140,17 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/recommendations.png "recommendations")
 
+1. Click on those name who have **unassigned** status below is the example.
+
+    ![](images/unassigned.png "unassigned status")
+    
+1. Under Affected resources select your **virtual machine(1)** and then click on **fix(2)**.
+
+    ![](images/fix.png "fix")
+
+1. On the JIT VM access configuration menu click on **Save**.
+
+     ![](images/jitvm.png "save")
 
 
 ## Task 5: Exploring Security Center and Security benchmark
@@ -169,7 +180,9 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 1. On the Security Center | Under cloud security click on **Workload protections**. Here you can get an overview of Cloud coverage and Security alerts.
 
     ![](images/workloads.png "Workload protections")
-
+    
+    
+1. Click on the **Next** button present in the bottom-right corner of this lab guide. 
 
 
 
