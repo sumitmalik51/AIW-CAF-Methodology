@@ -69,7 +69,7 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 # Task 2: Configure Security Policies
 
-## What is a security policy?
+### What is a security policy?
 
 - An Azure Policy definition, created in Azure Policy, is a rule about specific security conditions that you want controlled. Built in definitions include things like controlling what type of resources can be deployed or enforcing the use of tags on all resources. You can also create your own custom policy definitions.
 
@@ -105,7 +105,7 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/refresh.png "Refresh")
 
-## Task 3: Secure Score 
+# Task 3: Secure Score 
 
 ### What is a Secure Score?
 - It helps you understand your current security situation.
@@ -118,7 +118,7 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/defender.png "Microsoft Defender")
 
-1. On the Microsoft Defender for Cloud overview page you can see your secure score.
+1. On the Microsoft Defender for Cloud overview page you can see your **secure score**.
 
     ![](images/securescore1.png "secure score")
 
@@ -130,7 +130,7 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/securescore2.png "overview security posture")
 
-## Task 4: Improving your Secure Posture 
+# Task 4: Improving your Secure Posture 
 
 1. Search **Microsoft Defender for Cloud(1)** and Select **Microsoft Defender for Cloud(2)**.
 
@@ -150,20 +150,20 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 1. On the JIT VM access configuration menu click on **Save**.
 
-     ![](images/jitvm.png "save")
+    ![](images/jitvm.png "save")
 
 
-## Task 5: Exploring Security Center and Security benchmark
+# Task 5: Exploring Security Center and Security benchmark
 
 Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centers within both cloud workloads and on-premises.
 
 1. In the Azure portal, Search **Azure Security Center (1)** and then click **Azure Security Center (2)**. 
 
-     ![](images/securitycentre.png "security centre")
+    ![](images/securitycentre.png "security centre")
      
 1. On the Security Center | Getting started blade, click **Install agents (1)** and then click **Install agents (2)**.
 
-     ![](images/agent.png "security agent")
+    ![](images/agent.png "security agent")
 
 1. On the Security Center | Overview blade, review the **Secure Score**.
 
