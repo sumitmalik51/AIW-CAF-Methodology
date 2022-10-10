@@ -1,4 +1,4 @@
-# Azure Security Center/ Microsoft Defender for Cloud
+# Exercise 01: Azure Security Center/ Microsoft Defender for Cloud
 ## Lab objectives
 In this lab, you will complete the following exercise:
 1. Exploring Microsoft Defender for Cloud 
@@ -70,12 +70,6 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 ## To enable enhanced security on multiple subscriptions or workspaces:
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-
-1. Search **Microsoft Defender for Cloud (1)** and then select **Microsoft Defender for Cloud(2)**.
-
-    ![](images/defender.png "Microsoft Defender")
-
 1. On the Microsoft Defender for Cloud menu, Click on **Getting started(1)** and then Select **Upgrade(2)**.
    The Upgrade tab lists subscriptions and workspaces eligible for onboarding.
     
@@ -88,12 +82,6 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 ![](images/new1.png "Upgrade")
 
 ## To Disable enhanced security on multiple subscriptions or worksapces:
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-
-1. Search **Microsoft Defender for Cloud (1)** and then Select **Microsoft Defender for Cloud(2)**.
-
-    ![](images/defender.png "Microsoft Defender")
 
 1. From Defender for Cloud's menu, select **Environment settings**.
 
@@ -116,7 +104,13 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 - There are different types of policies in Azure Policy. Defender for Cloud mainly uses 'Audit' policies that check specific conditions and configurations then report on compliance. There are also "Enforce' policies that can be used to apply secure settings.
 
+1. From Defender for Cloud's menu, select **Environment settings**.
 
+    ![](images/environmentdetails.png "environment details")
+    
+1. Select the relevant **subscriptions and workspaces**.
+
+1. On the left 
 
 ## Task 3: Secure Score 
 
