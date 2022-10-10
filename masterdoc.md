@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "CAF-Methodology)",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/gettingstarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/01-Azure-security-center.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/02-Azure-Web-Application-Firewall-on-Application-Gateway.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/03-Azure-Firewall-Premium.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/04-Azure-Sentinel.md",
+        "Order": 5
+      }
+    ]
+  }
+]
