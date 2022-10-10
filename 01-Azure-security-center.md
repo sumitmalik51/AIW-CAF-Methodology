@@ -1,17 +1,17 @@
-# Exercise 01: Azure Security Center/ Microsoft Defender for Cloud
+# Exercise 01: Azure Security Centre/ Microsoft Defender for Cloud
 ## Lab objectives
 In this lab, you will complete the following exercise:
 1. Exploring Microsoft Defender for Cloud 
 2. Configure Security Policies  
 3. Secure Score 
 4. Improving your Secure Posture 
-5. Exploring Security Center and Security benchmark 
+5. Exploring Security Centre and Security benchmark 
 
 # Task 1: Exploring Microsoft Defender for Cloud
 
 ### What is Microsoft Defender for Cloud?
 
-Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
+Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all your Azure, on-premises, and multicoloured (Amazon AWS and Google GCP) resources. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
 ![image](https://user-images.githubusercontent.com/33771500/187170501-f78beb93-08d6-47f1-8fa7-bb8798b685a5.png)
 
@@ -21,9 +21,9 @@ Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and C
 
 Defender for Cloud secure score continually assesses your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
 Defender for Cloud recommendations secures your workloads with step-by-step actions that protect your workloads from known security risks.
-Defender for Cloud alerts defends your workloads in real-time so you can react immediately and prevent security events from developing.
+Defender for Cloud alerts defends your workloads in real time so you can react immediately and prevent security events from developing.
 
-1. In the VM, double click on the **Azure portal shortcut** on the desktop.
+1. In the VM, double-click on the **Azure portal shortcut** on the desktop.
 
     ![](images/portal.png "Select Azure Portal")
     
@@ -31,11 +31,11 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/details.png "environment details")
 
-1. Login to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
+1. Log in to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
 
     ![](images/username.png "Username")
 
-1. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+1. Enter a password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
     ![](images/password.png "Password")
     
@@ -43,15 +43,15 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
     
     ![](images/staysigned.png "signed")
         
-   > **Note:** If there's another popup entitled **Help us protect your account** click **Skip for now (14 days intil this is required)**
+   > **Note:** If there's another popup entitled **Help us protect your account** click **Skip for now (14 days until this is required)**
 
     ![](images/skipfornow.png "skipfornow")
            
-1. If **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+1. If the **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
     ![](images/skiptour1.png "skiptour")
 
-1. Search **Microsoft Defender for Cloud(1)** and Select **Microsoft Defender for Cloud(2)**.
+1. Search **Microsoft Defender for Cloud (1)** and Select **Microsoft Defender for Cloud (2)**.
 
     ![](images/defender.png "Microsoft Defender")
 
@@ -63,7 +63,7 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/subsciptionss.png "subscriptions")
  
-1. Select **Enable all** to enable all of the plans for Defender for Cloud and then click on  **Save**.
+1. Select **Enable all** to enable all the plans for Defender for Cloud and then click on  **Save**.
 
     ![](images/planed.png "plan")
 
@@ -71,11 +71,11 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 ### What is a security policy?
 
-- An Azure Policy definition, created in Azure Policy, is a rule about specific security conditions that you want controlled. Built in definitions include things like controlling what type of resources can be deployed or enforcing the use of tags on all resources. You can also create your own custom policy definitions.
+- An Azure Policy definition, created in Azure Policy, is a rule about specific security conditions that you want to be controlled. Built-in definitions include things like controlling what type of resources can be deployed or enforcing the use of tags on all resources. You can also create your own custom policy definitions.
 
 - To implement these policy definitions (whether built-in or custom), you'll need to assign them. You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. Policies can be disabled or enabled from Azure Policy.
 
-- There are different types of policies in Azure Policy. Defender for Cloud mainly uses 'Audit' policies that check specific conditions and configurations then report on compliance. There are also "Enforce' policies that can be used to apply secure settings.
+- There are different types of policies in Azure Policy. Defender for Cloud mainly uses 'Audit' policies that check specific conditions and configurations and then report on compliance. There are also "Enforce' policies that can be used to apply security settings.
 
 1. From Defender for Cloud's menu, select **Environment settings**.
 
@@ -85,11 +85,11 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/subsciptionss.png "subscriptions")
 
-1. On the left hand side Blade under Policy settings, click on **Security policy(1)** and then click on **Assign policy(2)**.
+1. On the left-hand side Blade under Policy settings, click on **Security policy (1)** and then click on **Assign policy (2)**.
     
     ![](images/securitypolicy.png "security policy")
 
-1. On the Azure Security Benchmark page, Click on **Non-compliance messages(1)** and then select all **Policy definations(2)**, then click on **Review + create(3)**.
+1. On the Azure Security Benchmark page, Click on **Non-compliance messages (1)** and then select all **Policy definations (2)**, then click on **Review + create          (3)**.
 
     ![](images/noncomplaince.png "non complaince")
 
@@ -97,11 +97,11 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/createsave.png "Create")
 
-1. Under Security policy you can also find **Industry & regulatory standards**, which can be configured with ASC default initiative.
+1. Under the Security policy you can also find **Industry & regulatory standards**, which can be configured with ASC default initiative.
 
     ![](images/regulatorystandards.png "regulatory standards")
 
-1. Wait for couple of minutes and then **Refresh** the browser page to see the Industry & regulatory standards enabled.
+1. Wait for a couple of minutes and then **Refresh** the browser page to see the Industry & regulatory standards enabled.
 
     ![](images/refresh.png "Refresh")
 
@@ -114,37 +114,37 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 ### Access and track your secure score
 
-1. Search **Microsoft Defender for Cloud(1)** and Select **Microsoft Defender for Cloud(2)**.
+1. Search **Microsoft Defender for Cloud (1)** and Select **Microsoft Defender for Cloud (2)**.
 
     ![](images/defender.png "Microsoft Defender")
 
-1. On the Microsoft Defender for Cloud overview page you can see your **secure score**.
+1. On the Microsoft Defender for Cloud overview page, you can see your **secure score**.
 
     ![](images/securescore1.png "secure score")
 
-1. Click on **secure posture**.
+1. Click on **Security Posture**.
 
     ![](images/posture.png "security posture")
 
-1. Here you can get an overview of your security secure, unhealthy resources, and recomdations.
+1. Here you can get an overview of your security secure, unhealthy resources, and recommendations.
 
     ![](images/securescore2.png "overview security posture")
 
 # Task 4: Improving your Secure Posture 
 
-1. Search **Microsoft Defender for Cloud(1)** and Select **Microsoft Defender for Cloud(2)**.
+1. Search **Microsoft Defender for Cloud (1)** and Select **Microsoft Defender for Cloud (2)**.
 
     ![](images/defender.png "Microsoft Defender")
     
-1. On the Microsoft Defender for Cloud menu under General click on **Recommendations(1)** and then click on **All Recommendations(2)**.
+1. On the Microsoft Defender for Cloud menu under General click on **Recommendations. (1)** and then click on **All Recommendations (2)**.
 
     ![](images/recommendations.png "recommendations")
 
-1. Click on those name who have **unassigned** status below is the example.
+1. Click on those names that have **unassigned** status below is an example.
 
     ![](images/unassigned.png "unassigned status")
     
-1. Under Affected resources select your **virtual machine(1)** and then click on **fix(2)**.
+1. Under Affected resources select your **virtual machine (1)** and then click on a **fix (2)**.
 
     ![](images/fix.png "fix")
 
@@ -153,31 +153,31 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
     ![](images/jitvm.png "save")
 
 
-# Task 5: Exploring Security Center and Security benchmark
+# Task 5: Exploring Security Centre and Security benchmark
 
-Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centers within both cloud workloads and on-premises.
+Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centres within both cloud workloads and on-premises.
 
-1. In the Azure portal, Search **Azure Security Center (1)** and then click **Azure Security Center (2)**. 
+1. In the Azure portal, Search **Azure Security Centre (1)** and then click **Azure Security Centre (2)**. 
 
     ![](images/securitycentre.png "security centre")
      
-1. On the Security Center | Getting started blade, click **Install agents (1)** and then click **Install agents (2)**.
+1. On the Security Centre | Getting started blade, click **Install agents (1)** and then click **Install agents (2)**.
 
     ![](images/agent.png "security agent")
 
-1. On the Security Center | Overview blade, review the **Secure Score**.
+1. On the Security Centre | Overview blade, review the **Secure Score**.
 
     ![](images/securescore1.png "secure score")
     
-1. On the Security Center | Under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources, and            recomdations.
+1. On the Security Centre | Under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources, and            recommendations.
     
     ![](images/securityposture1.png "overview security posture")
    
-1.  On the Security Center | Under cloud security click on **Regulatory compliance**. Here you can get an overview of Azure Security Benchmark
+1.  On the Security Centre | Under cloud security click on **Regulatory compliance**. Here you can get an overview of Azure Security Benchmark
 
     ![](images/compliance.png "overview of regulatory compliance")
     
-1. On the Security Center | Under cloud security click on **Workload protections**. Here you can get an overview of Cloud coverage and Security alerts.
+1. On the Security Centre | Under cloud security click on **Workload protections**. Here you can get an overview of Cloud coverage and Security alerts.
 
     ![](images/workloads.png "Workload protections")
     
