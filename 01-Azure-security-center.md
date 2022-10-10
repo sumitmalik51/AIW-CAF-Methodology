@@ -67,30 +67,6 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 1. Select **Save**.
 
-## To enable enhanced security on multiple subscriptions or workspaces:
-
-1. On the Microsoft Defender for Cloud menu, Click on **Getting started(1)** and then Select **Upgrade(2)**.
-   The Upgrade tab lists subscriptions and workspaces eligible for onboarding.
-    
-    ![](images/1.png "Getting started")
-        
-1. Select the desired **subscriptions and workspace** from the list.
-
-1. Select **Upgrade**.
-
-![](images/new1.png "Upgrade")
-
-## To Disable enhanced security on multiple subscriptions or worksapces:
-
-1. From Defender for Cloud's menu, select **Environment settings**.
-
-    ![](images/environmentdetails.png "environment details")
-
-1. Select the relevant **subscriptions and workspaces**.
-
-1. Find the plan you wish to turn off and select **Off**.
-
-    ![](images/selectoffneww.png "selectoffneww")
 
 
 # Task 2: Configure Security Policies
