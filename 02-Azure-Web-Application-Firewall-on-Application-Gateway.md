@@ -1,4 +1,4 @@
-# Azure Web Application Firewall on Application Gateway
+# Exercise 2: Azure Web Application Firewall on Application Gateway
 ## Lab objectives
 In this lab, you will complete the following exercise:
 
@@ -8,7 +8,7 @@ In this lab, you will complete the following exercise:
 4. Customize WAF rules
 5. Attack simulation
 
-# Exercise 1: Configure WAF to Protect your web application
+# Task 1: Configure WAF to Protect your web application
 
 ### What is Azure Web Application Firewall ?
 Microsoft Azure also has a WAF service that provides centralized protection of your web applications from common exploits and vulnerabilities. The Azure Web Application Firewall is one of the features of Azure Application Gateway (layer 7 load balancer) and its main goal is to protect a web application to common attack like SQL injections, cross-site scripting and others. Also it is following the Open Web Application Security Project (OWASP) Core Rule Set. Azure WAF service offers you to select some or all of the rules from the OWASP Core Rule Set.
@@ -61,7 +61,8 @@ Azure Application Gateway has a public IP, or front end, and your application us
       ![](images/backend-health.png "Backend Health")
       
  
- # Exercise 2: Publish your application to the internet with the application gateway
+ # Task 2: Publish your application to the internet with the application gateway
+ 
 
   
 
