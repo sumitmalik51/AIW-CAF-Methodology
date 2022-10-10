@@ -55,19 +55,17 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
     ![](images/defender.png "Microsoft Defender")
 
-1. On the Defender for Cloud Page, **Click** on the **Environment settings** under Management
+1. On the Defender for Cloud Page, Click on the **Environment settings** under Management
 
-    ![](images/environmentdetails.png "environment details")
+    ![](images/settings.png "environment details")
     
 1. Select the **subscription or workspace** that you want to protect.
-    
-1. Select **Enable all** to enable all of the plans for Defender for Cloud.
+
+    ![](images/subsciptionss.png "subscriptions")
+ 
+1. Select **Enable all** to enable all of the plans for Defender for Cloud and then click on  **Save**.
 
     ![](images/planed.png "plan")
-
-1. Select **Save**.
-
-
 
 # Task 2: Configure Security Policies
 
@@ -81,79 +79,68 @@ Defender for Cloud alerts defends your workloads in real-time so you can react i
 
 1. From Defender for Cloud's menu, select **Environment settings**.
 
-    ![](images/environmentdetails.png "environment details")
+    ![](images/settings.png "environment details")
     
 1. Select the relevant **subscriptions and workspaces**.
 
-1. On the left hand side Blade click on **Security policy** and then click on **Assign policy**.
+    ![](images/subsciptionss.png "subscriptions")
 
-1. On the Azure Security Benchmark page, Click on **Non-compliance messages** and then select all **Policy definations**, then click on **Review + create**.
+1. On the left hand side Blade under Policy settings, click on **Security policy(1)** and then click on **Assign policy(2)**.
+    
+    ![](images/securitypolicy.png "security policy")
+
+1. On the Azure Security Benchmark page, Click on **Non-compliance messages(1)** and then select all **Policy definations(2)**, then click on **Review + create(3)**.
+
+    ![](images/noncomplaince.png "non complaince")
 
 1. Now click on **Create**.
 
+    ![](images/createsave.png "Create")
+
 1. Under Security policy you can also find **Industry & regulatory standards**, which can be configured with ASC default initiative.
 
-1. Wait for couple of minutes and then refresh the browser page to see the Industry & regulatory standards enabled
+    ![](images/regulatorystandards.png "regulatory standards")
+
+1. Wait for couple of minutes and then **Refresh** the browser page to see the Industry & regulatory standards enabled.
+
+    ![](images/refresh.png "Refresh")
 
 ## Task 3: Secure Score 
 
-What is a Secure Score?
-As you must have known by now that the azure security center has two goals :
-1. It helps you understand your current security situation.
-2. It helps you improve your security situation by giving recommendations.
-3. A secure score is a way to achieve your goal: the higher the score, the lower the risk level.
+### What is a Secure Score?
+- It helps you understand your current security situation.
+- It helps you improve your security situation by giving recommendations.
+- A secure score is a way to achieve your goal: the higher the score, the lower the risk level.
 
-To improve the percentage, review Security center recommendations for the pending actions. Proposals also include steps to follow to achieve the goal.
-
-Secure Score
-How is the Secure Score Calculated?
-Each recommendation has some points assigned to it. If you apply that recommendation, the score will automatically increase. Each proposal will have a maximum score and current score, as shown in the figure.
-
-Score Calculation 
-Few formulas are used by azure to calculate the score, which you as a user don’t need to worry about. You need to follow the security recommendations provided by the Azure Security Center.
-Overview of secure score
-Microsoft Defender for Cloud has two main goals:
-
-To help you understand your current security situation
-To help you efficiently and effectively improve your security
-The central feature in Defender for Cloud that enables you to achieve those goals is the secure score.
-
-Defender for Cloud continually assesses your cross-cloud resources for security issues. It then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
-
-In the Azure portal pages, the secure score is shown as a percentage value and the underlying values are also clearly presented:
-
-Overview of secure score
-Microsoft Defender for Cloud has two main goals:
-
-to help you understand your current security situation
-to help you efficiently and effectively improve your security
-The central feature in Defender for Cloud that enables you to achieve those goals is the secure score.
-
-Defender for Cloud continually assesses your cross-cloud resources for security issues. It then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
-
-In the Azure portal pages, the secure score is shown as a percentage value and the underlying values are also clearly presented:
-
-## Access and track your secure score
-You can find your overall secure score, as well as your score per subscription, through the Azure portal or programmatically as described in the following sections:
-Get your secure score from the portal
-Defender for Cloud displays your score prominently in the portal: it's the first main tile the Defender for Cloud overview page. Selecting this tile, takes you to the dedicated secure score page, where you'll see the score broken down by subscription. Select a single subscription to see the detailed list of prioritized recommendations and the potential impact that remediating them will have on the subscription's score.
+### Access and track your secure score
 
 1. Search **Microsoft Defender for Cloud(1)** and Select **Microsoft Defender for Cloud(2)**.
 
-1. Now on Microsoft Defender for Cloud overview page you can see your secure score.
+    ![](images/defender.png "Microsoft Defender")
+
+1. On the Microsoft Defender for Cloud overview page you can see your secure score.
+
+    ![](images/securescore.png "secure score")
 
 1. Click on **secure posture**.
 
+    ![](images/securityposture.png "security posture")
+
 1. Here you can get an overview of your security secure, unhealthy resources, and recomdations.
 
+    ![](images/overviewsecurityposture.png "overview security posture")
 
 ## Task 4: Improving your Secure Posture 
 
-## How your secure score is calculated
+1. Search **Microsoft Defender for Cloud(1)** and Select **Microsoft Defender for Cloud(2)**.
 
-The contribution of each security control towards the overall secure score is shown on the recommendations page.
-![](images/15.png)
-To get all the possible points for a security control, all of your resources must comply with all of the security recommendations within the security control. For example, Defender for Cloud has multiple recommendations regarding how to secure your management ports. You'll need to remediate them all to make a difference to your secure score. ((((((((((((((recomdations))))))))))))))))))))))))))
+    ![](images/defender.png "Microsoft Defender")
+    
+1. On the Microsoft Defender for Cloud menu under General click on **Recommendations(1)** and then click on **All Recommendations(2)**.
+
+    ![](images/recommendations.png "recommendations")
+
+
 
 ## Task 5: Exploring Security Center and Security benchmark
 
@@ -167,13 +154,21 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
      ![](images/agent.png "security agent")
 
-1. On the Security Center | Overview blade, review the Secure Score tile.
+1. On the Security Center | Overview blade, review the **Secure Score**.
 
-> **Note:**: Record the current score if it is available.
+    ![](images/securescore1.png "secure score")
+    
+1. On the Security Center | Under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources, and            recomdations.
+    
+    ![](images/securityposture1.png "overview security posture")
+   
+1.  On the Security Center | Under cloud security click on **Regulatory compliance**. Here you can get an overview of Azure Security Benchmark
 
-1. Navigate back to the Security Center | Overview blade, select **Assessed resources**.
+    ![](images/compliance.png "overview of regulatory compliance")
+    
+1. On the Security Center | Under cloud security click on **Workload protections**. Here you can get an overview of Cloud coverage and Security alerts.
 
-1. On the **Inventory blade**, select the **myVM entry**.
+    ![](images/workloads.png "Workload protections")
 
 
 
