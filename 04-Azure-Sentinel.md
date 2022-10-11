@@ -50,7 +50,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
      ![](images/passed-log.png " Passed log analytics")
     
-   >**NOTE**: It may take a little while for the workspace to be Created.
+   >**NOTE**: It may take a Couple of minutes for the workspace to be Created.
 
 1. Click on **ADD**.
 
