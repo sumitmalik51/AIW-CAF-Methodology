@@ -21,9 +21,4 @@ For more information, see https://learn.microsoft.com/en-us/azure/firewall/premi
 
 First, create a resource group to contain the resources needed to deploy the firewall. Then create a VNet, subnets, and a test server.
 
-1. You can see a virtual machine desktop 💻 is loaded on the left side in your browser. Use this virtual machine throughout the workshop to perform the lab.
-1. In the virtual machine destop, double click on the **Azure portal** shortcut of Microsoft Edge browser which is provided on the desktop.
-      
-      ![](.././images/select-azureportal.png "Select Azure Portal")
-      
 1. 
