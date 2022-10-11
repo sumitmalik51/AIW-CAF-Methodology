@@ -10,8 +10,8 @@ In this lab, you will complete the following exercise:
 # Task 1: What is Microsoft Sentinel?
 
 Microsoft Sentinel is a scalable, cloud-native solution that provides:
-- Security information and event management (SIEM)
-- Security orchestration, automation, and response (SOAR)
+- Security information and event management (SIEM).
+- Security orchestration, automation, and response (SOAR).
 
  Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise. With Microsoft Sentinel, you get a single solution for attack detection, threat visibility, proactive hunting, and threat response.
 
@@ -25,6 +25,43 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
     
 # Task 2: Onboard Azure Subscription to Azure sentinel
 
-1. Search **microsoft-sentinel(1)** and Select **microsoft-sentinel(2)**.
+1. In Azure portal, Search **microsoft-sentinel (1)** and Select **microsoft-sentinel (2)**.
 
     ![](images/microsoft-sentinel.png "microsoft-sentinel")
+ 
+1. On the Microsoft Sentinel page, Click on **Create**.
+
+    ![](images/click-create.png "Create")
+
+1. If there is no already a Log Analytic workspace that you can use click **Create a new workspace**.
+
+     ![](images/loganalytics.png "log analytics")
+     
+1. On **Log Analytics workspace** page, provide the information as mentioned below,
+   - Subscription: **Leave it as default**
+   - Resource Group: Enter **JumpVM-rg**.
+   - Name: Enter a Unique value.
+   - Region: Select **East US** from the drop-down list
+   - Click on **Review and Create** to continue.
+
+     ![](images/create-log.png " create log analytics")
+  
+1. If Validations is passed click on **Create** to create your new Log Analytics workspace.
+
+     ![](images/passed-log.png " Passed log analytics")
+    
+   >**NOTE**: It may take a little while for the workspace to be Created.
+
+1. Click on **ADD**.
+
+      ![](images/click-add.png "click on add")
+
+1. This is the default page you will be taken to once your new Azure Sentinel instance has been created. After this, the overview page will be the default page shown.
+
+     ![](images/news-sentinel.png "news-sentinel")
+     
+     
+# Task 3: Onboard the Web App – IIS server to sentinel
+
+
+  
