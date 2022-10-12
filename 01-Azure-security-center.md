@@ -101,7 +101,6 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/workloads.png "Workload protections")
     
-    
 # Task 2: Configure Security Policies
 
 ### What is a security policy?
@@ -202,9 +201,51 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/posture.png "security posture")
 
-1. Here you can get an overview of your security secure, unhealthy resources, and recommendations.
+1. Here you can get an overview of your **security secure, unhealthy resources, and recommendations**.
 
     ![](images/securescore2.png "overview security posture")
+    
+1. The bottom section lists the subscriptions and their current secure scores. To view the recommendations behind the score, click on **View recommendations**.
+
+    ![](images/secure1.png)
+    
+1. Close the **View recommendations** page to return to **Recommendations** page.
+
+    ![](images/secure2.png)
+    
+1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on       the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
+
+    ![](images/secure3.png)
+    
+1. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated            recommendations. You can use this file for pivoting and reporting.
+
+    ![](images/secure4.png)
+    
+1. Under **Recommendation**, Click on **Manage access and permissions** and select **Guest Configuration extension should be installed on machines** from the drop down    list. 
+
+    ![](images/secure5.png)
+    
+1. On the top section, notice the following:
+
+   - Title of the recommendation: **Guest Configuration extension should be installed on machines**
+   - Severity indicator: **Medium**
+   - Freshness interval: **30 Min** 
+
+    ![](images/secure6.png)
+    
+1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources
+1. Under **Affected resources**, **select a resource** (the single **Virtual machine** on the Unhealthy resources) and click on **Fix**. This will automatically apply    the remediation on the selected resource.
+
+    ![](images/secure7.png)
+    
+1. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
+
+    ![](images/secure8.png)
+    
+1. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources.
+   > **Note**: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab. You can move to next task and come back                   later to check on this.
+    
+    ![](images/secure9.png)
 
 # Task 4: Improving your Secure Posture 
 
