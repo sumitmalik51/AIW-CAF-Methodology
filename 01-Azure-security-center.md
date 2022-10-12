@@ -253,21 +253,39 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/defender.png "Microsoft Defender")
     
-1. On the Microsoft Defender for Cloud menu under General click on **Recommendations. (1)** and then click on **All Recommendations (2)**.
+1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to      security vulnerabilities). Make sure you have **Machines should have a vulnerability assessment solution (3)** recommendation listed here.
 
-    ![](images/recommendations.png "recommendations")
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-1. Click on those names that have **unassigned** status below is an example.
+    ![](images/posture1.png)
 
-    ![](images/unassigned.png "unassigned status")
+1. Click on **Machines should have a vulnerability assessment solution** recommendation and open it.
+1. Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once    done, **Close (3)** this window. 
+
+    ![](images/posture2.png)
+
+1. From the **Affected resources (2)** tab, select  **Labvm-DID(2)** virtual machines. Click on **Fix (3)**.
+
+    ![](images/posture3.png)
+
+1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers)**. Click on  **Proceed**.
+
+    ![](images/posture4.png)
+
+1. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 1 resources**.
+
+    ![](images/posture5.png)
+
+1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
+
+1. Ensure the VM extension is deployed on the relevant machines:
+    - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
+    - Select **labvm-DID**. next, click on **Extensions + applications(2)** under the **Settings** section.
+    - Ensure that **WindowsAgent.AzureSecurityCenter** extension is installed and the status is **Provisioning succeeded**.
+
     
-1. Under Affected resources select your **virtual machine (1)** and then click on a **fix (2)**.
+    ![](images/posture6.png)
 
-    ![](images/fix.png "fix")
-
-1. On the JIT VM access configuration menu click on **Save**.
-
-    ![](images/jitvm.png "save")
 
 # Task 5: Exploring Security Centre and Security benchmark
 
@@ -319,11 +337,11 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we      enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
-1. Use the **Filter by name** box to search for **Virtual machine **. You should now see a filtered view containing your desired resource: **labvm-ODL**. Hover on the    red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
+1. Use the **Filter by name** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **labvm-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
 
     ![](images/defender7.png)
 
-1. Open the resource health pane by selecting the resource. Click on **labvm-ODL**. Alternately. you can also right-click on any resource and select **view resource**.    You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
+1. Open the resource health pane by selecting the resource. Click on **labvm-DID**. Alternately. you can also right-click on any resource and select **view resource**.    You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
 
     ![](images/defender8.png)
 
@@ -372,7 +390,6 @@ Azure Security Center by Microsoft is a solution that provides unified security 
  
    ![](images/defender18.png)
 
-
 ## Explore Security benchmark
 
 1. Search for **Policy (1)** in Azure portal search bar and then click on **Policy (2)**.
@@ -408,7 +425,6 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/benchmark5.png)
 
-    
 ## Add a custom initiative to your subscription
 
 1. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
