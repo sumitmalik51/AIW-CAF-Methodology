@@ -89,6 +89,19 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/installed-inventory1.png "installed-inventory")
 
+1. On Microsoft Defender for Cloud Under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources, and            recommendations.
+    
+    ![](images/securityposture1.png "overview security posture")
+   
+1. On Microsoft Defender for Cloud Under cloud security click on **Regulatory compliance**. you can get insights into your compliance posture based on continuous            assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark** and **Lowest compliance          regulatory standards**.
+
+    ![](images/compliance.png "overview of regulatory compliance")
+    
+1. On Microsoft Defender for Cloud Under cloud security click on **Workload protections**. you can see the coverage of your **connected resources** for the currently selected subscription. Additionally, you can also view the recent **security alerts**, color-coded by severity.
+
+    ![](images/workloads.png "Workload protections")
+    
+    
 # Task 2: Configure Security Policies
 
 ### What is a security policy?
@@ -191,17 +204,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/securescore1.png "secure score")
     
-1. On the Security Centre | Under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources, and            recommendations.
-    
-    ![](images/securityposture1.png "overview security posture")
-   
-1.  On the Security Centre | Under cloud security click on **Regulatory compliance**. Here you can get an overview of Azure Security Benchmark
 
-    ![](images/compliance.png "overview of regulatory compliance")
-    
-1. On the Security Centre | Under cloud security click on **Workload protections**. Here you can get an overview of Cloud coverage and Security alerts.
-
-    ![](images/workloads.png "Workload protections")
     
     
 1. Click on the **Next** button present in the bottom-right corner of this lab guide. 
