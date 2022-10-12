@@ -269,7 +269,6 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/jitvm.png "save")
 
-
 # Task 5: Exploring Security Centre and Security benchmark
 
 Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centres within both cloud workloads and on-premises.
@@ -314,7 +313,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
    > **Note**: In your environment, these numbers may not be the same, since it varies in time
 
-1.  Notice the total number of resources, The total number of resources are the ones that are connected to the Microsoft Defender for Cloud and NOT the total number of     resources that you have in your subscriptions.
+1.  Notice the **total number of resources**, The total number of resources are the ones that are connected to the Microsoft Defender for Cloud and NOT the total           number of resources that you have in your subscriptions.
 
 1. Notice the number of **unhealthy resources**, The unhealthy resources are the resources with actionable recommendations based on the selected filter.
 
@@ -336,11 +335,9 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. Go back to the Inventory page In the filter menu, select the **Resource Groups (1)** filter and then provide the value **Jumpvm-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
 
-       
-    ![](images/defender10.png)
+      ![](images/defender10.png)
+
     > **Note:** The list can be filtered and sorted.
-
-
 1. On the **Inventory** page, Select the **virtual machine** and then from the top menu, click on **Assign tags**
 
     ![](images/defender11.png)
@@ -376,9 +373,80 @@ Azure Security Center by Microsoft is a solution that provides unified security 
    ![](images/defender18.png)
 
 
+## Explore Security benchmark
 
+1. Search for **Policy (1)** in Azure portal search bar and then click on **Policy (2)**.
 
+    ![](images/policy1.png)
+    
+1. Select **Definitions(1)** from the left navigation pane.
+
+1. From the top menu, select **+ Initiative definition(2)** to add a new initiative
+
+    ![](images/benchmark1.png)
  
+1. On the New Initiative definition page, select the following:
+    - Initiative location: Select your Subscription
+    - Name: **Contoso Security Benchmark**
+    - Description: Baseline for security policies to appear alongside the built-in recommendations
+    - Category: Select **Create new** and type: **Contoso**
+    - Version: **1**
+    - Click **Next**
+
+    ![](images/benchmark2.png)
+
+1. On the Policies tab, select **Add policy definition(s) (1)**.
+1. The Add policy definition(s) pane open Search **Storage accounts should restrict network access (2)** and select the **Storage accounts should restrict network        access (3)** and click on **Add (4)**. Select **Review + Create (5)**.
+
+    ![](images/benchmark3.png)
+
+1. Click on **Create**.
+
+    ![](images/benchmark4.png)
+
+1.  Wait for a notification: ✅ **Successfully saved initiative definition**.
+
+    ![](images/benchmark5.png)
+
+    
+## Add a custom initiative to your subscription
+
+1. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
+    
+    ![](images/defender.png "Microsoft Defender")
+
+1. On the Microsoft Defender for Cloud, Under Management Click on the **Environment settings**.
+
+    ![](images/settings.png "environment details")
+    
+1. Select the **subscription or workspace** that you want to protect.
+
+    ![](images/subsciptionss.png "subscriptions")
+        
+1. Under policy setting, Click on **Security Policy**.
+
+    ![](images/security1.png)
+
+1. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
+
+    ![](images/security2.png)
+
+1. Your newly created initiative is listed: **Contoso Security Benchmark**. Select **Add**.
+
+    ![](images/security3.png)
+
+1. On the **Assign Initiative** page leave everything as default and select **Review + Create**.
+
+    ![](images/security4.png)
+    
+1. Now click on **Create**.
+
+    ![](images/security5.png)
+
+1. Your custom initiative is now assigned.
+
+    ![](images/security6.png)
+
 
 
 
