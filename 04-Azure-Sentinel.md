@@ -52,9 +52,17 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
     
    >**NOTE**: It may take a Couple of minutes for the workspace to be Created.
 
+1. Once the Log Analytics workspace is added you will see notification which says **Successfully added Log Analytics workspace** as shown below.
+
+      ![](images/sentinel1.png)
+
 1. Click on **ADD**.
 
       ![](images/click-add.png "click on add")
+      
+1. Once the Microsoft Sentinel is added you will see another notification which says **Successfully added Azure Sentinel** as shown below.
+
+      ![](images/sentinel2.png)
 
 1. This is the default page you will be taken to once your new Azure Sentinel instance has been created. After this, the overview page will be the default page shown.
 
@@ -68,13 +76,24 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
 # Task 4: Explore Azure Sentinel and query logs
 
-1. Now, click on the **Workbooks** from the left pane under the Threat Management section and search for WAF and select **Microsoft Web Application Firewall (WAF) - Azure WA** from the search result.
+1. Now, click on the **Workbooks** from the left pane under the Threat Management section and search for WAF and select **Microsoft Web Application Firewall (WAF) -      Azure WAF** from the search result.
 
      ![](images/401.png "news-sentinel")
 
-2. Then from the bottom-right corner of the Azure portal, click on **Save** and then on **OK** to save the workbook.
+1. Then from the bottom-right corner of the Azure portal, click on **Save** and then on **OK** to save the workbook.
 
     ![](images/402.png "news-sentinel")
     
-3. 
+1. Once the **Workbook** is added. you will see notification which says **Workbook 'Microsoft Web Application Firewall (WAF) - Azure WAF saved successfully** as shown    below.
+
+
+
+1. On Microsoft Sentinel blade, under configuration click on **Setting (1)** and then click on **workspace setting**.
+
+
+1. On the Log Analytics workspace page, under Connect a data source click on **Azure virtual machines (VMs)**.
+
+
+1. 
+
   
