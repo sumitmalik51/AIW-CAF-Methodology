@@ -55,7 +55,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
     ![](images/defender.png "Microsoft Defender")
 
-1. On the Microsoft Defender for Cloud, Under Management Click on the **Environment settings**.
+1. On the Microsoft Defender for Cloud, Under Management Click on the **Environment settings**.Here you'll be able see the subscription.
 
     ![](images/settings.png "environment details")
     
@@ -71,7 +71,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/inventory.png "inventory")
     
-1. From the **Inventory** tab, click on the **Add non-Azure servers**.
+1. From the **Inventory** tab, under general click on **Add non-Azure servers**.
 
     ![](images/add-inventory.png "add-inventory")
     
@@ -83,21 +83,23 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/saved-inventory.png "saved-inventory")
     
-1. Now, close the blade and go back to **Inventory** tab and then you will see few connected resources. If you didn't see any resource, you will have to click on Refresh button at the top.
+1. Now, close the blade and go back to **Inventory** tab and then you will see few connected resources. If you didn't see any resource, you will have to click on          Refresh button at the top.
+
+    ![](images/onboard.png "Onboard")
 
 1. You can also find the **Virtual machines** enabled available in the resources list because **LogAnalytics** agent is already enabled for it and the same Log Analytics workspace is connected to Security Center. 
 
     ![](images/installed-inventory1.png "installed-inventory")
 
-1. On Microsoft Defender for Cloud Under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources, and            recommendations.
+1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
     
     ![](images/securityposture1.png "overview security posture")
    
-1. On Microsoft Defender for Cloud Under cloud security click on **Regulatory compliance**. you can get insights into your compliance posture based on continuous            assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark** and **Lowest compliance          regulatory standards**.
+1. On Microsoft Defender for Cloud page,Under cloud security click on **Regulatory compliance**. you can get insights into your compliance posture based on continuous    assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark** and **Lowest compliance          regulatory standards**.
 
     ![](images/compliance.png "overview of regulatory compliance")
     
-1. On Microsoft Defender for Cloud Under cloud security click on **Workload protections**. you can see the coverage of your **connected resources** for the currently selected subscription. Additionally, you can also view the recent **security alerts**, color-coded by severity.
+1. On Microsoft Defender for Cloud page, under cloud security click on **Workload protections**. you can see the coverage of your **connected resources** for the          currently selected subscription. Additionally, you can also view the recent **security alerts**, color-coded by severity.
 
     ![](images/workloads.png "Workload protections")
     
@@ -147,8 +149,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/policy1.png )
     
-1. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and          initiatives.
-1. From the top menu use the filter ribbon, set the Definitions Type as **Initiative(2)** and select **Security Center(3)** from the Category filter.
+1. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and          initiatives. From the top menu use the filter ribbon, set the Definitions Type as **Initiative(2)** and select **Security Center(3)** from the Category filter.
 
     ![](images/policy2.png )
     
@@ -213,15 +214,15 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/secure2.png)
     
-1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on       the **Recommendations status** (both completed security controls and recommendations) and **Resource health** (by severity).
+1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on       the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
     ![](images/secure3.png)
     
-1. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status, and the associated            recommendations. You can use this file for pivoting and reporting.
+1. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated            recommendations. You can use this file for pivoting and reporting.
 
     ![](images/secure4.png)
     
-1. Under **Recommendation**, Click on **Manage access and permissions** and select **Guest Configuration extension should be installed on machines** from the drop-down    list. 
+1. Under **Recommendation**, Click on **Manage access and permissions** and select **Guest Configuration extension should be installed on machines** from the drop down    list. 
 
     ![](images/secure5.png)
     
@@ -289,7 +290,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 # Task 5: Exploring Security Centre and Security benchmark
 
-Azure Security Centre by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centres within both cloud workloads and on-premises.
+Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centres within both cloud workloads and on-premises.
 
 ## Explore Security Centre
 
@@ -313,7 +314,7 @@ Azure Security Centre by Microsoft is a solution that provides unified security 
 
     ![](images/defender2.png "Whats new")
     
-1. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations, and    Security alerts.**
+1. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and    Security alerts.**
 
     ![](images/defender3.png "high level numbers")
 
@@ -337,7 +338,7 @@ Azure Security Centre by Microsoft is a solution that provides unified security 
 
 1. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we      enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
-1. Use the **Filter by name** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **labvm-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
+1. Use the **Filter by name** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **labvm-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
 
     ![](images/defender7.png)
 
@@ -351,7 +352,7 @@ Azure Security Centre by Microsoft is a solution that provides unified security 
 
     > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the         case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
-1. Go back to the Inventory page in the filter menu, select the **Resource Groups (1)** filter and then provide the value **JumpVM-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
+1. Go back to the Inventory page In the filter menu, select the **Resource Groups (1)** filter and then provide the value **Jumpvm-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
 
       ![](images/defender10.png)
 
@@ -368,7 +369,7 @@ Azure Security Centre by Microsoft is a solution that provides unified security 
 
     ![](images/defender13.png)
     
-1. From the filter pane, select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **JumpVM-rg**        (Unselect remaining) and again click on **Ok**
+1. From the filter pane,select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **jumpvm-rg**        (Unselect remaining) and again click on **Ok**
 
     ![](images/defender14.png)
 
@@ -398,7 +399,7 @@ Azure Security Centre by Microsoft is a solution that provides unified security 
     
 1. Select **Definitions(1)** from the left navigation pane.
 
-1. From the top menu, select **+ Initiative definition (2)** to add a new initiative
+1. From the top menu, select **+ Initiative definition(2)** to add a new initiative
 
     ![](images/benchmark1.png)
  
