@@ -60,8 +60,21 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
      ![](images/news-sentinel.png "news-sentinel")
      
+
+     
      
 # Task 3: Onboard the Web App – IIS server to sentinel
 
 
+# Task 4: Explore Azure Sentinel and query logs
+
+1. Now, click on the **Workbooks** from the left pane under the Threat Management section and search for WAF and select **Microsoft Web Application Firewall (WAF) - Azure WA** from the search result.
+
+     ![](images/401.png "news-sentinel")
+
+2. Then from the bottom-right corner of the Azure portal, click on **Save** and then on **OK** to save the workbook.
+
+    ![](images/402.png "news-sentinel")
+    
+3. 
   
