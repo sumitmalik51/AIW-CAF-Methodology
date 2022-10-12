@@ -4,7 +4,7 @@ In this lab, you will complete the following exercise:
 1. What is Microsoft Sentinel
 1. Onboard Azure Subscription to Azure sentinel
 1. Onboard the Web App – IaaS server to sentinel
-1. Explore and query logs
+1. Explore query logs
 
 
 # Task 1: What is Microsoft Sentinel?
@@ -68,19 +68,11 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
      ![](images/news-sentinel.png "news-sentinel")
      
-
-     
-     
-# Task 3: Onboard the Web App – IIS server to sentinel
-
-
-# Task 4: Explore Azure Sentinel and query logs
-
-1. Now, click on the **Workbooks** from the left pane under the Threat Management section and search for WAF and select **Microsoft Web Application Firewall (WAF) -      Azure WAF** from the search result.
+1. Now, click on the **Workbooks (1)** from the left pane under the Threat Management section and search  **WAF (2)** and select **Microsoft Web Application Firewall      (WAF) - Azure WAF (3)** from the search result.
 
     ![](images/401.png "news-sentinel")
 
-1. Then from the bottom-right corner of the Azure portal, click on **Save** and then on **OK** to save the workbook.
+1. Then from the bottom-right corner of the Azure portal, click on **Save (1)** and then click on **OK (2)** to save the workbook.
 
     ![](images/402.png "news-sentinel")
     
@@ -110,10 +102,15 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/sentinel9.png "news-sentinel")
 
+    >**NOTE**: Azure sentinel will takes around 20 minutes to load and display the data, meanwhile you can continue with the lab and we will explore on the data            collected by log analytics in task 4.    
+     
+# Task 3: Onboard the Web App – IIS server to sentinel
+
+
+# Task 4: Explore query logs
+
 1. Now, go back to **Microsoft Sentinel Overview** blade by clicking on Overview under General section on the left and, then click on **Heartbeat** to query the           VM insights. Count of **Events** could be different on your Microsoft Sentinel Dashboard.
 
-    >**NOTE**: Wait for 20 minutes and then Refresh the browser page to see the overview data.
-     
     ![](images/500.png "news-sentinel")
 
 1. Click on **Run** You will see results for **union Heartbeat** in query explorer. You can see operations around Network, Logical Disk, Memory, and Processor for        VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
@@ -136,6 +133,20 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/505.png "news-sentinel")
 
-1. Under all queries select **others (1)** then, you will find `VMProcess` query under **Queries**, and then click on **Run** to run the querie.
+1. Under all queries select **others (1)** then, you will find `VMProcess` query under **Queries**, and then click on **Run** to run the saved querie.
 
     ![](images/506.png "news-sentinel")
+
+1. Now close the blade go back to the **Microsoft sentinel** overview page.
+
+    ![](images/507.png "news-sentinel")
+     
+1. On the **Microsoft sentinel** overview page, under General section on the left and, then click on **usage** to query the VM insights.
+
+    ![](images/508.png "news-sentinel")
+    
+1.  Click on **Run** You will see results for **union usage** in query explorer. You can see operations around Network, Logical Disk, Memory, and Processor for             VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
+
+     ![](images/509.png "news-sentinel")
+
+    
