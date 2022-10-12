@@ -161,7 +161,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/policy4.png )
 
-1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**. then click on **Save (4)**.
+1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Save (4)**.
 
     ![](images/policy5.png )
     
