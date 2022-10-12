@@ -330,16 +330,53 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. On the resource health pane for **labvm-ODL**, review the virtual machine information alongside the recommendation list.
 
-
     ![](images/defender9.png)
 
-  > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
+    > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the         case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
 1. Go back to the Inventory page In the filter menu, select the **Resource Groups (1)** filter and then provide the value **Jumpvm-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
 
        
     ![](images/defender10.png)
- > **Note:** The list can be filtered and sorted.
+    > **Note:** The list can be filtered and sorted.
+
+
+1. On the **Inventory** page, Select the **virtual machine** and then from the top menu, click on **Assign tags**
+
+    ![](images/defender11.png)
+
+1. On the **Assign tags** blade, Assign **Environment** as the name and **Production** as the value and click on **Save**.
+
+    ![](images/defender12.png)
+
+1. Wait for a notification: ✅ **Successfully assigned the tag**.
+
+    ![](images/defender13.png)
+    
+1. From the filter pane,select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **jumpvm-rg**        (Unselect remaining) and again click on **Ok**
+
+    ![](images/defender14.png)
+
+1. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the    resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
+
+1. Wait for a notification: ✅ **Your CSV report is ready**.
+
+    ![](images/defender15.png)
+
+1. From the top menu, click on **Open query**.
+
+    ![](images/defender16.png)
+    
+1. On the **Azure Resource Graph Explorer** blade, click on **Run Query (1)**. You should now have the same list of resources and columns as in the previous step. This       query is editable for your needs and here it gets very powerful.
+
+    ![](images/defender17.png)
+
+1. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as **asc-filtered-query** and      select **save**.
+ 
+   ![](images/defender18.png)
+
+
+
 
  
 
