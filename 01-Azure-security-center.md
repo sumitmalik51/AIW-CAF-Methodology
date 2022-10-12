@@ -51,11 +51,11 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/skiptour1.png "skiptour")
 
-1. Search **Microsoft Defender for Cloud (1)** and Select **Microsoft Defender for Cloud (2)**.
-
+1. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
+    
     ![](images/defender.png "Microsoft Defender")
 
-1. On the Defender for Cloud Page, Click on the **Environment settings** under Management
+1. On the hach79TDK*WL, Under Management Click on the **Environment settings**.
 
     ![](images/settings.png "environment details")
     
@@ -66,6 +66,28 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 1. Select **Enable all** to enable all the plans for Defender for Cloud and then click on  **Save**.
 
     ![](images/planed.png "plan")
+    
+1. Back on **Microsoft Defender for Cloud** page under General Click on **Inventory**.
+
+    ![](images/inventory.png "inventory")
+    
+1. From the **Inventory** tab, click on the **Add non-Azure servers**.
+
+    ![](images/add-inventory.png "add-inventory")
+    
+1. On **Onboard servers to Defender for Cloud** page, click on **Upgrade** next to the existing **log analytics workspace** named  to upgrade. This will allow Azure Defender protection for your resources.
+
+    ![](images/upgrade-inventory.png "upgrade-inventory")
+    
+1. Once the Defender plans is added you will see another notification which says **Successfully added Defender plans** as shown below.
+
+    ![](images/saved-inventory.png "saved-inventory")
+    
+1. Now, close the blade and go back to **Inventory** tab and then you will see few connected resources. If you didn't see any resource, you will have to click on Refresh button at the top.
+
+1. You can also find the **Virtual machines** enabled available in the resources list because **LogAnalytics** agent is already enabled for it and the same Log Analytics workspace is connected to Security Center. 
+
+    ![](images/installed-inventory1.png "installed-inventory")
 
 # Task 2: Configure Security Policies
 
