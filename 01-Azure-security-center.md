@@ -112,7 +112,9 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 - There are different types of policies in Azure Policy. Defender for Cloud mainly uses 'Audit' policies that check specific conditions and configurations and then report on compliance. There are also "Enforce' policies that can be used to apply security settings.
 
-1. From Defender for Cloud's menu, select **Environment settings**.
+## Explore Cloud Policy
+
+1. From Defender for Cloud's menu, select **Environment settings**. Here you'll be able see the subscription.
 
     ![](images/settings.png "environment details")
     
@@ -139,6 +141,45 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 1. Wait for a couple of minutes and then **Refresh** the browser page to see the Industry & regulatory standards enabled.
 
     ![](images/refresh.png "Refresh")
+    
+## Explore Azure Policy
+
+1. Search for **Policy (1)** in Azure portal search bar and then click on **Policy (2)**.
+
+    ![](images/policy1.png )
+    
+1. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and          initiatives.
+1. From the top menu use the filter ribbon, set the Definitions Type as **Initiative(2)** and select **Security Center(3)** from the Category filter.
+
+    ![](images/policy2.png )
+    
+1. You can now see built-in initiatives used by Microsoft Defender for Cloud. You can choose one of them. Below is an example.
+
+    ![](images/policy3.png )
+  
+1. On the Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instances page click on **Assign**.
+
+    ![](images/policy4.png )
+
+1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**. then click on **Save (4)**.
+
+    ![](images/policy5.png )
+    
+1. Click on **Non-compliance messages (1)** and then select all **Policy definations (2)**, then click on **Review + create (3)**.
+
+    ![](images/policy6.png )
+    
+1. Now click on **Create**.
+
+    ![](images/policy7.png )
+
+1. Once the Policy is assigned you will see another notification which says **Role Assignments creation succeeded** and **Creating initiative assignment succeeded** as    shown below.
+
+    ![](images/policy8.png )
+    
+1. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the                assignments, for example:
+
+    ![](images/policy9.png )
 
 # Task 3: Secure Score 
 
