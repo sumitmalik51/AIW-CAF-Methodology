@@ -55,7 +55,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
     ![](images/defender.png "Microsoft Defender")
 
-1. On the hach79TDK*WL, Under Management Click on the **Environment settings**.
+1. On the Microsoft Defender for Cloud, Under Management Click on the **Environment settings**.
 
     ![](images/settings.png "environment details")
     
@@ -65,7 +65,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
  
 1. Select **Enable all** to enable all the plans for Defender for Cloud and then click on  **Save**.
 
-    ![](images/planed.png "plan")
+    ![](images/enabled-defender.png "enabled all")
     
 1. Back on **Microsoft Defender for Cloud** page under General Click on **Inventory**.
 
