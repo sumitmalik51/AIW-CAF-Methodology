@@ -234,7 +234,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     ![](images/secure6.png)
     
 1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources
-1. Under **Affected resources**, **select a resource** (the single **Virtual machine** on the Unhealthy resources) and click on **Fix**. This will automatically apply    the remediation on the selected resource.
+1. Under **Affected resources (1)**, **select a resource** (the single **Virtual machine (2)** on the Unhealthy resources) and click on **Fix (3)**. This will             automatically apply the remediation on the selected resource.
 
     ![](images/secure7.png)
     
@@ -274,22 +274,75 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centres within both cloud workloads and on-premises.
 
+## Explore Security Centre
+
 1. In the Azure portal, Search **Azure Security Centre (1)** and then click **Azure Security Centre (2)**. 
 
     ![](images/securitycentre.png "security centre")
      
-1. On the Security Centre | Getting started blade, click **Install agents (1)** and then click **Install agents (2)**.
+1. On  Getting started blade, click **Install agents (1)** and then click **Install agents (2)**.
 
     ![](images/agent.png "security agent")
 
-1. On the Security Centre | Overview blade, review the **Secure Score**.
+1. Back on Getting started blade, click **Upgrade** and then click **Open security center**.
 
-    ![](images/securescore1.png "secure score")
-    
+    ![](images/center1.png "Open security center")
 
+1. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for      your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
+
+    ![](images/defender1.png "Subscription")
+
+1. Click on the **What’s new** button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
+
+    ![](images/defender2.png "Whats new")
     
+1. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and    Security alerts.**
+
+    ![](images/defender3.png "high level numbers")
+
+1. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of **Completed controls and Completed        recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
     
-1. Click on the **Next** button present in the bottom-right corner of this lab guide. 
+    ![](images/defender4.png "security posture")
+
+1. On the Microsoft Defender for Cloud blade, under the **General** section, select the **Inventory** button.
+
+    ![](images/defender5.png)
+
+1. Hover to the **Summaries strip** at the top of the page.
+
+    ![](images/defender6.png)
+
+   > **Note**: In your environment, these numbers may not be the same, since it varies in time
+
+1.  Notice the total number of resources, The total number of resources are the ones that are connected to the Microsoft Defender for Cloud and NOT the total number of     resources that you have in your subscriptions.
+
+1. Notice the number of **unhealthy resources**, The unhealthy resources are the resources with actionable recommendations based on the selected filter.
+
+1. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we      enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
+
+1. Use the **Filter by name** box to search for **Virtual machine **. You should now see a filtered view containing your desired resource: **labvm-ODL**. Hover on the    red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
+
+    ![](images/defender7.png)
+
+1. Open the resource health pane by selecting the resource. Click on **labvm-ODL**. Alternately. you can also right-click on any resource and select **view resource**.    You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
+
+    ![](images/defender8.png)
+
+1. On the resource health pane for **labvm-ODL**, review the virtual machine information alongside the recommendation list.
+
+
+    ![](images/defender9.png)
+
+  > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
+
+1. Go back to the Inventory page In the filter menu, select the **Resource Groups (1)** filter and then provide the value **Jumpvm-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
+
+       
+    ![](images/defender10.png)
+ > **Note:** The list can be filtered and sorted.
+
+ 
+
 
 
 
