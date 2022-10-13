@@ -107,29 +107,47 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
 1. In Azure portal, Search **Log Analytics workspace (1)** and Select **Log Analytics workspace (2)**.
 
+     ![](images/analytics1.png)
 
+1. On log analytics workspace, Select your **workspace Name (1)**. Under setting click on **Agents management (2)** after that select **Log Analytics agent                instructions (3)** and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)** and save it to notepad we can      use it later.
 
-1. On log analytics workspace, Select your **workspace Name (1)**. Under setting click on **Agents management (2)** after that select **Log Analytics agent                instructions (3)** and then click on **Download Windows Agent [64 bit] (4)**.
+     ![](images/analytics2.png)
 
+1. Now, click on three dots **[...] (1)** and go to **downloads (2)**.
 
+     ![](images/analytics3.png)
 
-1. Now, click on 
+1. you will see the **MMA setup**. Now click on **open file**.
 
+     ![](images/analytics4.png)
 
+1. On Microsoft monitoring agent setup wizard, click on **Next**.
 
+     ![](images/analytics5.png)
+   
+1. Click on **I Agree**.
 
+      ![](images/analytics6.png)
+ 
+1. On the destination folder, if you want to change the location of installing the microsoft monitoring agent you can do it by clicking on **Change (1)** button          otherwise by default remain as same. click on **Next (2)**.
 
+      ![](images/analytics7.png)
 
+1. Select the **Connect the agent to azure log analytics(OMS)** then click on **Next**.
 
+      ![](images/analytics8.png)
 
+1. Enter the **Workspace ID (1)** and **Workspace key or Primary key (2)** that you are noted in step 2, click on **Next (3)**.
 
+      ![](images/analytics9.png)
 
+1. Click on **Install**.
 
+      ![](images/analytics10.png)
 
+1. You will see that Microsoft monitoring agent configuration completed successfully, click on **Finish**.
 
-
-
-
+      ![](images/analytics11.png)
 
 # Task 4: Explore query logs
 
