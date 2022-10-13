@@ -43,6 +43,13 @@ In this task you will enable diagnostic settings in Azure Firewall to collect fi
 
    ![](images/firewall6.png "search gateway")
    
+### IDPS Tests
+
+Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
+
+In this task you will test IDPS for http and https traffic
+
+1. 
 
 
 
