@@ -43,7 +43,7 @@ In this task you will enable diagnostic settings in Azure Firewall to collect fi
 
    ![](images/firewall6.png "search gateway")
    
-7. Click on **Save**.
+
 
 
 
