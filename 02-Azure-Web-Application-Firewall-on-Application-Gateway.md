@@ -31,18 +31,20 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
       ![](images/addhealthprobes.png "Health Probes")
       
- 1. - Enter Name of the probe : **my-probe**
-    - Keep Protocol as **HTTP**.
-    - Choose Pick host name from backend HTTP settings as **YES**.
-    - Enter the relative **Path** of the probe as **/weatherforecast**
-    - Enter the **Interval (seconds)** : 30
-    - Enter the **Timeout (seconds)**  : 30
-    - Enter the **Unhealthy threshold** : 3
-    - Choose Use probe matching conditions as **YES**.
-    - Enter the value of HTTP response status code match: **200-399**.
-    - Click on **Add**.
+ 1. - Enter Name of the probe : **my-probe (1)**
+    - Keep Protocol as **HTTP (2)**.
+    - Choose Pick host name from backend HTTP settings as **Yes (3)**.
+    - Choose Pick port name from backend settings as **Yes (4)**
+    - Enter the relative **Path** of the probe as **/weatherforecast (5)**
+    - Enter the **Interval (seconds)** : **30 (6)**
+    - Enter the **Timeout (seconds)**  : **30 (7)**
+    - Enter the **Unhealthy threshold** : **3 (8)**
+    - Choose Use probe matching conditions as **Yes (9)**.
+    - Enter the value of HTTP response status code match: **200-399 (10)**.
+    - **Uncheck** the box next to **I want to test the backend health before adding the health probe (11)**
+    - Click on **Add (12)**.
  
-      ![](images/healthprobe1.png "probe name")
+      ![](/images1/newhealthprobe.png "probe name")
   
  1. On the Application gateway blade Click on **Backend setting(1)** and then select your **Backend setting(2)**.
 
