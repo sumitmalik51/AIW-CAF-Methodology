@@ -69,11 +69,11 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
 1. Back on **Microsoft Defender for Cloud** page under General Click on **Inventory**.
 
-    ![](images/inventory.png "inventory")
+    ![](images/118.png "inventory")
     
 1. From the **Inventory** tab, under general click on **Add non-Azure servers**.
 
-    ![](images/add-inventory.png "add-inventory")
+    ![](images/119.png "add-inventory")
     
 1. On **Onboard servers to Defender for Cloud** page, click on **Upgrade** next to the existing **log analytics workspace** named  to upgrade. This will allow Azure Defender protection for your resources.
 
@@ -89,7 +89,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 1. You can also find the **Virtual machines** enabled available in the resources list because **LogAnalytics** agent is already enabled for it and the same Log Analytics workspace is connected to Security Center. 
 
-    ![](images/installed-inventory1.png "installed-inventory")
+    ![](images/120.png "installed-inventory")
 
 1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
     
@@ -173,34 +173,59 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/policy2.png )
     
-1. You can now see built-in initiatives used by Microsoft Defender for Cloud. You can choose one of them. Below is an example.
+1. You can now see built-in initiatives used by Microsoft Defender for Cloud. Here click on **Azure Security Benchmark**.
 
-    ![](images/policy3.png )
+    ![](images/105.png )
   
-1. On the Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instances page click on **Assign**.
+1. On the **Azure Security Benchmark** Initiative Definition page click on **Assign**.
 
-    ![](images/policy4.png )
+    ![](images/106.png )
 
-1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Save (4)**.
+1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Save (4)**, followed by clicking on **Next (5)**
 
-    ![](images/policy5.png )
+    ![](images/107.png )
     
-1. Click on **Non-compliance messages (1)** and then select all **Policy definations (2)**, then click on **Review + create (3)**.
+1. Under **Advanced** tab, leave everything to default and then click on **Next**.
 
-    ![](images/policy6.png )
+    ![](images/108.png "environment details")
+    
+1. Now under **parameters** tab, leave everything to default and then click on **Next**.
+
+    ![](images/109.png "environment details")
+    
+1. Now under **Remediation** tab, leave everything to default and then click on **Next**.
+
+    ![](images/110.png "environment details")
+    
+1. Now on **Non-compliance messages** tab, select all **Policy definations (1)**, then click on **Review + create (2)**.
+
+    ![](images/111.png )
     
 1. Now click on **Create**.
 
-    ![](images/policy7.png )
+    ![](images/112.png )
 
-1. Once the Policy is assigned you will see another notification which says **Role Assignments creation succeeded** and **Creating initiative assignment succeeded** as    shown below.
+1. Once the Policy is assigned you will see another notification which says **Creating initiative assignment succeeded** as shown below.
 
-    ![](images/policy8.png )
+    ![](images/113.png )
     
-1. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the                assignments, for example:
+1. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**, and here you can see **Azure Securiy Benchmark** assigned.
 
-    ![](images/policy9.png )
+    ![](images/114.png )
+    
+1. Now under Policy page, click on **Overview (1)** and then click on **Azure Security Benchmark (2)**.
 
+    ![](images/115.png )
+    
+1. Under Azure Security Benchmark Initiative compliance page, click on **Non-complient resources (1)**, and then click on a resource from the list.
+
+    ![](images/116.png )
+
+1. Now you will be able to see the compliance state of the resource in detail.
+
+    ![](images/117.png )
+    
+    
 # Task 3: Secure Score 
 
 ### What is a Secure Score?
@@ -254,10 +279,11 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/secure6.png)
     
-1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources
-1. Under **Affected resources (1)**, **select a resource** (the single **Virtual machine (2)** on the Unhealthy resources) and click on **Fix (3)**. This will             automatically apply the remediation on the selected resource.
+1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources.
+2. 
+3. Under **Affected resources (1)**, **select a resource** (the single **Virtual machine (2)** on the Unhealthy resources) and click on **Fix (3)**. This will  automatically apply the remediation on the selected resource.
 
-    ![](images/secure7.png)
+    ![](images/121.png)
     
 1. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
@@ -285,9 +311,9 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/posture2.png)
 
-1. From the **Affected resources (2)** tab, select  **Labvm-DID(2)** virtual machines. Click on **Fix (3)**.
+1. From the **Affected resources (2)** tab, select  **JumpVM-DID(2)** virtual machines. Click on **Fix (3)**.
 
-    ![](images/posture3.png)
+    ![](images/123.png)
 
 1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers)**. Click on  **Proceed**.
 
@@ -295,7 +321,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 1. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 1 resources**.
 
-    ![](images/posture5.png)
+    ![](images/124.png)
 
 1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
@@ -358,9 +384,9 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we      enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
-1. Use the **Filter by name** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **labvm-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
+1. Use the **Filter by name** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **JumpVM-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
 
-    ![](images/defender7.png)
+    ![](images/125.png)
 
 1. Open the resource health pane by selecting the resource. Click on **labvm-DID**. Alternately. you can also right-click on any resource and select **view resource**.    You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
 
@@ -372,14 +398,15 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the         case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
-1. Go back to the Inventory page In the filter menu, select the **Resource Groups (1)** filter and then provide the value **Jumpvm-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
+1. Go back to the Inventory page In the filter menu, select the **Resource Groups (1)** filter and then provide the value **JumpVM-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
 
       ![](images/defender10.png)
 
     > **Note:** The list can be filtered and sorted.
+    
 1. On the **Inventory** page, Select the **virtual machine** and then from the top menu, click on **Assign tags**
 
-    ![](images/defender11.png)
+    ![](images/126.png)
 
 1. On the **Assign tags** blade, Assign **Environment** as the name and **Production** as the value and click on **Save**.
 
@@ -389,9 +416,9 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/defender13.png)
     
-1. From the filter pane,select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **jumpvm-rg**        (Unselect remaining) and again click on **Ok**
+1. From the filter pane,select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **JumpVM-rg**        (Unselect remaining) and again click on **Ok**
 
-    ![](images/defender14.png)
+    ![](images/127.png)
 
 1. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the    resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
 
@@ -401,9 +428,9 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. From the top menu, click on **Open query**.
 
-    ![](images/defender16.png)
+    ![](images/128.png)
     
-1. On the **Azure Resource Graph Explorer** blade, click on **Run Query (1)**. You should now have the same list of resources and columns as in the previous step. This       query is editable for your needs and here it gets very powerful.
+1. On the **Azure Resource Graph Explorer** blade, click on **Run Query (1)**. This query is editable based on the requirement.
 
     ![](images/defender17.png)
 
