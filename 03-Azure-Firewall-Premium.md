@@ -49,6 +49,8 @@ Azure Firewall Premium provides signature-based IDPS to allow rapid detection of
 
 In this task you will test IDPS for http and https traffic
 
+### Test IDPS for HTTP traffic
+
 1. 
 
 
