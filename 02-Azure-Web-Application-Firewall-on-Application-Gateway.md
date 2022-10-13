@@ -62,10 +62,13 @@ Azure Application Gateway has a public IP, or front end, and your application us
  
       ![](images/edit1.png "Overwrite some changes")
       
- 1. Now, On the Application gateway blade click on **Backend health** setting and check that status is **Healthy**.
+ 1. Now, on the Application gateway blade click on **Backend health** setting and check that status is **Healthy**.
  
       ![](images/backend-health.png "Backend Health")
-      
+  
+ 1. Navigate back to home page and search for **Application Firewall Policies (1)** from search bar and select it **(2)**.
+
+      ![](images1/firewallpolicies.png)
  
  # Task 2: Publish your application to the internet with the application gateway
  
