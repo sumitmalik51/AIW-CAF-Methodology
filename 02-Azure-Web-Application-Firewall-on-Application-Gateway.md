@@ -25,11 +25,11 @@ Azure Application Gateway has a public IP, or front end, and your application us
     
  1. Select your **Application Gateway**.
 
-      ![](images/select.png "select gateway")
+      ![](images/appgateway.png "select gateway")
       
  1. On the Application gateway blade click on **Health Probes(1)** setting and then click on **Add(2)**.
 
-      ![](images/healthprobe.png "Health Probes")
+      ![](images/addhealthprobes.png "Health Probes")
       
  1. - Enter Name of the probe : **my-probe**
     - Keep Protocol as **HTTP**.
