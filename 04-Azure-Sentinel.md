@@ -38,7 +38,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
      
 1. On **Log Analytics workspace** page, provide the information as mentioned below,
    - Subscription: **Leave it as default (1)**
-   - Resource Group: Enter **JumpVM-rg (2) **.
+   - Resource Group: Enter **JumpVM-rg (2)**.
    - Name: Enter a **Unique value (3)**.
    - Region: Select **East US (4)** from the drop-down list
    - Click on **Tags (5)** to continue.
@@ -83,7 +83,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
    ![](images/sentinel4.png "news-sentinel")
 
-1. On Microsoft Sentinel blade, under configuration click on **Setting (1)** and then click on **workspace settings (2)**.
+1. On Microsoft Sentinel blade, under configuration click on **Settings (1)** and then click on **Workspace settings (2)**.
 
 
     ![](images/log10.png "news-sentinel")
