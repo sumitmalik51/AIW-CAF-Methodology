@@ -72,7 +72,7 @@ Azure Application Gateway has a public IP, or front end, and your application us
  
  1. Click on **firewallpolicy** under Web Application Firewall page and click on **Associated Application gateways** under Settings from Application Gateway WAF policy page.
 
-     ![](../images1/firewallpolicy.png)
+     ![](/images1/firewallpolicy.png)
  # Task 2: Publish your application to the internet with the application gateway
  
 
