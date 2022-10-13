@@ -21,16 +21,28 @@ In this task you will enable diagnostic settings in Azure Firewall to collect fi
 
 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
 
+   ![](images/firewall1.png "search gateway")
+
 2. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
+
+   ![](images/firewall2.png "search gateway")
 
 3. Select **Add diagnostic setting** on the **Diagnostic settings**. 
 
+   ![](images/firewall4.png "search gateway")
+
 4. Now for **Diagnostic setting name** enter **fw-diagnostics**.
+
+   ![](images/firewall3.png "search gateway")
 
 5. Under **Logs**, select **AzureFirewallApplicationRule**, and **AzureFirewallNetworkRule**.
 
+   ![](images/firewall5.png "search gateway")
+
 6. Under **Destination details**, select **Send to Log Analytics workspace** and then click on **Save**.
 
+   ![](images/firewall6.png "search gateway")
+   
 7. Click on **Save**.
 
 
