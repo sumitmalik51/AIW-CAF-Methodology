@@ -31,7 +31,9 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
       ![](images/addhealthprobes.png "Health Probes")
       
- 1. - Enter Name of the probe : **my-probe (1)**
+ 1. Follow the below instructions under **Add health probe** page:
+    
+    - Enter Name of the probe : **my-probe (1)**
     - Keep Protocol as **HTTP (2)**.
     - Choose Pick host name from backend HTTP settings as **Yes (3)**.
     - Choose Pick port name from backend settings as **Yes (4)**
@@ -50,7 +52,9 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
       ![](/images1/backendsettings.png "backend setting name")
       
- 1. - Choose override with new host name as **YES**.
+ 1. Follow the below instructions under **Add Backend settings** :
+    
+    - Choose override with new host name as **YES**.
     - Select Host name Override : **Pick host name from Backend target**.
     - Choose Use Custom probe as **YES**.
     - Select your Custom probe as **my-probe**.
