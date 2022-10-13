@@ -137,7 +137,7 @@ In this task, you'll publish an application via Azure Firewall and Application G
           
 1. Now, to test the application copy and paste the Public IP address of **Firewall** in a new browser tab.
 
-   ![ss](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/CIVMeastus002.png?raw=true)
+   ![ss](/images1/webapp.png)
        
 1. This will confirm that you have published the Contoso web application via Azure Firewall & Application Gateway.
 
