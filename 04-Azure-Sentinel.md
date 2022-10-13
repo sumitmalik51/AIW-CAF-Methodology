@@ -37,39 +37,43 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
      ![](images/loganalytics.png "log analytics")
      
 1. On **Log Analytics workspace** page, provide the information as mentioned below,
-   - Subscription: **Leave it as default**
-   - Resource Group: Enter **JumpVM-rg**.
-   - Name: Enter a Unique value.
-   - Region: Select **East US** from the drop-down list
-   - Click on **Review and Create** to continue.
+   - Subscription: **Leave it as default (1)**
+   - Resource Group: Enter **JumpVM-rg (2) **.
+   - Name: Enter a **Unique value (3)**.
+   - Region: Select **East US (4)** from the drop-down list
+   - Click on **Tags (5)** to continue.
 
-     ![](images/create-log.png " create log analytics")
+     ![](images/log1.png "create log analytics")
+     
+1. On the **Tags** tab, we dont need to add tags by default remain as same. click on **Review + create**.
+
+     ![](images/log2.png "create log analytics")
   
 1. If Validations is passed click on **Create** to create your new Log Analytics workspace.
 
-     ![](images/passed-log.png " Passed log analytics")
+     ![](images/log3.png "Passed log analytics")
     
    >**NOTE**: It may take a Couple of minutes for the workspace to be Created.
 
 1. Once the Log Analytics workspace is added you will see notification which says **Successfully added Log Analytics workspace** as shown below.
 
-      ![](images/sentinel1.png)
+      ![](images/log4.png "Passed log analytics")
 
 1. Click on **ADD**.
 
-      ![](images/click-add.png "click on add")
+      ![](images/log5.png "click on add")
       
 1. Once the Microsoft Sentinel is added you will see another notification which says **Successfully added Azure Sentinel** as shown below.
 
-      ![](images/sentinel2.png)
+      ![](images/log6.png)
 
 1. This is the default page you will be taken to once your new Azure Sentinel instance has been created. After this, the overview page will be the default page shown.
 
-     ![](images/news-sentinel.png "news-sentinel")
+     ![](images/log7.png "news-sentinel")
      
 1. Now, click on the **Workbooks (1)** from the left pane under the Threat Management section and search  **WAF (2)** and select **Microsoft Web Application Firewall      (WAF) - Azure WAF (3)** from the search result.
 
-    ![](images/401.png "news-sentinel")
+    ![](images/log8.png "news-sentinel")
 
 1. Then from the bottom-right corner of the Azure portal, click on **Save (1)** and then click on **OK (2)** to save the workbook.
 
@@ -79,10 +83,10 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
    ![](images/sentinel4.png "news-sentinel")
 
-1. On Microsoft Sentinel blade, under configuration click on **Setting (1)** and then click on **workspace settings**.
+1. On Microsoft Sentinel blade, under configuration click on **Setting (1)** and then click on **workspace settings (2)**.
 
 
-    ![](images/sentinel5.png "news-sentinel")
+    ![](images/log10.png "news-sentinel")
 
 1. On the Log Analytics workspace page, under Connect a data source click on **Azure virtual machines (VMs) (1)**.
 
@@ -117,7 +121,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
      ![](images/analytics3.png)
 
-1. you will see the **MMA setup**. Now click on **open file**.
+1. You will see the **MMA setup**. Now click on **open file**.
 
      ![](images/analytics4.png)
 
@@ -129,9 +133,9 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
       ![](images/analytics6.png)
  
-1. On the destination folder, if you want to change the location of installing the microsoft monitoring agent you can do it by clicking on **Change (1)** button          otherwise by default remain as same. click on **Next (2)**.
+1. Click on **Next**.
 
-      ![](images/analytics7.png)
+      ![](images/analytics12.png)
 
 1. Select the **Connect the agent to azure log analytics(OMS)** then click on **Next**.
 
@@ -148,6 +152,20 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 1. You will see that Microsoft monitoring agent configuration completed successfully, click on **Finish**.
 
       ![](images/analytics11.png)
+      
+     >**NOTE**: Wait for 30 minutes to see that your window computer is connected.
+
+1. Back on **log analytics workspce** blade, Select your **workspace Name (1)**. Under setting click on **Agents management (2)** and you will see that **1 Windows        computers connected (3)**
+
+      ![](images/agents1.png)
+
+1. If you want to see the logs, click on **See them in logs**.
+
+      ![](images/agents2.png)
+
+1. You will see that the **MMA** query is running automatically and you also seen the results.
+
+     ![](images/agents3.png)
 
 # Task 4: Explore query logs
 
