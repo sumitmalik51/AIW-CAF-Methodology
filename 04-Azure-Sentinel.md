@@ -92,7 +92,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/correct2.png "news-sentinel")
 
-1. You will see that virtual machine is not connected with Log Analytics connection. So now click on **VM Name** to connect with Log Analytics connection
+1. You will see that the virtual machine is not connected to the Log Analytics Connection. Now, click on **VM Name** to connect with Log Analytics Connection
 
     ![](images/correct3.png "news-sentinel")
       
@@ -100,111 +100,112 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/correct5.png "news-sentinel")
      
-1. Once the VM is connected you will see the notification which says **Successfully connected virtual machine** as shown below.
+1. Once the VM is connected you will see the notification that says **Successfully connected virtual machine**, as shown below.
 
     ![](images/correct4.png "news-sentinel")
 
-    >**NOTE**: Azure sentinel will takes around 20 minutes to load and display the data, meanwhile you can continue with the lab and we will explore on the data            collected by log analytics in task 4.    
+    >**NOTE**: Azure sentinel will take around 20 minutes to load and display the data, meanwhile you can continue with the lab and  we will explore the data            collected by log analytics in task 4.    
      
 # Task 3: Onboard the Web App – IIS server to sentinel
 
-1. In Azure portal, Search **Log Analytics workspace (1)** and Select **Log Analytics workspace (2)**.
+1. In Azure portal, search **Log Analytics workspace (1)**. and select **Log Analytics workspace (2)** from the search results.
 
      ![](images/analytics1.png)
 
-1. On log analytics workspace, Select your **workspace Name (1)**. Under setting click on **Agents management (2)** after that select **Log Analytics agent                instructions (3)** and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)** and save it to notepad we can      use it later.
+1. On the  log analytics workspace page, select your **log analytics workspace (1)**,and under settings, click on **Agents management (2)** after that expand **Log Analytics agent                instructions (3)**, and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)**, then save it to notepad for later use.
 
      ![](images/analytics2.png)
 
-1. Now, click on three dots **[...] (1)** and go to **downloads (2)**.
+1. Now, on your we browser, click on three dots **[...] (1)** and, go to **Downloads (2)**.
 
      ![](images/analytics3.png)
 
-1. You will see the **MMA setup**. Now click on **open file**.
+1. You will see a file name **MMASetup-AMD64.exe**, here click on **Open file**.
 
      ![](images/analytics4.png)
 
-1. On Microsoft monitoring agent setup wizard, click on **Next**.
+1. On the Microsoft Monitoring Agent Setup Wizard, click on **Next**.
 
      ![](images/analytics5.png)
    
-1. Click on **I Agree**.
+1. Now under Microsoft Software License Terms, click on **I Agree**.
 
       ![](images/analytics6.png)
  
-1. Click on **Next**.
+1. Under Destination Folder page leave the path to default, and Click on **Next**.
 
       ![](images/analytics12.png)
 
-1. Select the **Connect the agent to azure log analytics(OMS)** then click on **Next**.
+1. Now under Agent Setup Options, select the checkbox **Connect the agent to Azure Log Analytics (OMS)**, then click on **Next**.
 
       ![](images/analytics8.png)
 
-1. Enter the **Workspace ID (1)** and **Workspace key or Primary key (2)** that you are noted in step 2, click on **Next (3)**.
+1. Enter the **Workspace ID (1)** and **Workspace key or Primary key (2)** that you are noted in step 2, then click on **Next (3)**.
 
       ![](images/analytics9.png)
 
-1. Click on **Install**.
+1. Under Ready to Install page, click on **Install**.
 
       ![](images/analytics10.png)
 
-1. You will see that Microsoft monitoring agent configuration completed successfully, click on **Finish**.
+1. Once the  Microsoft Monitoring Agent configuration is completed successfully, click on **Finish**.
 
       ![](images/analytics11.png)
-      
-     >**NOTE**: Wait for 30 minutes to see that your window computer is connected.
 
-1. Back on **log analytics workspce** blade, Select your **workspace Name (1)**. Under setting click on **Agents management (2)** and you will see that **1 Windows        computers connected (3)**
+1. On the **log analytics workspace** page, click on your **log analytics workspace (1)**, then click on **Agents management (2)** under settings and you will see **1 Windows        computers connected (3)**
+   >**NOTE**: It will takes around 30 minutes, for the log analytics agent to    connect with virtual machine, wait for it to complete before proceeding with the lab.
 
       ![](images/agents1.png)
 
-1. If you want to see the logs, click on **See them in logs**.
+1. To explore more on logs, click on **See them in Logs**.
 
       ![](images/agents2.png)
 
-1. You will see that the **MMA** query is running automatically and you also seen the results.
+1. Here you will see the **MMA** query running automatically, and the query result below it.
 
      ![](images/agents3.png)
 
 # Task 4: Explore query logs
 
-1. Now, go back to **Microsoft Sentinel Overview** blade by clicking on Overview under General section on the left and, then click on **Heartbeat** to query the           VM insights. Count of **Events** could be different on your Microsoft Sentinel Dashboard.
-
+1. Now, go back to **Microsoft Sentinel |Overview** page by clicking on **Overview (1)** under General on the left hand side blade, and then click on **Heartbeat (2)**.
+    
     ![](images/microsoft1.png "news-sentinel")
+    
+ >**NOTE**:Your hearbeat count may varyfrom the screenshot above. 
 
-1. Click on **Run** You will see results for **union Heartbeat** in query explorer. You can see operations around Network, Logical Disk, Memory, and Processor for        VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
+1. Now under **Logs** page, click on **Run** , Here you will see results of  **union Heartbeat** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
     ![](images/microsoft2.png "news-sentinel")
      
-1. You can save the query for later use by clicking on the **Save (1)** and then **Save as query (2)** button.
+1. You can save the query for later use by clicking on the **Save (1)** and then select **Save as query (2)**.
   
      ![](images/microsoft3.png "news-sentinel")
 
-1. Now, provide **VMProcess** for the **Query name (1)**, then click on **Save (2)**.
+1. Now under **Save as query** blade, enter **VMProcess (1)** as **Query name**, and then click on **Save (2)**.
 
     ![](images/503.png "news-sentinel")
 
-1. Once the Query is saved you will see the notification which says **Successfully saved query** as shown below.
+1. Once the Query is saved you will see the notification thats says **Successfully saved query**, as shown below.
 
     ![](images/504.png "news-sentinel")
 
-1. You can see and run the saved **queries** by browsing to **Queries**
+1. Now click on **Queries**, to browse the saved queries in queries explorer.
 
     ![](images/505.png "news-sentinel")
 
-1. Under all queries select **others (1)** then, you will find `VMProcess` query under **Queries**, and then click on **Run** to run the saved querie.
+1. On the **Queries** page, under All Queries, scroll down to **Other (1)**, and then click on **Run (2)** under **VMprocess** to run the saved querie.
 
     ![](images/506.png "news-sentinel")
 
-1. Now close the blade go back to the **Microsoft sentinel** overview page.
+1. Now click on **X** on the top right corner to return to the **Microsoft sentinel** overview page.
 
     ![](images/microsoft4.png "news-sentinel")
      
-1. On the **Microsoft sentinel** overview page, under General section on the left and, then click on **usage** to query the VM insights.
+1. On the  Microsoft Sentinel **Overview** page, click on **USAGE (2)**.
 
     ![](images/microsoft5.png "news-sentinel")
     
-1.  Click on **Run** You will see results for **union usage** in query explorer. You can see operations around Network, Logical Disk, Memory, and Processor for             VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
+1.  Now under **Logs** page, click on **Run (2)** , Here you will see results of  **union usage** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
      ![](images/microsoft6.png "news-sentinel")
 
