@@ -85,7 +85,10 @@ Azure Application Gateway has a public IP, or front end, and your application us
     -  Click on **Add (3)**
 
     ![](images1/associateappgateway.png)
+    
+1. Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation of the successful deployment. Select **Go to resource (2)**. This action will redirect you to the page.
 
+    ![](images1/gotoresource.png)
     
  # Task 2: Publish your application to the internet with the application gateway
  
