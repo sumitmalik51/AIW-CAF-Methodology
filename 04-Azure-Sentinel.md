@@ -6,7 +6,6 @@ In this lab, you will complete the following exercise:
 1. Onboard the Web App – IaaS server to sentinel
 1. Explore query logs
 
-
 # Task 1: What is Microsoft Sentinel?
 
 Microsoft Sentinel is a scalable, cloud-native solution that provides:
@@ -105,6 +104,31 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
     >**NOTE**: Azure sentinel will takes around 20 minutes to load and display the data, meanwhile you can continue with the lab and we will explore on the data            collected by log analytics in task 4.    
      
 # Task 3: Onboard the Web App – IIS server to sentinel
+
+1. In Azure portal, Search **Log Analytics workspace (1)** and Select **Log Analytics workspace (2)**.
+
+
+
+1. On log analytics workspace, Select your **workspace Name (1)**. Under setting click on **Agents management (2)** after that select **Log Analytics agent                instructions (3)** and then click on **Download Windows Agent [64 bit] (4)**.
+
+
+
+1. Now, click on 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Task 4: Explore query logs
