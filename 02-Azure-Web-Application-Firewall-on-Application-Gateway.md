@@ -46,9 +46,9 @@ Azure Application Gateway has a public IP, or front end, and your application us
  
       ![](/images1/newhealthprobe.png "probe name")
   
- 1. On the Application gateway blade Click on **Backend setting(1)** and then select your **Backend setting(2)**.
+ 1. On the Application gateway blade click on **Backend setting(1)** under Settings tab and then select **Backendsetting(2)**.
 
-      ![](images/backendsetting1.png "backend setting name")
+      ![](/images1/backendsettings.png "backend setting name")
       
  1. - Choose override with new host name as **YES**.
     - Select Host name Override : **Pick host name from Backend target**.
