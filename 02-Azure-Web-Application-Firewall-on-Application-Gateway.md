@@ -34,7 +34,7 @@ Azure Application Gateway has a public IP, or front end, and your application us
  1. - Enter Name of the probe : **my-probe**
     - Keep Protocol as **HTTP**.
     - Choose Pick host name from backend HTTP settings as **YES**.
-    - Enter the relative **Path** of the probe.
+    - Enter the relative **Path** of the probe as **/weatherforecast**
     - Enter the **Interval (seconds)** : 30
     - Enter the **Timeout (seconds)**  : 30
     - Enter the **Unhealthy threshold** : 3
