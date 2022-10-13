@@ -28,7 +28,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/microsoft-sentinel.png "microsoft-sentinel")
  
-1. On the Microsoft Sentinel page, Click on **Create**.
+1. On the Microsoft Sentinel page, click on **Create**.
 
     ![](images/correct1.png "Create")
 
