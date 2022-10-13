@@ -24,7 +24,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
     
 # Task 2: Onboard Azure Subscription to Azure sentinel
 
-1. In Azure portal, Search **microsoft-sentinel (1)** and Select **microsoft-sentinel (2)**.
+1. In Azure portal, search **microsoft-sentinel (1)** and select **microsoft-sentinel (2)**.
 
     ![](images/microsoft-sentinel.png "microsoft-sentinel")
  
