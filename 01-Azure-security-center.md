@@ -217,7 +217,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/115.png )
     
-1. Under Azure Security Benchmark Initiative compliance page, click on **Non-complient resources (1)**, and then click on a resource from the list.
+1. Under Azure Security Benchmark Initiative compliance page, click on **Non-complient resources (1)**, and then click on a resource from the list **(2)**.
 
     ![](images/116.png )
 
@@ -241,7 +241,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 1. On the Microsoft Defender for Cloud overview page, you can see your **secure score**.
 
-    ![](images/securescore1.png "secure score")
+    ![](images/posture.png "secure score")
 
 1. Click on **Security Posture**.
 
@@ -388,11 +388,11 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/125.png)
 
-1. Open the resource health pane by selecting the resource. Click on **labvm-DID**. Alternately. you can also right-click on any resource and select **view resource**.    You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
+1. Open the resource health pane by selecting the resource. Click on **JumpVM-DID**. Alternately. you can also right-click on any resource and select **view resource**.    You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
 
     ![](images/defender8.png)
 
-1. On the resource health pane for **labvm-ODL**, review the virtual machine information alongside the recommendation list.
+1. On the resource health pane for **JumpVM-ODL**, review the virtual machine information alongside the recommendation list.
 
     ![](images/defender9.png)
 
