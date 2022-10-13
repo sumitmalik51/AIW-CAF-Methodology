@@ -15,7 +15,7 @@ Microsoft Azure also has a WAF service that provides centralized protection of y
 
 Azure Application Gateway has a public IP, or front end, and your application users will use this IP address to connect to your application gateway. Application Gateway is going to take the incoming traffic and, based on a few rules, redirect the traffic to the appropriate back end in the backend pool. You can have app services, virtual machines, virtual machine scale sets, or even other IP addresses in the backend pools.
 
- ![](images/applicationgateway.png "application gateway")
+ ![](/images1/applicationgateway.png "application gateway")
  
  ## Task 1: Configure WAF to Protect your web application
  
