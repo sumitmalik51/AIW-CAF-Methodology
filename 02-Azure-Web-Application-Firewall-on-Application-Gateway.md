@@ -104,11 +104,11 @@ In this task, you'll publish an application via Azure Firewall and Application G
      
 1. Select **Firewall Manager (1)** from **Settings** and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
-   ![FM](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/firewallmanager.png?raw=true)
+   ![FM](/images1/firewallmanager.png)
     
 1. Select **Azure Firewall Policies (1)** under **Firewall Manager** page and click on Firewall Policy **afw-contoso-prod-firewallpolicy (2)**.
 
-   ![policy](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/afwp.png?raw=true)
+   ![policy](/images1/selectfirewallpolicy.png)
    
 1. Select **DNAT Rules (1)** from **Settings** tab under **Firewall Policy** page and select **+ Add a rule collection (2)**
 
