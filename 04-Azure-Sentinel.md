@@ -32,46 +32,46 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/correct1.png "Create")
 
-1. If there is no already a Log Analytic workspace that you can use click **Create a new workspace**.
+1. If there is no Log Analytic workspace pre-created then click on ** + Create a new workspace**, else continue from step 8.
 
      ![](images/loganalytics.png "log analytics")
      
 1. On **Log Analytics workspace** page, provide the information as mentioned below,
    - Subscription: **Leave it as default (1)**
-   - Resource Group: Enter **JumpVM-rg (2)**.
+   - Resource Group: **JumpVM-rg (2)**.
    - Name: Enter **log-analytics (3)**.
    - Region: Select **East US (4)** from the drop-down list
    - Click on **Tags (5)** to continue.
 
      ![](images/log1.png "create log analytics")
      
-1. On the **Tags** tab, we dont need to add tags by default remain as same. click on **Review + create**.
+1. On the **Tags** tab, leave everything to default and then  click on **Review + create**.
 
      ![](images/log2.png "create log analytics")
   
-1. If Validations is passed click on **Create** to create your new Log Analytics workspace.
+1. If the validation is passed then  click on **Create**.
 
      ![](images/log3.png "Passed log analytics")
     
-   >**NOTE**: It may take a Couple of minutes for the workspace to be Created.
+   >**NOTE**: It may take a couple of minutes for the workspace to be created.
 
-1. Once the Log Analytics workspace is added you will see notification which says **Successfully added Log Analytics workspace** as shown below.
+1. Once the Log Analytics workspace is added you will see a notification that says **Successfully added Log Analytics workspace**, as shown below.
 
       ![](images/log4.png "Passed log analytics")
 
-1. Click on **ADD**.
+1. now under **add Microsoft Sentinel to a workspace** page, select **log-analytics** workspace Click on **Add**.
 
       ![](images/log5.png "click on add")
       
-1. Once the Microsoft Sentinel is added you will see another notification which says **Successfully added Azure Sentinel** as shown below.
+1. Once the Microsoft Sentinel is added you will see another notification that says **Successfully added Azure Sentinel**, as shown below.
 
       ![](images/log6.png)
 
-1. This is the default page you will be taken to once your new Azure Sentinel instance has been created. After this, the overview page will be the default page shown.
+1. This is the default page you will be taken to once your new Azure Sentinel instance is created.
 
      ![](images/log7.png "news-sentinel")
      
-1. Now, click on the **Workbooks (1)** from the left pane under the Threat Management section and search  **WAF (2)** and select **Microsoft Web Application Firewall      (WAF) - Azure WAF (3)** from the search result.
+1. Now, click on **Workbooks (1)** from the left pane under Threat management, and search  **WAF (2)** and select **Microsoft Web Application Firewall      (WAF) - Azure WAF (3)** from the search results.
 
     ![](images/log8.png "news-sentinel")
 
@@ -79,16 +79,16 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/402.png "news-sentinel")
     
-1. Once the **Workbook** is added. you will see notification which says **Workbook 'Microsoft Web Application Firewall (WAF) - Azure WAF saved successfully** as shown    below.
+1. Once the **Workbook** is added, you will see notification that says **Workbook 'Microsoft Web Application Firewall (WAF) - Azure WAF saved successfully**, as shown below.
 
    ![](images/sentinel4.png "news-sentinel")
 
-1. On Microsoft Sentinel blade, under configuration click on **Settings (1)** and then click on **Workspace settings (2)**.
+1. On the left hand blade of Microsoft Sentinel page, under configuration, click on **Settings (1)** and then click on **Workspace settings (2)**.
 
 
     ![](images/log10.png "news-sentinel")
 
-1. On the Log Analytics workspace page, under Connect a data source click on **Azure virtual machines (VMs) (1)**.
+1. On the Log Analytics workspace page, under Connect a data source, click on **Azure virtual machines (VMs)**.
 
     ![](images/correct2.png "news-sentinel")
 
