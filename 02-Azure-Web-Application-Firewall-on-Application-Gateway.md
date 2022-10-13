@@ -98,9 +98,9 @@ In this task, you'll publish an application via Azure Firewall and Application G
 
    ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
     
-1. Click on the firewall **<inject key="Firewall" enableCopy="false"/>**.
+1. Click on the firewall **AzureFirewall**.
 
-   ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/afw.png?raw=true)
+   ![firewall](/images1/azurefirewall.png)
      
 1. Select **Firewall Manager (1)** from **Settings** and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
