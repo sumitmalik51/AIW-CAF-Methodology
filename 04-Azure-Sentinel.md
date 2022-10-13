@@ -30,7 +30,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
  
 1. On the Microsoft Sentinel page, Click on **Create**.
 
-    ![](images/click-create.png "Create")
+    ![](images/correct1.png "Create")
 
 1. If there is no already a Log Analytic workspace that you can use click **Create a new workspace**.
 
@@ -39,7 +39,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 1. On **Log Analytics workspace** page, provide the information as mentioned below,
    - Subscription: **Leave it as default (1)**
    - Resource Group: Enter **JumpVM-rg (2)**.
-   - Name: Enter a **Unique value (3)**.
+   - Name: Enter **log-analytics (3)**.
    - Region: Select **East US (4)** from the drop-down list
    - Click on **Tags (5)** to continue.
 
@@ -90,20 +90,19 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
 1. On the Log Analytics workspace page, under Connect a data source click on **Azure virtual machines (VMs) (1)**.
 
-    ![](images/sentinel6.png "news-sentinel")
-
+    ![](images/correct2.png "news-sentinel")
 
 1. You will see that virtual machine is not connected with Log Analytics connection. So now click on **VM Name** to connect with Log Analytics connection
 
-    ![](images/sentinel7.png "news-sentinel")
+    ![](images/correct3.png "news-sentinel")
       
 1. Click on **Connect**.
 
-    ![](images/sentinel8.png "news-sentinel")
+    ![](images/correct5.png "news-sentinel")
      
 1. Once the VM is connected you will see the notification which says **Successfully connected virtual machine** as shown below.
 
-    ![](images/sentinel9.png "news-sentinel")
+    ![](images/correct4.png "news-sentinel")
 
     >**NOTE**: Azure sentinel will takes around 20 minutes to load and display the data, meanwhile you can continue with the lab and we will explore on the data            collected by log analytics in task 4.    
      
@@ -171,15 +170,15 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
 1. Now, go back to **Microsoft Sentinel Overview** blade by clicking on Overview under General section on the left and, then click on **Heartbeat** to query the           VM insights. Count of **Events** could be different on your Microsoft Sentinel Dashboard.
 
-    ![](images/500.png "news-sentinel")
+    ![](images/microsoft1.png "news-sentinel")
 
 1. Click on **Run** You will see results for **union Heartbeat** in query explorer. You can see operations around Network, Logical Disk, Memory, and Processor for        VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
-    ![](images/501.png "news-sentinel")
+    ![](images/microsoft2.png "news-sentinel")
      
 1. You can save the query for later use by clicking on the **Save (1)** and then **Save as query (2)** button.
   
-     ![](images/502.png "news-sentinel")
+     ![](images/microsoft3.png "news-sentinel")
 
 1. Now, provide **VMProcess** for the **Query name (1)**, then click on **Save (2)**.
 
@@ -199,14 +198,14 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
 1. Now close the blade go back to the **Microsoft sentinel** overview page.
 
-    ![](images/507.png "news-sentinel")
+    ![](images/microsoft4.png "news-sentinel")
      
 1. On the **Microsoft sentinel** overview page, under General section on the left and, then click on **usage** to query the VM insights.
 
-    ![](images/508.png "news-sentinel")
+    ![](images/microsoft5.png "news-sentinel")
     
 1.  Click on **Run** You will see results for **union usage** in query explorer. You can see operations around Network, Logical Disk, Memory, and Processor for             VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
-     ![](images/509.png "news-sentinel")
+     ![](images/microsoft6.png "news-sentinel")
 
     
