@@ -95,7 +95,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
     ![](images/securityposture1.png "overview security posture")
    
-1. On Microsoft Defender for Cloud page,Under cloud security click on **Regulatory compliance**. you can get insights into your compliance posture based on continuous    assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark** and **Lowest compliance          regulatory standards**.
+1. On Microsoft Defender for Cloud page, under cloud security click on **Regulatory compliance**. you can get insights into your compliance posture based on continuous    assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark** and **Lowest compliance          regulatory standards**.
 
     ![](images/compliance.png "overview of regulatory compliance")
     
@@ -127,15 +127,35 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
     ![](images/securitypolicy.png "security policy")
 
-1. On the Azure Security Benchmark page, Click on **Non-compliance messages (1)** and then select all **Policy definations (2)**, then click on **Review + create          (3)**.
+1. On the Azure Security Benchmark page, under **Basics** tab, leave everything to default and click on **Next**.
+
+    ![](images/101.png "environment details")
+    
+ 1. Under **Advanced** tab, leave everything to default and then click on **Next**.
+
+    ![](images/102.png "environment details")
+    
+2. Under **Parameters** tab, leave everything to default and then click on **Next**.
+
+    ![](images/103.png "environment details")
+    
+3. Under **Remediation** tab, leave everything to default and then click on **Next**.
+
+    ![](images/104.png "environment details")
+
+1.Now under **Non-compliance messages (1)** and then select all **Policy definations (2)**, then click on **Review + create          (3)**.
 
     ![](images/noncomplaince.png "non complaince")
 
 1. Now click on **Create**.
 
     ![](images/createsave.png "Create")
+    
+1. Once the initiative assignment succeeds, you will get a notification in top right corner of the screen mentioning the same.
 
-1. Under the Security policy you can also find **Industry & regulatory standards**, which can be configured with ASC default initiative.
+    ![](images/403.png "environment details")
+
+1. Now you will be presented by **Industry & regulatory standards** under the Security policy, which can be configured with ASC default initiative.
 
     ![](images/regulatorystandards.png "regulatory standards")
 
