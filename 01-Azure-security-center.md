@@ -1,11 +1,11 @@
-# Exercise 01: Azure Security Centre/ Microsoft Defender for Cloud
+# Exercise 01: Azure Security Center/ Microsoft Defender for Cloud
 ## Lab objectives
 In this lab, you will complete the following exercise:
 1. Exploring Microsoft Defender for Cloud 
 2. Configure Security Policies  
 3. Secure Score 
 4. Improving your Secure Posture 
-5. Exploring Security Centre and Security benchmark 
+5. Exploring Security Center and Security benchmark 
 
 # Task 1: Exploring Microsoft Defender for Cloud
 
@@ -55,7 +55,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
     ![](images/defender.png "Microsoft Defender")
 
-1. On the Microsoft Defender for Cloud, Under Management Click on the **Environment settings**.Here you'll be able see the subscription.
+1. On the Microsoft Defender for Cloud, Under Management Click on the **Environment settings**. Here you'll be able see the subscription.
 
     ![](images/settings.png "environment details")
     
@@ -87,7 +87,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/onboard.png "Onboard")
 
-1. You can also find the **Virtual machines** enabled available in the resources list because **LogAnalytics** agent is already enabled for it and the same Log Analytics workspace is connected to Security Center. 
+1. You can also find the **Virtual machines** enabled available in the resources list because **Log Analytics** agent is already enabled for it and the same Log Analytics workspace is connected to Security Center. 
 
     ![](images/120.png "installed-inventory")
 
@@ -143,7 +143,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/104.png "environment details")
 
-1. Now under **Non-compliance messages (1)** and then select all **Policy definations (2)**, then click on **Review + create          (3)**.
+1. Now under **Non-compliance messages (1)** and then select all **Policy definitions (2)**, then click on **Review + create          (3)**.
 
     ![](images/noncomplaince.png "non complaince")
 
@@ -169,7 +169,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/policy1.png )
     
-1. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and          initiatives. From the top menu use the filter ribbon, set the Definitions Type as **Initiative(2)** and select **Security Center(3)** from the Category filter.
+1. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. This is where you can explore the built-in policy definitions and          initiatives. From the top menu use the filter ribbon, set the Definitions Type as **Initiative (2)** and select **Security Center (3)** from the Category filter.
 
     ![](images/policy2.png )
     
@@ -197,7 +197,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/110.png "environment details")
     
-1. Now on **Non-compliance messages** tab, select all **Policy definations (1)**, then click on **Review + create (2)**.
+1. Now on the **Non-compliance messages** tab, select all **Policy definitions (1)**, then click on **Review + create (2)**.
 
     ![](images/111.png )
     
@@ -209,7 +209,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/113.png )
     
-1. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**, and here you can see **Azure Securiy Benchmark** assigned.
+1. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**, and here you can see **Azure Securtiy Benchmark** assigned.
 
     ![](images/114.png )
     
@@ -217,7 +217,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/115.png )
     
-1. Under Azure Security Benchmark Initiative compliance page, click on **Non-complient resources (1)**, and then click on a resource from the list **(2)**.
+1. Under Azure Security Benchmark Initiative compliance page, click on **Non-compliant resources (1)**, and then click on a resource from the list **(2)**.
 
     ![](images/azure12.png )
 
@@ -259,7 +259,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/secure2.png)
     
-1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on       the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
+1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on       the **Recommendations status** (both completed security controls and recommendations) and **Resource health** (by severity).
 
     ![](images/secure3.png)
     
@@ -267,7 +267,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/secure4.png)
     
-1. Under **Recommendation**, Click on **Manage access and permissions** and select **Guest Configuration extension should be installed on machines** from the drop down    list. 
+1. Under **Recommendation**, Click on **Manage access and permissions** and select **Guest Configuration extension should be installed on machines** from the drop-down    list. 
 
     ![](images/secure5.png)
     
@@ -301,7 +301,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
 1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to      security vulnerabilities). Make sure you have **Machines should have a vulnerability assessment solution (3)** recommendation listed here.
 
-   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![](images/posture1.png)
 
@@ -310,7 +310,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/posture2.png)
 
-1. From the **Affected resources (2)** tab, select  **JumpVM-DID(2)** virtual machines. Click on **Fix (3)**.
+1. From the **Affected resources (1)** tab, select  **JumpVM-DID (2)** virtual machines. Click on **Fix (3)**.
 
     ![](images/123.png)
 
@@ -327,19 +327,19 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **labvm-DID**. next, click on **Extensions + applications** under the **Settings** section.
-    - Ensure that **WindowsAgent.AzureSecurityCenter** extension is installed and the status is **Provisioning succeeded**.
+    - Ensure that **WindowsAgent.AzureSecurityCenter** extension is installed, and the status is **Provisioning succeeded**.
 
     
     ![](images/posture6.png)
 
 
-# Task 5: Exploring Security Centre and Security benchmark
+# Task 5: Exploring Security Center and Security benchmark
 
-Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centres within both cloud workloads and on-premises.
+Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centers within both cloud workloads and on-premises.
 
-## Explore Security Centre
+## Explore Security Center
 
-1. In the Azure portal, Search **Azure Security Centre (1)** and then click **Azure Security Centre (2)**. 
+1. In the Azure portal, Search **Azure Security Center (1)** and then click **Azure Security Center (2)**. 
 
     ![](images/securitycentre.png "security centre")
      
@@ -383,11 +383,11 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we      enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
-1. Use the **Filter by name (1)** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **JumpVM-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
+1. Use the **Filter by name (1)** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **JumpVM-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
 
     ![](images/fix2.png)
 
-1. Open the resource health pane by selecting the resource. Click on **JumpVM-DID (1)**. Alternately. you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolution, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
+1. Open the resource health pane by selecting the resource. Click on **JumpVM-DID (1)**. Alternately. you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
 
     ![](images/fix3.png)
 
@@ -397,7 +397,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the         case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
-1. Go back to the Inventory page In the filter menu, select the **Resource Groups (1)** filter and then provide the value **JumpVM-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
+1. Go back to the Inventory page in the filter menu, select the **Resource Groups (1)** filter and then provide the value **JumpVM-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
 
       ![](images/fix5.png)
 
@@ -415,7 +415,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/defender13.png)
     
-1. From the filter pane,select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **JumpVM-rg**        (Unselect remaining) and again click on **Ok**
+1. From the filter pane, select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **JumpVM-rg**        (Unselect remaining) and again click on **Ok**
 
     ![](images/127.png)
 
@@ -443,9 +443,9 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/policy1.png)
     
-1. Select **Definitions(1)** from the left navigation pane.
+1. Select **Definitions (1)** from the left navigation pane.
 
-1. From the top menu, select **+ Initiative definition(2)** to add a new initiative
+1. From the top menu, select **+ Initiative definition (2)** to add a new initiative
 
     ![](images/benchmark1.png)
  
