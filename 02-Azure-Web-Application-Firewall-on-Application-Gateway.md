@@ -122,13 +122,12 @@ In this task, you will be testing your application for security and perform samp
 
 1. You can perform a sample attack on your application by passing this **?q=<script>** value at the end of the web application URL or IP address.
     
-1. Now pass the value **?q=<script>** at the end of your **Application Gateway** IP and try browsing it. You can observe the Server Error.
+1. Now pass the value **?q=<script>** at the end of your **Application Gateway** IP and try browsing it. You can observe the web application can be still accessible.
   
    > **Note** : Your browsing URL value should look ```http://20.185.224.102/?q=<script>```
     
    ![ss](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/server.png?raw=true)
   
-   > **Note**: In case if you are not able to see the Server Error, follow the below steps.
 
 1. To make your application more secure, select **agw-contoso-prod-eastus-001** from the overview page of the resource group.
      
