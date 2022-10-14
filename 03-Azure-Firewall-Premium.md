@@ -51,7 +51,7 @@ In this task you will test IDPS for http and https traffic
 
 ### Test IDPS for HTTP traffic
 
-1. On the JumpVM irtual machine, search for command prompt and open administrator command prompt window.
+1. On the JumpVM virtual machine, search for command prompt and open administrator command prompt window.
 
 2. Type the following command at the command prompt:
 
