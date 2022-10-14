@@ -8,8 +8,6 @@ In this lab, you will complete the following exercise:
 4. Customize WAF rules
 5. Attack simulation
 
-# Task 1: Configure WAF to Protect your web application
-
 ### What is Azure Web Application Firewall ?
 Microsoft Azure also has a WAF service that provides centralized protection of your web applications from common exploits and vulnerabilities. The Azure Web Application Firewall is one of the features of Azure Application Gateway (layer 7 load balancer) and its main goal is to protect a web application to common attack like SQL injections, cross-site scripting and others. Also it is following the Open Web Application Security Project (OWASP) Core Rule Set. Azure WAF service offers you to select some or all of the rules from the OWASP Core Rule Set.
 
@@ -19,7 +17,7 @@ Azure Application Gateway has a public IP, or front end, and your application us
  
  ## Task 1: Configure WAF to Protect your web application
  
- 1. Search **Application Gateway (1)** and then select **Application Gateway(2)**.
+ 1. Search **Application Gateway (1)** and then select **Application Gateway (2)**.
  
       ![](images/searchgateway.png "search gateway")
     
@@ -81,8 +79,8 @@ Azure Application Gateway has a public IP, or front end, and your application us
  1. Under **Associate an application gateway** page, enter below instructions:
 
     - **Application Gateway (WAF v2 SKU)** : Select **Aplication Gateway (1)** from drop-down 
-    -  **Check** the box next to **Apply the web Application Firewall policy configuration even it's different from current configuation (2) **
-    -  Click on **Add (3)**
+    - **Check** the box next to **Apply the web Application Firewall policy configuration even it's different from current configuation (2) **
+    - Click on **Add (3)**
 
     ![](images1/associateappgateway.png)
     
@@ -94,7 +92,7 @@ Azure Application Gateway has a public IP, or front end, and your application us
  
 In this task, you'll publish an application via Azure Firewall and Application Gateway.
 
-1. On the Azure Portal **Home** page, search for **Azure Firewall** and select it.
+1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
 
    ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
     
@@ -106,7 +104,7 @@ In this task, you'll publish an application via Azure Firewall and Application G
 
    ![FM](/images1/firewallmanager.png)
     
-1. Select **Azure Firewall Policies (1)** under **Firewall Manager** page and click on Firewall Policy **afw-contoso-prod-firewallpolicy (2)**.
+1. Select **Azure Firewall Policies (1)** under **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
    ![policy](/images1/selectfirewallpolicy.png)
    
