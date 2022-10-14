@@ -2,41 +2,36 @@
 
 1. Once you launch the lab, a virtual machine (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.	
 
-   ![](media/.png)	
+   ![](images/lab-launched.jpg)	
 
 2. To get lab environment details, click on the **Environment Details** tab located next to the *Lab Guide* tab. 	
 
-   ![](media/.png)	
+   ![](images/env-details.jpg)	
 
-## Exercise 1: Log in to Azure Portal
+## Log in to Azure Portal
 
-1. In the JumpVM, double click on the **Azure portal shortcut** on the desktop.
+1. In the JumpVM, double click on the **Azure portal shortcut** on the desktop. if you get welcome screen of edge browser, click on **Start without your data**, on next screen click on **Continue without your data** and on next screen click on **Confirm and start browsing**.
 
-   ![azure portal.](media/.png)  
+   ![azure portal.](images/open-azure-portal.jpg)  
 
-2. Login to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
+2. Login to Azure with the username **<inject key="AzureAdUserEmail" />** (1) and click on **Next** (2).
 
-   ![](media/.png)
+   ![](images/enter-email.jpg)
 
-3. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+3. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**. On next screen if you see **More information required**, then click on **Skip for now (14 days until this is required**.
 
-   ![](media/.png)
+   ![](media/password-signin.jpg)
 
-   >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+   >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes**, Choose **No**.
    
-   ![](media/.png)
+   ![](images/stay-sign-in.jpg)
      
    >**Note:** If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
    
-   ![](media/.png) 
+   ![](images/welcome-azure-later.jpg)
    
-   >**Note:** If there's another popup entitled **Help us protect your account** click **Skip for now (14 days intil this is required)**
-   
-   ![](media/.png)
-    
 4. **Close** the recommendation page by clicking on the X mark.
+  
+5. Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
 
-   ![](media/.png)
-   
-6. Click on the **Next** button present in the bottom-right corner of this lab guide.   
-
+   ![](images/next-page-open.jpg)
