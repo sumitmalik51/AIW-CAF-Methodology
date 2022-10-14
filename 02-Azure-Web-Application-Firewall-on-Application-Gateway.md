@@ -80,7 +80,7 @@ Azure Application Gateway has a public IP, or front end, and your application us
     
  ## Task 2: Publish your application to the internet with the application gateway
  
-In this task, you'll publish an application via Azure Firewall and Application Gateway.
+In this task, you'll publish an application via Application Gateway.
 
 1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
 
@@ -115,19 +115,19 @@ In this task, you'll publish an application via Azure Firewall and Application G
       - Protocol: Select **TCP** from the drop-down list
       - Destination Ports: **80**
       - Destination type: Select **IP Address** from the drop-down list
-      - Destination : Enter the IP address of **Firewall** that you copied in the task-1
-      - Translated address: Enter the Private IP address of **Application gateway**. 
+      - Destination : Enter the IP address of **Firewall** 
+      - Translated address: Enter the Public IP address of **Application gateway**. 
       - Translated port: **80**
      
      - Click on **Add (6)**
 
-       ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/rulec.png?raw=true)
+       ![rule](/images1/rulecollection.png)
           
-1. Now, to test the application copy and paste the Public IP address of **Firewall** in a new browser tab.
+1. Now, to test the application copy and paste the Public IP address of **Application** in a new browser tab.
 
    ![ss](/images1/webapp.png)
        
-1. This will confirm that you have published the Contoso web application via Azure Firewall & Application Gateway.
+  > **Note** : This will confirm that you have published the Contoso web application via Application Gateway.
 
   
 
