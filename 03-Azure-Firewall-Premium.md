@@ -63,14 +63,14 @@ In this task you will test IDPS for http and https traffic
  
  4. Navigate to the Firewall Network rule logs on the Azure portal to find an alert similar to the following message:
 
-   ```
-   { “msg” : “TCP request from 10.0.100.5:16036 to 10.0.20.10:80. Action: Alert. Rule: 2032081. IDS: 
-   USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Tojan was 
-   detected”}
-   ```
+    ```
+    { “msg” : “TCP request from 10.0.100.5:16036 to 10.0.20.10:80. Action: Alert. Rule: 2032081. IDS: 
+    USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Tojan was 
+    detected”}
+    ```
 
-   > [!NOTE]
-   > It can take some time for the data to begin showing in the logs. Give it at least a couple minutes to allow for the logs to begin showing the data.
+    > [!NOTE]
+    > It can take some time for the data to begin showing in the logs. Give it at least a couple minutes to allow for the logs to begin showing the data.
  
 5. Add a signature rule for signature 2032081:
 
@@ -92,7 +92,7 @@ In this task you will test IDPS for http and https traffic
    `read tcp 10.0.100.5:55734->10.0.20.10:80: read: connection reset by peer`
 
 7. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
-<!---8. Now you can bypass the IDPS function using the **Bypass list**.
+   <!---8. Now you can bypass the IDPS function using the **Bypass list**.
 
    1. On the **IDPS (preview)** page, select the **Bypass list** tab.
    2. Edit **MyRule** and set **Destination** to *10.0.20.10, which is the ServerVM private IP address.
