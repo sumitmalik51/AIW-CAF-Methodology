@@ -20,7 +20,7 @@
 
 3. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**. On next screen if you see **More information required**, then click on **Skip for now (14 days until this is required**.
 
-   ![](media/password-signin.jpg)
+   ![](images/password-signin.jpg)
 
    >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes**, Choose **No**.
    
