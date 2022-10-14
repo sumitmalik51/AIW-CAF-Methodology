@@ -129,9 +129,9 @@ In this task, you will be testing your application for security and perform samp
    ![ss](/images1/attack.png)
   
 
-1. To make your application more secure, select **agw-contoso-prod-eastus-001** from the overview page of the resource group.
+1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
-   ![rp](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/selectapp.png?raw=true)
+   ![rp](/images1/rgappgateway.png)
     
 1. Under the **Application gateway** page, follow the below details:
      - Select **Web application firewall** under **Settings**    
