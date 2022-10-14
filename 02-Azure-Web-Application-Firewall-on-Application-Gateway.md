@@ -134,19 +134,17 @@ In this task, you will be testing your application for security and perform samp
    ![rp](/images1/rgappgateway.png)
     
 1. Under the **Application gateway** page, follow the below details:
-     - Select **Web application firewall** under **Settings**    
-     - Under **Configure** balde, confirm the  Firewall Status as **Enabled** and Firewall mode as **Prevention**.   
+     - Select **Web application firewall (1)** under **Settings**    
+     - Click on **firewallpolicy** under **Associated web application firewall policy (2)**   
   
-     ![config](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/configure.png?raw=true)
-
-     - Now move to **Rules (1)** blade    
-     - Advanced rule configuration: **Enabled (2)**    
-     - Select **Save (3)**
+     ![config](/images1/webappfirewall.png)
+ 
+1. Under **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
+ 
+    ![](/images1/switchtoprevention.png)
     
-     ![save](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/rulen.png?raw=true)
+1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
     
-1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the Server Error.
-    
-    ![server error](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/server.png?raw=true)
+    ![server error](/images1/403.png)
 
       
