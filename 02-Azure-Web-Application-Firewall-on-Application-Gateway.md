@@ -36,23 +36,6 @@ Azure Application Gateway has a public IP, or front end, and your application us
     - Click on **Save (3)**
 
     ![](/images1/editbackendpool.png)
-    
- 1. Navigate back to the **Application Gateway** page and select **Frontend IP configurations (1)** then click on **Private (2)**.
-
-    ![](../images1/frontendipconfig.png)
-    
- 1. Under **Private Application Gateway** page, follow the below mentioned instructions.
-
-     - **Name** : Enter **PrivateIP (1)
-     - **Check the box** next to **Choose a specific private IP address (2)**
-     - **Private IP address** : Enter **10.0.1.4**
-     - Select **Save (5)**
-
-     ![](/images1/private1.png)
-     
- 1. Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation of the successful **Saved application gateway changes (2)**.
-
-     ![](/images1/notification.png)
 
  1. Navigate back to home page and search for **Application Firewall Policies (1)** from search bar and select it **(2)**.
 
