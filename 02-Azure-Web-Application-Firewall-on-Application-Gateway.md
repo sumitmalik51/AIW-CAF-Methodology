@@ -113,6 +113,41 @@ In this task, you'll publish an application via Application Gateway.
   > **Note** : This will confirm that you have published the Contoso web application via Application Gateway.
 
   
+## Task 3: Monitor attacks against your web application 
 
+
+In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user.
+
+   > **Note** : You can perform this task only after finishing the task 2 and task 3.
+
+1. You can perform a sample attack on your application by passing this **?q=<script>** value at the end of the web application URL or IP address.
+    
+1. Now pass the value **?q=<script>** at the end of your **Firewall** IP and try browsing it. You can observe the Server Error.
+  
+   > **Note** : Your browsing URL value should look ```http://20.185.224.102/?q=<script>```
+    
+   ![ss](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/server.png?raw=true)
+  
+   > **Note**: In case if you are not able to see the Server Error, follow the below steps.
+
+1. To make your application more secure, select **agw-contoso-prod-eastus-001** from the overview page of the resource group.
+     
+   ![rp](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/selectapp.png?raw=true)
+    
+1. Under the **Application gateway** page, follow the below details:
+     - Select **Web application firewall** under **Settings**    
+     - Under **Configure** balde, confirm the  Firewall Status as **Enabled** and Firewall mode as **Prevention**.   
+  
+     ![config](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/configure.png?raw=true)
+
+     - Now move to **Rules (1)** blade    
+     - Advanced rule configuration: **Enabled (2)**    
+     - Select **Save (3)**
+    
+     ![save](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/rulen.png?raw=true)
+    
+1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the Server Error.
+    
+    ![server error](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/server.png?raw=true)
 
       
