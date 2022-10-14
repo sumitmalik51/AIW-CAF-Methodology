@@ -51,7 +51,52 @@ In this task you will test IDPS for http and https traffic
 
 ### Test IDPS for HTTP traffic
 
-1. 
+1. On the JumpVM irtual machine, search for command prompt and open administrator command prompt window.
+
+2. Type the following command at the command prompt:
+
+   - Replace <your web server address> with JumpVm IP.
+
+    `curl -A "HaxerMen" <your web server address>`
+ 
+ 3. In the custom prompt you will see your Web server response.
+ 
+ 4. Navigate to the Firewall Network rule logs on the Azure portal to find an alert similar to the following message:
+
+   ```
+   { “msg” : “TCP request from 10.0.100.5:16036 to 10.0.20.10:80. Action: Alert. Rule: 2032081. IDS: 
+   USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Tojan was 
+   detected”}
+   ```
+
+   > [!NOTE]
+   > It can take some time for the data to begin showing in the logs. Give it at least a couple minutes to allow for the logs to begin showing the data.
+ 
+5. Add a signature rule for signature 2032081:
+
+   1. Select the **DemoFirewallPolicy** and under **Settings** select **IDPS**.
+   1. Select the **Signature rules** tab.
+   1. Under **Signature ID**, in the open text box type *2032081*.
+   1. Under **Mode**, select **Deny**.
+   1. Select **Save**.
+   1. Wait for the deployment to complete before proceeding.
+
+
+
+6. On WorkerVM, run the `curl` command again:
+
+   `curl -A "HaxerMen" <your web server address>`
+
+   Since the HTTP request is now blocked by the firewall, you'll see the following output after the connection timeout expires:
+
+   `read tcp 10.0.100.5:55734->10.0.20.10:80: read: connection reset by peer`
+
+7. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
+<!---8. Now you can bypass the IDPS function using the **Bypass list**.
+
+   1. On the **IDPS (preview)** page, select the **Bypass list** tab.
+   2. Edit **MyRule** and set **Destination** to *10.0.20.10, which is the ServerVM private IP address.
+   3. Select **Save**.
 
 
 
