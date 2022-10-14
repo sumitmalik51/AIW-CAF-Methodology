@@ -122,7 +122,7 @@ In this task, you will be testing your application for security and perform samp
 
 1. You can perform a sample attack on your application by passing this **?q=<script>** value at the end of the web application URL or IP address.
     
-1. Now pass the value **?q=<script>** at the end of your **Firewall** IP and try browsing it. You can observe the Server Error.
+1. Now pass the value **?q=<script>** at the end of your **Application Gateway** IP and try browsing it. You can observe the Server Error.
   
    > **Note** : Your browsing URL value should look ```http://20.185.224.102/?q=<script>```
     
