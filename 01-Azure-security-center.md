@@ -29,14 +29,33 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
     ![](images/defender.png "Microsoft Defender")
     
-1. Note that the Subscriptions icon on the top menu bar allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
+1. Note that the **Subscriptions** icon on the top menu bar allows you to view and filter **subscriptions**. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
     ![](images/defender-subs.jpg)
     
-1. Click on the What’s new button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
+1. Click on the **What’s new button** – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
 
     ![](images/defender-whats-new.jpg)
+    
+1. Note the high-level numbers at the top menu; This view allows you to see a summary of your Azure subscriptions, Assessed resources, Active recommendations and Security alerts.
 
+    ![](images/defender-overview.jpg)
+
+1. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
+
+    ![](images/overview-security-posture.jpg)
+    
+    > ⭐ Good to know: <br>
+    > The higher the score, the lower the identified risk level.
+
+1. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the Cloud Security section.
+
+    ![](images/select-workload-protection.jpg)
+    
+1. On the **Workload Protections** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
+
+    ![](images/workload-fully-protected.jpg)
+    
 1. On the Microsoft Defender for Cloud. Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
 
     ![](images/settings.png "environment details")
