@@ -25,45 +25,18 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
       ![](images/appgateway.png "select gateway")
       
- 1. On the Application gateway blade click on **Health Probes(1)** setting and then click on **Add(2)**.
+ 1. On the Application gateway blade click on **Backend pools(1)** setting and then select on **AGBackendtarget(2)**.
 
-      ![](images/addhealthprobes.png "Health Probes")
-      
- 1. Follow the below instructions under **Add health probe** page:
-    
-    - Enter Name of the probe : **my-probe (1)**
-    - Keep Protocol as **HTTP (2)**.
-    - Choose Pick host name from backend HTTP settings as **Yes (3)**.
-    - Choose Pick port name from backend settings as **Yes (4)**
-    - Enter the relative **Path** of the probe as **/weatherforecast (5)**
-    - Enter the **Interval (seconds)** : **30 (6)**
-    - Enter the **Timeout (seconds)**  : **30 (7)**
-    - Enter the **Unhealthy threshold** : **3 (8)**
-    - Choose Use probe matching conditions as **Yes (9)**.
-    - Enter the value of HTTP response status code match: **200-399 (10)**.
-    - **Uncheck** the box next to **I want to test the backend health before adding the health probe (11)**
-    - Click on **Add (12)**.
- 
-      ![](/images1/newhealthprobe.png "probe name")
-  
- 1. On the Application gateway blade click on **Backend setting(1)** under Settings tab and then select **Backendsetting(2)**.
+     ![](/images1/backendpools.png)
+     
+ 1. On **Edit backend pool** page, follow the below mentioned instructions:
 
-      ![](/images1/backendsettings.png "backend setting name")
-      
- 1. Follow the below instructions under **Add Backend settings** :
-    
-    - Choose override with new host name as **YES**.
-    - Select Host name Override : **Pick host name from Backend target**.
-    - Choose Use Custom probe as **YES**.
-    - Select your Custom probe as **my-probe**.
-    - Click on **Save**.
- 
-      ![](images/edit1.png "Overwrite some changes")
-      
- 1. Now, on the Application gateway blade click on **Backend health** setting and check that status is **Healthy**.
- 
-      ![](images/backend-health.png "Backend Health")
-  
+    - **Target type** : Select **Virtual Machine (1)** from drop-down.
+    - **Target** : Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down
+    - Click on **Save (3)**
+
+    ![](/images1/editbackendpool.png)
+
  1. Navigate back to home page and search for **Application Firewall Policies (1)** from search bar and select it **(2)**.
 
       ![](images1/firewallpolicies.png)
