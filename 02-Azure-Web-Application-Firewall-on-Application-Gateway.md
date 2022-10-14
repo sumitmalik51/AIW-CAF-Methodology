@@ -126,7 +126,7 @@ In this task, you will be testing your application for security and perform samp
   
    > **Note** : Your browsing URL value should look ```http://20.185.224.102/?q=<script>```
     
-   ![ss](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/server.png?raw=true)
+   ![ss](/images1/attack.png)
   
 
 1. To make your application more secure, select **agw-contoso-prod-eastus-001** from the overview page of the resource group.
