@@ -53,13 +53,19 @@ In this task you will test IDPS for http and https traffic
 
 1. On the JumpVM virtual machine, search for command prompt and open administrator command prompt window.
 
+   ![](images/firewall6.png "search gateway")
+
 2. Type the following command at the command prompt:
 
    - Replace <your web server address> with JumpVm IP.
 
-    `curl -A "HaxerMen" <your web server address>`
+     `curl -A "HaxerMen" <your web server address>`
+ 
+    ![](images/firewall6.png "search gateway")
  
  3. In the custom prompt you will see your Web server response.
+ 
+    ![](images/firewall6.png "search gateway")
  
  4. Navigate to the Firewall Network rule logs on the Azure portal to find an alert similar to the following message:
 
