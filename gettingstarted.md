@@ -18,7 +18,7 @@
 
    ![](images/enter-email.jpg)
 
-3. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**. On next screen if you see **More information required**, then click on **Skip for now (14 days until this is required**.
+3. Enter password **<inject key="AzureAdUserPassword" />** (1) and click on **Sign in** (2). On next screen if you see **More information required**, then click on **Skip for now (14 days until this is required**.
 
    ![](images/password-signin.jpg)
 
