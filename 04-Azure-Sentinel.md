@@ -104,7 +104,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/correct4.png "news-sentinel")
 
-    >**NOTE**: Azure sentinel will take around 15 minutes to load and display the data, meanwhile you can continue with the lab and  we will explore the data            collected by log analytics in task 4.    
+    >**NOTE**: Azure sentinel will take around 30 minutes to load and display the data, meanwhile you can continue with the lab and  we will explore the data            collected by log analytics in task 4.    
      
 # Task 3: Onboard the Web App – IIS server to sentinel
 
