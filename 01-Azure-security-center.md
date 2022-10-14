@@ -23,33 +23,7 @@ Defender for Cloud secure score continually assesses your security posture so yo
 Defender for Cloud recommendations secures your workloads with step-by-step actions that protect your workloads from known security risks.
 Defender for Cloud alerts defends your workloads in real time so you can react immediately and prevent security events from developing.
 
-1. In the VM, double-click on the **Azure portal shortcut** on the desktop.
-
-    ![](images/portal.png "Select Azure Portal")
-    
-1. Click on the **Environment Details** tab located next to the Lab Guide tab and Copy the **Username and Password**.
-
-    ![](images/details.png "environment details")
-
-1. Log in to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
-
-    ![](images/username.png "Username")
-
-1. Enter a password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
-
-    ![](images/password.png "Password")
-    
-   > **Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
-    
-    ![](images/staysigned.png "signed")
-        
-   > **Note:** If there's another popup entitled **Help us protect your account** click **Skip for now (14 days until this is required)**
-
-    ![](images/skipfornow.png "skipfornow")
-           
-1. If the **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-
-    ![](images/skiptour1.png "skiptour")
+1. If you have not Signed in to Azure portal already, follow the steps from page 1 of the lab guide to sign in.
 
 1. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
     
