@@ -49,6 +49,10 @@ Azure Application Gateway has a public IP, or front end, and your application us
      - Select **Save (5)**
 
      ![](/images1/private1.png)
+     
+ 1. Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation of the successful **Saved application gateway changes (2)**.
+
+     ![](/images1/notification.png)
 
  1. Navigate back to home page and search for **Application Firewall Policies (1)** from search bar and select it **(2)**.
 
