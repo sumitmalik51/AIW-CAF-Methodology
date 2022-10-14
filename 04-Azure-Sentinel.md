@@ -153,7 +153,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
       ![](images/analytics11.png)
 
 1. On the **log analytics workspace** page, click on your **log analytics workspace (1)**, then click on **Agents management (2)** under settings and you will see **1 Windows        computers connected (3)**
-   >**NOTE**: It will takes around 30 minutes, for the log analytics agent to    connect with virtual machine, wait for it to complete before proceeding with the lab.
+   >**NOTE**: It will takes around 2-3 minutes, for the log analytics agent to connect with virtual machine, wait for it to complete before proceeding with the lab.
 
       ![](images/agents1.png)
 
