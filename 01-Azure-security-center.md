@@ -28,8 +28,16 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 1. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
     
     ![](images/defender.png "Microsoft Defender")
+    
+1. Note that the Subscriptions icon on the top menu bar allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
-1. On the Microsoft Defender for Cloud, Under Management Click on the **Environment settings**. Here you'll be able see the subscription.
+    ![](images/defender-subs.jpg)
+    
+1. Click on the What’s new button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
+
+    ![](images/defender-whats-new.jpg)
+
+1. On the Microsoft Defender for Cloud. Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
 
     ![](images/settings.png "environment details")
     
