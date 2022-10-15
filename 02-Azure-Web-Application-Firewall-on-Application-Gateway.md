@@ -108,13 +108,11 @@ In this task, you'll publish an application via Application Gateway.
           
 1. Now, to test the application copy and paste the Public IP address of **Application** in a new browser tab.
 
-   ![ss](/images1/webapp.png)
+   ![ss](/images/image307.png)
        
   > **Note** : This will confirm that you have published the Contoso web application via Application Gateway.
-
   
 ## Task 3: Monitor attacks against your web application 
-
 
 In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user.
 
@@ -128,7 +126,6 @@ In this task, you will be testing your application for security and perform samp
     
    ![ss](/images1/attack.png)
   
-
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
    ![rp](/images1/rgappgateway.png)
@@ -147,7 +144,70 @@ In this task, you will be testing your application for security and perform samp
     
     ![server error](/images1/403.png)
  
+ 1. Back again, on the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
  
+
+## Task 4: Customize WAF rules
+ 
+ 1. Search **Application Gateway (1)** and then select **Application Gateway (2)**.
+ 
+     ![](images/searchgateway.png "search gateway")
+ 
+ 1. Select your **Application Gateway**.
+ 
+     ![](images/appgateway.png "select gateway")
+ 
+ 1. Copy the **Frontend public IP address** of application gateway.
+
+      > **Note** : Save the Frontend public IP address in notepad for later use.
+ 
+      ![](images/image301.png "select gateway")
+
+ 1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
+ 
+      ![ss](/images/image307.png)
+ 
+ 1. In azure portal, search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
+ 
+      ![](images/image302.png "select gateway")
+ 
+ 1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and  after that click on **+ Add custom rule (3)**.
+ 
+      ![](images/image303.png "select gateway")
+ 
+ 1. On the **Add custom rule** blade, enter the following details
+ 
+    - Custom rule name : **WAFcustomrule (1)**.
+    - Priority : enter **1**.
+    - IP address of JumpVM : **_______(3)**.
+    - Click on **Add (4)**.
+ 
+      ![](images/image304.png "select gateway")
+ 
+ 1. Click on **Save**.
+ 
+      ![](images/image305.png "select gateway")
+
+ 
+ 1. Once the custom rule is created you will see the notification that says Successfully **Updated the WAF policy**, as shown below.
+ 
+       ![](images/image306.png "select gateway")
+ 
+ 1. To test the application whether the website is blocked or not, you can paste the Frontend public IP address of **Application Gateway** in a new browser tab             that you copied earlier in step 3.
+ 
+     > **Note** : you will see that your website is blocked.
+ 
+ 
+ 
+ 1. Now, you can paste the Frontend public IP address of **Application Gateway** in your **Local computer / Personal computer**.
+ 
+      > **Note** : you will see that your website is running.
+ 
+     ![ss](/images/image307.png)
+
+
+
+
  
 
       
