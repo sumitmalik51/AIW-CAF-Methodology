@@ -36,6 +36,10 @@ Azure Application Gateway has a public IP, or front end, and your application us
     - Click on **Save (3)**
 
     ![](/images1/editbackendpool.png)
+    
+1. Once the Backend pools is edited, you will see the notification that says **Successfully added rule collection**, as shown below.
+
+     ![](/images/image309.png)
 
  1. Navigate back to home page and search for **Application Firewall Policies (1)** from search bar and select it **(2)**.
 
