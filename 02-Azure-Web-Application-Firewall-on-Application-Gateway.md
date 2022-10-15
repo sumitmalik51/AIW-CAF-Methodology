@@ -106,7 +106,7 @@ In this task, you'll publish an application via Application Gateway.
 
        ![rule](/images1/rulecollection.png)
           
-1. Now, to test the application copy and paste the Public IP address of **Application** in a new browser tab.
+1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
 
    ![ss](/images/image307.png)
        
@@ -146,6 +146,7 @@ In this task, you will be testing your application for security and perform samp
  
  1. Back again, on the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
  
+     ![ss](/images/image308.png)
 
 ## Task 4: Customize WAF rules
  
@@ -158,14 +159,14 @@ In this task, you will be testing your application for security and perform samp
      ![](images/appgateway.png "select gateway")
  
  1. Copy the **Frontend public IP address** of application gateway.
-
-      > **Note** : Save the Frontend public IP address in notepad for later use.
  
       ![](images/image301.png "select gateway")
 
  1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
  
-      ![ss](/images/image307.png)
+      > **Note** : You will see that your website is running.
+ 
+      ![](/images/image307.png)
  
  1. In azure portal, search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
@@ -188,12 +189,11 @@ In this task, you will be testing your application for security and perform samp
  
       ![](images/image305.png "select gateway")
 
- 
- 1. Once the custom rule is created you will see the notification that says Successfully **Updated the WAF policy**, as shown below.
+  1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
        ![](images/image306.png "select gateway")
  
- 1. To test the application whether the website is blocked or not, you can paste the Frontend public IP address of **Application Gateway** in a new browser tab             that you copied earlier in step 3.
+ 1.  Now, navigate back to the tab where you browsed the IP Address of Frontend public IP address of application gateway earlier and **refresh** the page. You can          observe the **403 Forbidden error**
  
      > **Note** : you will see that your website is blocked.
  
