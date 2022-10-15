@@ -148,8 +148,6 @@ In this task, you will be testing your application for security and perform samp
     ![server error](/images1/403.png)
  
  
- ## Task 4:	Customize WAF rules
  
- 1. 
 
       
