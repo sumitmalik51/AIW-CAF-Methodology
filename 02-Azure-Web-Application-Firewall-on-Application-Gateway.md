@@ -146,5 +146,10 @@ In this task, you will be testing your application for security and perform samp
 1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
     
     ![server error](/images1/403.png)
+ 
+ 
+ ## Task 4:	Customize WAF rules
+ 
+ 1. 
 
       
