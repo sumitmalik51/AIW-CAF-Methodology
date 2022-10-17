@@ -139,7 +139,7 @@ In this task you will test IDPS for http traffic
  
  4. Once the deployment completes open a browser on JumpVM, navigate to `https://www.nytimes.com/section/world` and validate that the HTML response is displayed as expected in the browser.
 
-    ![](images/firewall19.png "search gateway")
+    ![](images/firewall20.png "search gateway")
  
  5. In the Azure portal, navigate to your log analytics workspace and in Application rule Monitoring logs review the entire URL.
  
