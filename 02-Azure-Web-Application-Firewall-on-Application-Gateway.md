@@ -270,21 +270,21 @@ In this task, you will create a storage account, this storage account will be us
  
       ![](/images/image307.png)
 
-1. Navigate to the resource group **<inject key="Resource Group" enableCopy="false"/>**, from **Overview (1)** tab select the Firewall.
+1. Navigate to the resource group **JumpVM-rg**, from **Overview (1)** tab select the Firewall.
 
-   ![loadbalancer](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/afwf.png?raw=true)
+   ![loadbalancer](/images1/firewall.png)
    
 1. Select **Firewall Public IP** from the Overview tab.
 
-    ![pip](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/fip.png?raw=true)
+    ![pip](/images1/firewallIP.png)
     
 1. Copy the Public Ip and save it in text editor.
 
-    ![ip](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/copyip.png?raw=true)
+    ![ip](/images1/firewallip1.png)
       
 1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
 
-   ![pip](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/CIVMeastus002.png?raw=true)
+   ![pip](/images/image307.png)
 
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
 
