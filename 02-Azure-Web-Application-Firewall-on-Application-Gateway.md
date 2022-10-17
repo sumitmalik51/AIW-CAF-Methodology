@@ -131,11 +131,7 @@ In this task, you'll publish an application via Application Gateway.
   
 ## Task 3: Monitor attacks against your web application 
 
-## Task 2: Create Flow Logs
-
-Network Security Group (NSG) flow logs are a feature of Azure Network Watcher that allows you to log information about IP traffic flowing through an NSG. Flow data is sent to Azure Storage accounts from where you can access it as well as export it to any visualization tool, SIEM, or IDS of your choice. To learn more about flow logs refer: ```https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview```
-
-### Task 2.1: Create Storage Account
+### Task 3.1: Create Storage Account
 
 In this task, you will create a storage account, this storage account will be used to store the NSG flow logs
      
@@ -163,7 +159,7 @@ In this task, you will create a storage account, this storage account will be us
 
       ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createst.png?raw=true)
       
- ### Task 2.2: Create Log Analytics Workspace
+ ### Task 3.2: Create Log Analytics Workspace
  
  In this task, you will create Log Analytics Workspace. This Log Analytics workspace will be used by Traffic Analytics to store the aggregated and indexed data that is then used to generate the analytics.
       
@@ -193,7 +189,7 @@ In this task, you will create a storage account, this storage account will be us
 
     ![createLAW](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createloga1.png?raw=true)
        
- ### Task 2.3: Create NSG flow logs.
+ ### Task 3.3: Create NSG flow logs.
  
  In this task, you will create NSG flow logs in the Network Watcher.
 
