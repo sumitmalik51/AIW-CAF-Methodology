@@ -284,7 +284,7 @@ In this task, you will create a storage account, this storage account will be us
       
 1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
 
-   ![pip](/images/image307.png)
+   ![pip](/images1/webapp.png)
 
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
 
