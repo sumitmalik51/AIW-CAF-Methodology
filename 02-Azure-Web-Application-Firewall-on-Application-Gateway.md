@@ -332,19 +332,19 @@ In this task, you will create a storage account, this storage account will be us
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
-    ![td](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/seeall1.png?raw=true)
+    ![td](/images1/ipsee.png)
     
 1. You can observe the graph of **Time trending chart for top 5 talking IPs** from **Traffic distribution across top IPs** page.
 
-    ![see more](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm1.png?raw=true)
+    ![see more](/images1/trafficdistri.png)
     
 1. Under **Details of top 5 talking IPs**, select VM IP to explore more about traffic distribution.
 
-     ![see more](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm2.png?raw=true)
+     ![see more](/images1/top5.png)
      
 1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
     
-1. In the same way, you can explore more about **Subnets**, **VNet**, **VMSS**.
+1. In the same way, you can explore more about **Malicious traffic**, **Blocked traffic**.
 
 1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
 
