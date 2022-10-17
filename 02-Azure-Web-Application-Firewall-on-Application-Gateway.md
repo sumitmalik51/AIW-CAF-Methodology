@@ -131,40 +131,172 @@ In this task, you'll publish an application via Application Gateway.
   
 ## Task 3: Monitor attacks against your web application 
 
-In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user.
+## Task 2: Create Flow Logs
 
-   > **Note** : You can perform this task only after finishing the task 2 and task 3.
+Network Security Group (NSG) flow logs are a feature of Azure Network Watcher that allows you to log information about IP traffic flowing through an NSG. Flow data is sent to Azure Storage accounts from where you can access it as well as export it to any visualization tool, SIEM, or IDS of your choice. To learn more about flow logs refer: ```https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview```
 
-1. You can perform a sample attack on your application by passing this **?q=<script>** value at the end of the web application URL or IP address.
-    
-1. Now pass the value **?q=<script>** at the end of your **Application Gateway** IP and try browsing it. You can observe the web application can be still accessible.
-  
-   > **Note** : Your browsing URL value should look ```http://20.185.224.102/?q=<script>```
-    
-   ![ss](/images1/attack.png)
-  
-1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
+### Task 2.1: Create Storage Account
+
+In this task, you will create a storage account, this storage account will be used to store the NSG flow logs
      
-   ![rp](/images1/rgappgateway.png)
-    
-1. Under the **Application gateway** page, follow the below details:
-     - Select **Web application firewall (1)** under **Settings**    
-     - Click on **firewallpolicy** under **Associated web application firewall policy (2)**   
-  
-     ![config](/images1/webappfirewall.png)
- 
-1. Under **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
- 
-    ![](/images1/switchtoprevention.png)
-    
-1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
-    
-    ![server error](/images1/403.png)
- 
- 1. Back again, on the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
- 
-     ![ss](/images/image308.png)
+1. Now from the **Home** page of Azure Portal, type **Storage account (1)** on the search box and then click on it. 
 
+   ![storage](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/storage.png?raw=true)
+     
+1. In the **Storage account** page, select **Create**.
+
+   ![storage account](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/createstorageacc.png?raw=true)
+     
+1.  On the **Basics** tab of **Storage account** blade, enter the below details:
+
+     - Subscription : Select your **Subscription (1)**
+
+     - Resource Group : Select **<inject key="Resource Group" enableCopy="false"/> (2)**
+
+     - Storage account name : Enter **<inject key="Storageaccount Name" enableCopy="true"/> (3)**
+
+     - Select **Review + create (4)**
+
+       ![storage account](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/storageaccount.png?raw=true)
+         
+ 1.  Review the configuration of the storage account and click on **Create**.
+
+      ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createst.png?raw=true)
+      
+ ### Task 2.2: Create Log Analytics Workspace
+ 
+ In this task, you will create Log Analytics Workspace. This Log Analytics workspace will be used by Traffic Analytics to store the aggregated and indexed data that is then used to generate the analytics.
+      
+ 1. From the **Home** page of Azure Portal, type **Log Analytics Workspace** on the search box and then click on it. 
+
+    ![LAW](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/LAW.png?raw=true)
+    
+ 1. Select **Create**.
+
+     ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/click.png?raw=true)
+      
+ 1.  On the **Basics** tab of **Create Log Analytics workspace**, enter the below information:
+       
+       - Subscription : Select your **Subscription (1)**
+
+       - Resource Group : **<inject key="Resource Group" enableCopy="false"/> (2)**
+
+       - Name : **log-contoso-diagnosticworkspace (3)**
+
+       - Region : **East US (4)**
+
+       - Select **Review + Create (5)**
+
+       ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createlog.png?raw=true)
+       
+ 1. Review the configuration of analytics workspace and select **Create**
+
+    ![createLAW](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createloga1.png?raw=true)
+       
+ ### Task 2.3: Create NSG flow logs.
+ 
+ In this task, you will create NSG flow logs in the Network Watcher.
+
+1. Now navigate back to Azure **Home** page, from search bar search for **Network Watcher** and select it.
+
+   ![network watcher](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/networkwatcher1.1.png?raw=true)
+   
+1. On the Network Watcher page select the **NSG flow logs** under Logs.
+
+   ![select nsg](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/nsgflow.png?raw=true)
+    
+      
+1. Now click on **Create NSG flow log**.
+
+   ![flow log](../media/creatensgflowlog.png)
+      
+1. On the **Basics** tab of **Create a flow log**, enter the following details:
+
+      - Under **Project details** click on **+ Select NSG**.
+
+         ![](../media/addnsgtoflow.png)
+         
+      - On **Select network security group** page, select **nsg-contoso-weballow-001 (1)** and click on **Confirm selection (2)**.
+
+        ![](../media/confirm%20selection.png)
+        
+      - Under **Instance details**, follow the below steps:
+
+
+         -  Storage Accounts :Select **<inject key="Storageaccount Name" enableCopy="true"/> (1)**
+
+         - Retention(days) : Enter **7 (2)**
+
+         - Select **Configuration (3)**
+
+           ![flow log](../media/instance%20details.png)
+        
+1. Under the **Configuration** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
+
+     ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/config.png?raw=true)
+        
+1. Review the configuration of the flow log and select **Create**.
+
+   ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/create3.png?raw=true)
+   
+1. Now navigate back to the Network Watcher, select **NSG flow logs(1)**  and click on **+Create (2)**.
+
+   ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm5.png?raw=true)
+   
+      
+1. On the **Basics** tab of **Create a flow log**, enter the following details:
+
+      - Under **Project details** click on **+ Select NSG**.
+
+         ![](../media/addnsgtoflow.png)
+         
+      - On **Select network security group** page, select **nsg-contoso-weballow-002 (1)** and click on **Confirm selection (2)**.
+
+        ![](../media/confirm%20selection2.png)
+
+      - Under **Instance details**, follow the below steps:
+
+
+         -  Storage Accounts :Select **<inject key="Storageaccount Name" enableCopy="true"/> (1)**
+
+         - Retention(days) : Enter **7 (2)**
+
+         - Select **Configuration (3)**
+
+           ![flow log](../media/instancedetails2.png)
+
+        
+        
+1. Under the **Configuration** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
+
+     ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/config.png?raw=true)
+        
+1. Review the configuration of the flow log and select **Create**.
+
+   ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/crett.png?raw=true)
+       
+1. You'll be able to see the created NSG flow logs for both virtual machines under **NSG Flow logs** of **Network watcher blade**
+
+    ![nsg](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/creatednsg1.png?raw=true)
+    
+1. Now click on storage account from NSG flow logs blade.
+
+    ![st](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/selectst.png?raw=true)
+    
+1. Click on **Containers (1)** and select **insights-logs-networksecuritygroupflowevent (2)**.
+
+    ![container](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/containers.png?raw=true)
+ 
+1. In the container, navigate to the folder hierarchy until you get to a PT1H.json file and select it.
+
+   > **Note:** Log files are written to a folder hierarchy that follows the following naming convention: https://{storageAccountName}.blob.core.windows.net/insights-logs-networksecuritygroupflowevent/resourceId=/SUBSCRIPTIONS/{subscriptionID}/RESOURCEGROUPS/{resourceGroupName}/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/{nsgName}/y={year}/m={month}/d={day}/h={hour}/m=00/macAddress={macAddress}/PT1H.json
+
+   ![json](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/json1.png?raw=true)
+     
+1. Click on **Download**. You can use this file to process, analyze, and visualize Flow Logs using tools like Traffic Analytics, Splunk, Grafana, Stealthwatch, etc.
+
+    ![downlaod](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/download1.png?raw=true)
+     
 ## Task 4: Customize WAF rules
  
  1. Search **Application Gateway (1)** and then select **Application Gateway (2)**.
