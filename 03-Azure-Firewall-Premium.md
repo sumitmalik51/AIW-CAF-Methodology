@@ -14,7 +14,7 @@ For more information, see https://learn.microsoft.com/en-us/azure/firewall/premi
 
 In this exercise you will explore on Azure Firewall premium features. 
 
-# Task 1: Add firewall diagnostics settings 
+### Task 1: Add firewall diagnostics settings 
 
 In this task you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
