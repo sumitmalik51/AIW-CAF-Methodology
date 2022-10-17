@@ -357,27 +357,9 @@ In this task, you will create a storage account, this storage account will be us
      
 ## Task 4: Customize WAF rules
  
- 1. Search **Application Gateway (1)** and then select **Application Gateway (2)**.
+ 1. Within the **Jump VM**, type **cmd (1)** and select **Command Prompt (2)** then click on **Run as adminstrator (4)**.
  
-     ![](images/searchgateway.png "search gateway")
- 
- 1. Select your **Application Gateway**.
- 
-     ![](images/appgateway.png "select gateway")
- 
- 1. Copy the **Frontend public IP address** of application gateway.
- 
-      ![](images/image301.png "select gateway")
-
- 1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
- 
-      > **Note** : You will see that your website is running.
- 
-      ![](/images/image307.png)
- 
- 1. Click on **windows (1)** menu then type **cmd (2)** after then right click on **Command Prompt (3)** and then select **Run as adminstrator (4)**.
- 
-      ![](/images/image313.png)
+      ![](/images1/cmd1.png)
  
  1. On the Command Prompt, type **ipconfig (1)** and then copy the **IPv4 Address (2)** and save it to notepad for later use.
  
@@ -408,16 +390,16 @@ In this task, you will create a storage account, this storage account will be us
  
       ![](images/image306.png "select gateway")
  
- 1.  Now, navigate back to the tab where you browsed the IPv4 Address of Frontend public IP address of application gateway earlier and **refresh** the page. You can          observe the **403 Forbidden error**
+ 1.  Now, open a new tab in the Jump VM and browse the **IPv4 Address**.
  
      > **Note** : you will see that your website is Running.
 
  
-      ![ss](/images/image307.png)
+      ![ss](/images1/0.0.png)
  
- 1. Now, you can paste the Frontend public IP address of **Application Gateway** in your **Local computer / Personal computer**.You can  observe the **403 Forbidden       error**
+ 1. Now, you can paste the **IPv4 Address** in your **Local computer / Personal computer**.You can  observe the **403 Forbidden error**
  
-      > **Note** : you will see that your website is Blocked.
+      > **Note** : you will see that your website is Blocked outside the Jump VM
  
      ![ss](/images/image307.png)
 
