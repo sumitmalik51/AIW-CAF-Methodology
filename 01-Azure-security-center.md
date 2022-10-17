@@ -340,12 +340,10 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
-    - Select **labvm-DID**. next, click on **Extensions + applications** under the **Settings** section.
+    - Select **labvm-<inject key="Deployment ID" />**. next, click on **Extensions + applications** under the **Settings** section.
     - Ensure that **WindowsAgent.AzureSecurityCenter** extension is installed, and the status is **Provisioning succeeded**.
-
-    
+   
     ![](images/posture6.png)
-
 
 # Task 5: Exploring Security Center and Security benchmark
 
