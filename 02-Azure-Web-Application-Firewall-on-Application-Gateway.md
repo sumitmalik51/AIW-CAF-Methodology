@@ -247,24 +247,6 @@ In this task, you will create a storage account, this storage account will be us
 
     ![nsg](/images1/nsgflow.png)
     
-1. Now click on storage account from NSG flow logs blade.
-
-    ![st](/images1/staccflow.png)
-    
-1. Click on **Containers (1)** and select **insights-logs-networksecuritygroupflowevent (2)**.
-
-    ![container](/images1/insights.png)
- 
-1. In the container, navigate to the folder hierarchy until you get to a PT1H.json file and select it.
-
-   > **Note:** Log files are written to a folder hierarchy that follows the following naming convention: https://{storageAccountName}.blob.core.windows.net/insights-logs-networksecuritygroupflowevent/resourceId=/SUBSCRIPTIONS/{subscriptionID}/RESOURCEGROUPS/{resourceGroupName}/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/{nsgName}/y={year}/m={month}/d={day}/h={hour}/m=00/macAddress={macAddress}/PT1H.json
-
-   ![json](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/json1.png?raw=true)
-     
-1. Click on **Download**. You can use this file to process, analyze, and visualize Flow Logs using tools like Traffic Analytics, Splunk, Grafana, Stealthwatch, etc.
-
-    ![downlaod](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/download1.png?raw=true)
-    
     
 ### Task 3.4: Run Sample traffic and perform traffic analytics, review logs
 
