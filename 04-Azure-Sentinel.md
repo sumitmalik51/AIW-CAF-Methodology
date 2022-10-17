@@ -51,10 +51,12 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
   
 1. If the validation is passed then  click on **Create**.
 
+    >**NOTE**: It may take a couple of minutes for the workspace to be created.
+
+
      ![](images/log3.png "Passed log analytics")
     
-   >**NOTE**: It may take a couple of minutes for the workspace to be created.
-
+  
 1. Once the Log Analytics workspace is added you will see a notification that says **Successfully added Log Analytics workspace**, as shown below.
 
       ![](images/log4.png "Passed log analytics")
