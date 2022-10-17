@@ -125,7 +125,7 @@ In this task you will test IDPS for http traffic
       - Protocol: Enter **http,https**
       - TLS inspection : Check TLS inspection
       - Destination Type: Select **URL**
-      - Destination: Enter **www.nytimes.com/section/world**
+      - Destination: Enter `www.nytimes.com/section/world`
      
      - Click on **Add (6)**
  
