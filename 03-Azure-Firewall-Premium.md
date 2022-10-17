@@ -88,13 +88,13 @@ In this task you will test IDPS for http and https traffic
  
 7. Select *2032081 (1)* signature id  and click on **Edit Rules (2)**.
  
-   ![](images/firewall12png "search gateway")
+   ![](images/firewall12.png "search gateway")
  
-7. Under edit rules change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
+8. Under edit rules change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
  
    ![](images/firewall13.png "search gateway")
 
-6. Navigate back to WorkerVM, and run the `curl` command again:
+9. Navigate back to WorkerVM, and run the `curl` command again:
 
    `curl -A "HaxerMen" <your web server address>`
 
@@ -104,7 +104,7 @@ In this task you will test IDPS for http and https traffic
  
     ![](images/firewall14.png "search gateway")
 
-7. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
+10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
    <!---8. Now you can bypass the IDPS function using the **Bypass list**.
 
    1. On the **IDPS (preview)** page, select the **Bypass list** tab.
