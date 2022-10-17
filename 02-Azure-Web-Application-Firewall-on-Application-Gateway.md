@@ -237,3 +237,37 @@ In this task, you will be testing your application for security and perform samp
  ## Task 5 : Attack simulation 
 
       
+In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user.
+
+   > **Note** : You can perform this task only after finishing the task 2 and task 3.
+
+1. You can perform a sample attack on your application by passing this **?q=<script>** value at the end of the web application URL or IP address.
+    
+1. Now pass the value **?q=<script>** at the end of your **Application Gateway** IP and try browsing it. You can observe the web application can be still accessible.
+  
+   > **Note** : Your browsing URL value should look ```http://20.185.224.102/?q=<script>```
+    
+   ![ss](/images1/attack.png)
+  
+1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
+     
+   ![rp](/images1/rgappgateway.png)
+    
+1. Under the **Application gateway** page, follow the below details:
+     - Select **Web application firewall (1)** under **Settings**    
+     - Click on **firewallpolicy** under **Associated web application firewall policy (2)**   
+  
+     ![config](/images1/webappfirewall.png)
+ 
+1. Under **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
+ 
+    ![](/images1/switchtoprevention.png)
+    
+1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
+    
+    ![server error](/images1/403.png)
+ 
+ 1. Back again, on the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
+ 
+     ![ss](/images/image308.png)
+
