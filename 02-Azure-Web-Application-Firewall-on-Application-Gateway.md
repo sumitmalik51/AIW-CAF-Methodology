@@ -163,6 +163,10 @@ In this task, you will create a storage account, this storage account will be us
 
       ![create](/images1/create.png)
       
+ 1. Once the deployment is completed, click on **Go to resource**.
+
+     ![](../images1/gotoresource1.png)
+      
  ### Task 3.2: Create Log Analytics Workspace
  
  In this task, you will create Log Analytics Workspace. This Log Analytics workspace will be used by Traffic Analytics to store the aggregated and indexed data that is then used to generate the analytics.
