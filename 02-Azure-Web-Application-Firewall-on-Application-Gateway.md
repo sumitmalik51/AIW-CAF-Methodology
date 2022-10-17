@@ -196,6 +196,10 @@ In this task, you will create a storage account, this storage account will be us
  1. Review the configuration of analytics workspace and select **Create**
 
     ![createLAW](/images1/loganaly1.png)
+    
+1. Once the deployment is completed, click on **Go to resource**.
+
+     ![](../images1/gotoresource2.png)
        
  ### Task 3.3: Create NSG flow logs.
  
@@ -212,17 +216,17 @@ In this task, you will create a storage account, this storage account will be us
       
 1. Now click on **Create NSG flow log**.
 
-   ![flow log](../media/creatensgflowlog.png)
+   ![flow log](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/creatensgflowlog.png)
       
 1. On the **Basics** tab of **Create a flow log**, enter the following details:
 
       - Under **Project details** click on **+ Select NSG**.
 
-         ![](../media/addnsgtoflow.png)
+         ![](/images1/selectnsg.png)
          
-      - On **Select network security group** page, select **nsg-contoso-weballow-001 (1)** and click on **Confirm selection (2)**.
+      - On **Select network security group** page, select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nsg (1)** and click on **Confirm selection (2)**.
 
-        ![](../media/confirm%20selection.png)
+        ![](/images1/confirmselection.png)
         
       - Under **Instance details**, follow the below steps:
 
