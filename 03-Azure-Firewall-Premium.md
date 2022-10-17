@@ -80,14 +80,19 @@ In this task you will test IDPS for http and https traffic
  
 5. Now navigate back to firewallpolicy and under **Settings** select **IDPS**.
  
-6. On the **IDPS** page select **Signature rules** tab.
+   ![](images/firewall10.png "search gateway")
  
-7. Add a signature rule for signature 2032081:
-
-   1. Under **Signature ID**, in the open text box type *2032081*.
-   1. Under **Mode**, select **Deny**.
-   1. Select **Save**.
-   1. Wait for the deployment to complete before proceeding.
+6. On the **IDPS** page select **Signature rules** tab and under **Signature ID**, in the open text box type *2032081*.
+ 
+   ![](images/firewall11.png "search gateway")
+ 
+7. Select *2032081* signature id  and click on **Edit Rules**.
+ 
+   ![](images/firewall12png "search gateway")
+ 
+7. Under edit rules change ** Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
+ 
+    ![](images/firewall13.png "search gateway")
 
 6. Navigate back to WorkerVM, and run the `curl` command again:
 
@@ -95,7 +100,9 @@ In this task you will test IDPS for http and https traffic
 
    Since the HTTP request is now blocked by the firewall, you'll see the following output after the connection timeout expires:
 
-   `read tcp 10.0.100.5:55734->10.0.20.10:80: read: connection reset by peer`
+   `curl: (56) Recv failure: Connection was reset`
+ 
+    ![](images/firewall14.png "search gateway")
 
 7. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
    <!---8. Now you can bypass the IDPS function using the **Bypass list**.
