@@ -352,7 +352,7 @@ In this task, you will create a storage account, this storage account will be us
      
 ## Task 4: Customize WAF rules
  
- 1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (4)**.
+ 1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
  
       ![](/images1/cmd1.png)
  
@@ -371,8 +371,8 @@ In this task, you will create a storage account, this storage account will be us
  1. On the **Add custom rule** blade, enter the following details
  
     - Custom rule name : **WAFcustomrule (1)**.
-    - Priority : enter **1**.
-    - IP address or range: Enter **IPv4 Address** that is copied above in step 2
+    - Priority : enter **1 (2)**.
+    - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2
     - Click on **Add (4)**.
  
       ![](images/image304.png "select gateway")
