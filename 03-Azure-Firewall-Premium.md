@@ -10,12 +10,11 @@ Azure Firewall Premium is a next generation firewall with capabilities that are 
 - **Web categories** - administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
 For more information, see https://learn.microsoft.com/en-us/azure/firewall/premium-features
  
- 
 ## Test the Firewall
 
 In this exercise you will explore on Azure Firewall premium features. 
 
-### Task 1: Add firewall diagnostics settings 
+# Task 1: Add firewall diagnostics settings 
 
 In this task you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
