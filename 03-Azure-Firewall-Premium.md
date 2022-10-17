@@ -135,7 +135,7 @@ In this task you will create an application rule to allow access to sports web s
      
      - Click on **Add (6)**
  
-      ![](images/firewall21.png "search gateway")
+     ![](images/firewall21.png "search gateway")
  
  4. Once the deployment completes open a browser on JumpVM, navigate to `https://www.nfl.com` and verify you are able to see the NFL web page.
  
