@@ -41,19 +41,19 @@ Azure Application Gateway has a public IP or front end, and your application use
 
      ![](/images/image309.png)
 
- 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select it **(2)**.
+ 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies** **(2)**.
 
       ![](images1/firewallpolicies.png)
  
- 1. Click on **firewallpolicy** under Web Application Firewall page and click on **Associated Application gateways** under Settings from the Application Gateway WAF policy page.
+ 1. Click on **firewallpolicy** under Web Application Firewall page and click on **Associated application gateways** under **Settings** tab from the Application Gateway WAF policy page.
 
      ![](/images1/firewallpolicy.png)
      
- 1. Under **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
+ 1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
     ![](/images1/addappilcatiogateway.png)
     
- 1. Under the **Associate an application gateway** page, enter below instructions:
+ 1. Under the **Associate an application gateway** page, follow the below instructions:
 
     - **Application Gateway (WAF v2 SKU)** : Select **Aplication Gateway (1)** from drop-down 
     - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuation (2)**
@@ -62,11 +62,11 @@ Azure Application Gateway has a public IP or front end, and your application use
     ![](images1/associateappgateway.png)
     
     
-1. Back on, under **Associated Application gateway** page, click on **+ Add association (1)** and select **HTTP Listener (2)**
+1. Navigate abck to the **Associated Application gateway** page, click on **+ Add association (1)** and select **HTTP Listener (2)**
 
     ![](images/image310.png)
  
-1. Under, the **Associate listeners in an application gateway** page, enter below instructions:
+1. Under, the **Associate listeners in an application gateway** page, follow the below instructions:
 
     - **Application Gateway (WAF v2 SKU)** : Select **Application Gateway (1)** from drop-down .
     - **Listeners** : Select **AGListener (2)**.
@@ -74,7 +74,7 @@ Azure Application Gateway has a public IP or front end, and your application use
 
      ![](images/image311.png)
           
-1.  Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation of the successful deployment.
+1.  Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation stating that **Updated the Application Gateway**.
 
      ![](images/image312.png)
     
@@ -86,11 +86,11 @@ In this task, you'll publish an application via Application Gateway.
 
    ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
     
-1. Click on the firewall **AzureFirewall**.
+1. Click on the **AzureFirewall**.
 
    ![firewall](/images1/azurefirewall.png)
      
-1. Select **Firewall Manager (1)** from **Settings** and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+1. Select **Firewall Manager (1)** from **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
    ![FM](/images1/firewallmanager.png)
     
@@ -159,15 +159,12 @@ In this task, you will create a storage account, this storage account will be us
 
       ![create](/images1/create.png)
       
- 1. Once the deployment is completed, click on **Go to resource**.
-
-     ![](../images1/gotoresource1.png)
       
  ### Task 3.2: Create Log Analytics Workspace
  
  In this task, you will create Log Analytics Workspace. This Log Analytics workspace will be used by Traffic Analytics to store the aggregated and indexed data that is then used to generate the analytics.
       
- 1. From the **Home** page of Azure Portal, type **Log Analytics Workspace** on the search box and then click on it. 
+ 1. From the **Home** page of Azure Portal, type **Log Analytics Workspaces (1)** on the search box and then select **Log Analytics Workspaces (2)** . 
 
     ![LAW](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/LAW.png?raw=true)
     
@@ -193,9 +190,6 @@ In this task, you will create a storage account, this storage account will be us
 
     ![createLAW](/images1/loganaly1.png)
     
-1. Once the deployment is completed, click on **Go to resource**.
-
-     ![](../images1/gotoresource2.png)
        
 ### Task 3.3: Create NSG flow logs.
  
@@ -241,7 +235,7 @@ In this task, you will create a storage account, this storage account will be us
         
 1. Review the configuration of the flow log and select **Create**.
 
-   ![create](/images1/createflo.png)
+   ![create](/images1/create1.png)
        
 1. You'll be able to see the created NSG flow logs for both virtual machines under **NSG Flow logs** of **Network watcher blade**
 
@@ -264,7 +258,7 @@ In this task, you will create a storage account, this storage account will be us
  
       ![](images/image301.png "select gateway")
 
- 1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
+ 1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
  
       > **Note**: You will see that your website is running.
  
@@ -357,7 +351,7 @@ In this task, you will create a storage account, this storage account will be us
      
 ## Task 4: Customize WAF rules
  
- 1. Within the **Jump VM**, type **cmd (1)** and select **Command Prompt (2)** then click on **Run as administrator (4)**.
+ 1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (4)**.
  
       ![](/images1/cmd1.png)
  
@@ -377,7 +371,7 @@ In this task, you will create a storage account, this storage account will be us
  
     - Custom rule name : **WAFcustomrule (1)**.
     - Priority : enter **1**.
-    - IP address or range: Enter **IPv4 Address** that is copied above in step 5
+    - IP address or range: Enter **IPv4 Address** that is copied above in step 2
     - Click on **Add (4)**.
  
       ![](images/image304.png "select gateway")
@@ -397,11 +391,11 @@ In this task, you will create a storage account, this storage account will be us
  
       ![ss](/images1/0.0.png)
  
- 1. Now, you can paste the **IPv4 Address** in your **Local computer / Personal computer**.You can  observe the **403 Forbidden error**
+ 1. Now, you can paste the **IPv4 Address** in your **Local computer / Personal computer**.You can  observe the **This site can’t be reached error**
  
       > **Note**: you will see that your website is Blocked outside the Jump VM
  
-     ![ss](/images/image307.png)
+     ![ss](/images1/site.png)
 
 
 
@@ -441,7 +435,7 @@ In this task, you will be testing your application for security and perform samp
     
     ![server error](/images1/403.png)
  
- 1. Back again, on the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
+ 1. Navigate back to the **firewallpolicy** page, from **Overview (1)** tab click on **Switch to detection mode (2)**.
  
      ![ss](/images/image308.png)
 
