@@ -348,11 +348,11 @@ In this task, you will create a storage account, this storage account will be us
 
 1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
 
-    ![ap](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm3.png?raw=true)
+    ![ap](/images1/applicationports.png)
      
 1. From the **Most frequent L7 protocols** page, you can explore more about the ports and it's ranging.
 
-    ![l7](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm4.png?raw=true)
+    ![l7](/images1/l7proto.png)
      
      
 ## Task 4: Customize WAF rules
