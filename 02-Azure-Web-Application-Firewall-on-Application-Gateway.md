@@ -17,7 +17,7 @@ Azure Application Gateway has a public IP or front end, and your application use
  
  ## Task 1: Configure WAF to Protect your web application
  
- 1. From the Azure **Home** page, search for **Application Gateway (1)** from search bar and select **Application Gateway (2)**.
+ 1. From the Azure **Home** page, search for **Application gateways (1)** from search bar and select **Application gateways (2)**.
  
       ![](images/searchgateway.png "search gateway")
     
@@ -25,7 +25,7 @@ Azure Application Gateway has a public IP or front end, and your application use
 
       ![](images/appgateway.png "select gateway")
       
- 1. On the Application gateway blade click on the **Backend pools(1)** setting and then select **AGBackendtarget(2)**.
+ 1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
 
      ![](/images1/backendpools.png)
      
