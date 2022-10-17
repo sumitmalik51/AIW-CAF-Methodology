@@ -90,9 +90,9 @@ In this task you will test IDPS for http and https traffic
  
    ![](images/firewall12png "search gateway")
  
-7. Under edit rules change ** Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
+7. Under edit rules change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
  
-    ![](images/firewall13.png "search gateway")
+   ![](images/firewall13.png "search gateway")
 
 6. Navigate back to WorkerVM, and run the `curl` command again:
 
