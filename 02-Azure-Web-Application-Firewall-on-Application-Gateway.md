@@ -429,7 +429,7 @@ In this task, you will create a storage account, this storage account will be us
       
 In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user.
 
-     > **Note** : You can perform this task only after finishing the task 2 and task 3.
+   > **Note** : You can perform this task only after finishing the task 2 and task 3.
 
 1. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
     
