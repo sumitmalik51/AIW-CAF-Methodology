@@ -251,6 +251,24 @@ In this task, you will create a storage account, this storage account will be us
 ### Task 3.4: Run Sample traffic and perform traffic analytics, review logs
 
  In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
+ 
+1. Navigate back to the Azure **Home** page, from search bar search for **Application Gateway (1)** and then select **Application Gateway (2)**.
+ 
+     ![](images/searchgateway.png "search gateway")
+ 
+ 1. Select your **Application Gateway**.
+ 
+     ![](images/appgateway.png "select gateway")
+ 
+ 1. Copy the **Frontend public IP address** of application gateway.
+ 
+      ![](images/image301.png "select gateway")
+
+ 1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
+ 
+      > **Note** : You will see that your website is running.
+ 
+      ![](/images/image307.png)
 
 1. Navigate to the resource group **<inject key="Resource Group" enableCopy="false"/>**, from **Overview (1)** tab select the Firewall.
 
