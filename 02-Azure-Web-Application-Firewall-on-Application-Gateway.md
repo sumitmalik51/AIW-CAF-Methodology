@@ -8,10 +8,10 @@ In this lab, you will complete the following exercise:
 4. Customize WAF rules
 5. Attack simulation
 
-### What is Azure Web Application Firewall ?
-Microsoft Azure also has a WAF service that provides centralized protection of your web applications from common exploits and vulnerabilities. The Azure Web Application Firewall is one of the features of Azure Application Gateway (layer 7 load balancer) and its main goal is to protect a web application to common attack like SQL injections, cross-site scripting and others. Also it is following the Open Web Application Security Project (OWASP) Core Rule Set. Azure WAF service offers you to select some or all of the rules from the OWASP Core Rule Set.
+### What is Azure Web Application Firewall?
+Microsoft Azure also has a WAF service that provides centralized protection of your web applications from common exploits and vulnerabilities. The Azure Web Application Firewall is one of the features of Azure Application Gateway (layer 7 load balancer) and its main goal is to protect a web application from common attacks like SQL injections, cross-site scripting, and others. Also, it is following the Open Web Application Security Project (OWASP) Core Rule Set. Azure WAF service offers you to select some or all of the rules from the OWASP Core Rule Set.
 
-Azure Application Gateway has a public IP, or front end, and your application users will use this IP address to connect to your application gateway. Application Gateway is going to take the incoming traffic and, based on a few rules, redirect the traffic to the appropriate back end in the backend pool. You can have app services, virtual machines, virtual machine scale sets, or even other IP addresses in the backend pools.
+Azure Application Gateway has a public IP or front end, and your application users will use this IP address to connect to your application gateway. Application Gateway is going to take the incoming traffic and, based on a few rules, redirect the traffic to the appropriate back end in the backend pool. You can have app services, virtual machines, virtual machine scale sets, or even other IP addresses in the backend pools.
 
  ![](/images1/applicationgateway.png "application gateway")
  
@@ -25,11 +25,11 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
       ![](images/appgateway.png "select gateway")
       
- 1. On the Application gateway blade click on **Backend pools(1)** setting and then select on **AGBackendtarget(2)**.
+ 1. On the Application gateway blade click on the **Backend pools(1)** setting and then select **AGBackendtarget(2)**.
 
      ![](/images1/backendpools.png)
      
- 1. On **Edit backend pool** page, follow the below mentioned instructions:
+ 1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
     - **Target type** : Select **Virtual Machine (1)** from drop-down.
     - **Target** : Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down
@@ -37,15 +37,15 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
     ![](/images1/editbackendpool.png)
     
-1. Once the Backend pools is edited, you will see the notification that says **Successfully added rule collection**, as shown below.
+1. Once the Backend pools are edited, you will see the notification that says **Successfully added rule collection**, as shown below.
 
      ![](/images/image309.png)
 
- 1. Navigate back to home page and search for **Application Firewall Policies (1)** from search bar and select it **(2)**.
+ 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select it **(2)**.
 
       ![](images1/firewallpolicies.png)
  
- 1. Click on **firewallpolicy** under Web Application Firewall page and click on **Associated Application gateways** under Settings from Application Gateway WAF policy page.
+ 1. Click on **firewallpolicy** under Web Application Firewall page and click on **Associated Application gateways** under Settings from the Application Gateway WAF policy page.
 
      ![](/images1/firewallpolicy.png)
      
@@ -53,10 +53,10 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
     ![](/images1/addappilcatiogateway.png)
     
- 1. Under **Associate an application gateway** page, enter below instructions:
+ 1. Under the **Associate an application gateway** page, enter below instructions:
 
     - **Application Gateway (WAF v2 SKU)** : Select **Aplication Gateway (1)** from drop-down 
-    - **Check** the box next to **Apply the web Application Firewall policy configuration even it's different from current configuation (2)**
+    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuation (2)**
     - Click on **Add (3)**
 
     ![](images1/associateappgateway.png)
@@ -66,9 +66,9 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
     ![](images/image310.png)
  
-1. Under, **Associate listeners in an application gateway** page, enter below instructions:
+1. Under, the **Associate listeners in an application gateway** page, enter below instructions:
 
-    - **Application Gateway (WAF v2 SKU)** : Select **Aplication Gateway (1)** from drop-down .
+    - **Application Gateway (WAF v2 SKU)** : Select **Application Gateway (1)** from drop-down .
     - **Listeners** : Select **AGListener (2)**.
     - Click on **Add (3)**
 
@@ -102,7 +102,7 @@ In this task, you'll publish an application via Application Gateway.
 
    ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
     
-1. Under **Add a rule collection** page, enter the below details:
+1. Under the **Add a rule collection** page, enter the below details:
 
     - Name: **afw-contoso-prod-firewall-rulecolection (1)**
     - Rule Collection type: **DNAT (2)**
@@ -115,7 +115,7 @@ In this task, you'll publish an application via Application Gateway.
       - Protocol: Select **TCP** from the drop-down list
       - Destination Ports: **80**
       - Destination type: Select **IP Address** from the drop-down list
-      - Destination : Enter the IP address of **Firewall** 
+      - Destination: Enter the IP address of **Firewall** 
       - Translated address: Enter the Public IP address of **Application gateway**. 
       - Translated port: **80**
      
@@ -127,7 +127,7 @@ In this task, you'll publish an application via Application Gateway.
 
    ![ss](/images/image307.png)
        
-  > **Note** : This will confirm that you have published the Contoso web application via Application Gateway.
+  > **Note**: This will confirm that you have published the Contoso web application via Application Gateway.
   
 ## Task 3: Monitor attacks against your web application 
 
@@ -143,11 +143,11 @@ In this task, you will create a storage account, this storage account will be us
 
    ![storage account](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/createstorageacc.png?raw=true)
      
-1.  On the **Basics** tab of **Storage account** blade, enter the below details:
+1.  On the **Basics** tab of the **Storage account** blade, enter the below details:
 
      - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
 
-     -  Performace : Select **Standard (2)**
+     -  Performance: Select **Standard (2)**
 
      - Redundancy : Select **Geo-redundant storage (GRS) (3)**
      
@@ -179,7 +179,7 @@ In this task, you will create a storage account, this storage account will be us
        
        - Subscription : Select your **Subscription (1)**
 
-       - Resource Group : **JumpVM-rg (2)**
+       - Resource Group: **JumpVM-rg (2)**
 
        - Name : **log-contoso-diagnosticworkspace (3)**
 
@@ -189,7 +189,7 @@ In this task, you will create a storage account, this storage account will be us
 
        ![create](/images1/loganaly.png)
        
- 1. Review the configuration of analytics workspace and select **Create**
+ 1. Review the configuration of the analytics workspace and select **Create**
 
     ![createLAW](/images1/loganaly1.png)
     
@@ -201,7 +201,7 @@ In this task, you will create a storage account, this storage account will be us
  
  In this task, you will create NSG flow logs in the Network Watcher.
 
-1. Now navigate back to Azure **Home** page, from search bar search for **Network Watcher** and select it.
+1. Now navigate back to the Azure **Home** page, from the search bar search for **Network Watcher** and select it.
 
    ![network watcher](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/networkwatcher1.1.png?raw=true)
    
@@ -252,7 +252,7 @@ In this task, you will create a storage account, this storage account will be us
 
  In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
-1. Navigate back to the Azure **Home** page, from search bar search for **Application Gateway (1)** and then select **Application Gateway (2)**.
+1. Navigate back to the Azure **Home** page, from the search bar search for **Application Gateway (1)** and then select **Application Gateway (2)**.
  
      ![](images/searchgateway.png "search gateway")
  
@@ -260,17 +260,17 @@ In this task, you will create a storage account, this storage account will be us
  
      ![](images/appgateway.png "select gateway")
  
- 1. Copy the **Frontend public IP address** of application gateway.
+ 1. Copy the **Frontend public IP address** of the application gateway.
  
       ![](images/image301.png "select gateway")
 
  1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
  
-      > **Note** : You will see that your website is running.
+      > **Note**: You will see that your website is running.
  
       ![](/images/image307.png)
 
-1. Navigate to the resource group **JumpVM-rg**, from **Overview (1)** tab select the Firewall.
+1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the Firewall.
 
    ![loadbalancer](/images1/firewall.png)
    
@@ -278,7 +278,7 @@ In this task, you will create a storage account, this storage account will be us
 
     ![pip](/images1/firewallIP.png)
     
-1. Copy the Public Ip and save it in text editor.
+1. Copy the Public Ip and save it in a text editor.
 
     ![ip](/images1/firewallip1.png)
       
@@ -294,7 +294,7 @@ In this task, you will create a storage account, this storage account will be us
 
    ![time interval](/images1/timeinterval.png)
    
-   > **Note** : If you observe the **Time interval** is greyed-out, click on **Meanwhile, click here to see just resource data** and perform the above step.
+   > **Note**: If you observe the **Time interval** is greyed out, click on **Meanwhile, click here to see just resource data** and perform the above step.
 
       ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
       
@@ -308,7 +308,7 @@ In this task, you will create a storage account, this storage account will be us
 
     ![env](/images1/environment1.png)
       
-1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating to it.
+1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
 
     ![map](/images1/viewmap.png)
      
@@ -316,7 +316,7 @@ In this task, you will create a storage account, this storage account will be us
 
     ![md](/images1/moredetails.png)
       
-1. Under **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
+1. Under the **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
 
     ![comm](/images1/moreinsights.png)
      
@@ -326,7 +326,7 @@ In this task, you will create a storage account, this storage account will be us
       
 1. Close the **Ports receiving traffic from Internet** page by clicking the **Cross (X) icon** from the top right corner.
       
-1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across host, subnet, VNet, and VMSS.
+1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
     ![tr](/images1/totaltraffic.png)
      
@@ -334,7 +334,7 @@ In this task, you will create a storage account, this storage account will be us
 
     ![td](/images1/ipsee.png)
     
-1. You can observe the graph of **Time trending chart for top 5 talking IPs** from **Traffic distribution across top IPs** page.
+1. You can observe the graph of **Time trending chart for top 5 talking IPs** from the **Traffic distribution across top IPs** page.
 
     ![see more](/images1/trafficdistri.png)
     
@@ -344,20 +344,20 @@ In this task, you will create a storage account, this storage account will be us
      
 1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
     
-1. In the same way, you can explore more about **Malicious traffic**, **Blocked traffic**.
+1. In the same way, you can explore more about **Malicious traffic**, and **Blocked traffic**.
 
 1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
 
     ![ap](/images1/applicationports.png)
      
-1. From the **Most frequent L7 protocols** page, you can explore more about the ports and it's ranging.
+1. From the **Most frequent L7 protocols** page, you can explore more about the ports and their ranging.
 
     ![l7](/images1/l7proto.png)
      
      
 ## Task 4: Customize WAF rules
  
- 1. Within the **Jump VM**, type **cmd (1)** and select **Command Prompt (2)** then click on **Run as adminstrator (4)**.
+ 1. Within the **Jump VM**, type **cmd (1)** and select **Command Prompt (2)** then click on **Run as administrator (4)**.
  
       ![](/images1/cmd1.png)
  
@@ -365,11 +365,11 @@ In this task, you will create a storage account, this storage account will be us
  
       ![](/images/image314.png)
  
- 1. In azure portal, search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
+ 1. In the Azure portal, search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
       ![](images/image302.png "select gateway")
  
- 1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and  after that click on **+ Add custom rule (3)**.
+ 1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and after that click on **+ Add custom rule (3)**.
  
       ![](images/image303.png "select gateway")
  
@@ -377,7 +377,7 @@ In this task, you will create a storage account, this storage account will be us
  
     - Custom rule name : **WAFcustomrule (1)**.
     - Priority : enter **1**.
-    - IP address or range : Enter **IPv4 Address** that are copied above in step 5
+    - IP address or range: Enter **IPv4 Address** that is copied above in step 5
     - Click on **Add (4)**.
  
       ![](images/image304.png "select gateway")
@@ -392,26 +392,26 @@ In this task, you will create a storage account, this storage account will be us
  
  1.  Now, open a new tab in the Jump VM and browse the **IPv4 Address**.
  
-     > **Note** : you will see that your website is Running.
+     > **Note**: you will see that your website is Running.
 
  
       ![ss](/images1/0.0.png)
  
  1. Now, you can paste the **IPv4 Address** in your **Local computer / Personal computer**.You can  observe the **403 Forbidden error**
  
-      > **Note** : you will see that your website is Blocked outside the Jump VM
+      > **Note**: you will see that your website is Blocked outside the Jump VM
  
      ![ss](/images/image307.png)
 
 
 
 
- ## Task 5 : Attack simulation 
+ ## Task 5: Attack simulation 
 
       
-In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user.
+In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
-   > **Note** : You can perform this task only after finishing the task 2 and task 3.
+   > **Note**: You can perform this task only after finishing task 2 and task 3.
 
 1. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
     
@@ -433,7 +433,7 @@ In this task, you will be testing your application for security and perform samp
   
      ![config](/images1/webappfirewall.png)
  
-1. Under **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
+1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
     ![](/images1/switchtoprevention.png)
     
