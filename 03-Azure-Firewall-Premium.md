@@ -11,7 +11,7 @@ Azure Firewall Premium is a next generation firewall with capabilities that are 
 For more information, see https://learn.microsoft.com/en-us/azure/firewall/premium-features
  
  
-## Test the firewall
+## Test the Firewall
 
 In this exercise you will explore on Azure Firewall premium features. 
 
@@ -47,9 +47,9 @@ In this task you will enable diagnostic settings in Azure Firewall to collect fi
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
-In this task you will test IDPS for http and https traffic
-
 ### Task 2: Test IDPS for HTTP traffic
+
+In this task you will test IDPS for http traffic
 
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open  **Command Prompt (2)** window.
 
@@ -105,13 +105,8 @@ In this task you will test IDPS for http and https traffic
     ![](images/firewall14.png "search gateway")
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
-   <!---8. Now you can bypass the IDPS function using the **Bypass list**.
 
-   1. On the **IDPS (preview)** page, select the **Bypass list** tab.
-   2. Edit **MyRule** and set **Destination** to *10.0.20.10, which is the ServerVM private IP address.
-   3. Select **Save**.
-
-
-
-
+### Implement and Test URL filtering
+ 
+ 1. 
 
