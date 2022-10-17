@@ -106,7 +106,45 @@ In this task you will test IDPS for http traffic
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
-### Task 4: 
+### Task 4: Web categories testing
+ 
+In this task you will create an application rule to allow access to sports web sites.
+
+1. In the Azure portal, navigate to your **JumpVM-rg** ressource group and select **firewallpolicy**.
+ 
+   ![](images/firewall17.png "search gateway")
+ 
+2. Select **Application Rules (1)** from Settings tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+   
+   ![](images/firewall18.png "search gateway")
+ 
+3. Under **Add a rule collection** page, enter the below details:
+ 
+    - Name: **GeneralWeb (1)**
+    - Rule Collection type: **Application (2)**
+    - Priority: **103 (3)**
+    - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
+    - Under **Rules (5)** mention the below details:
+      - Name: **AllowSports**
+      - Source type: Select **IP Address** from the drop-down list
+      - Source: Enter *
+      - Protocol: Enter **http,https**
+      - TLS inspection : Check TLS inspection
+      - Destination Type: Select **Web categories**
+      - Destination: Enter `Sports`
+     
+     - Click on **Add (6)**
+ 
+      ![](images/firewall21.png "search gateway")
+ 
+ 4. Once the deployment completes open a browser on JumpVM, navigate to `https://www.nfl.com` and verify you are able to see the NFL web page.
+ 
+    ![](images/firewal22.png "search gateway")
+ 
+ 
+ 5. Now navigate to your log analytics workspace and in Application rule Monitoring logs review the **web Category: Sports rule** was matched and the request was allowed.
+ 
+  
 
 ### Task 5: Implement and Test URL filtering
  
