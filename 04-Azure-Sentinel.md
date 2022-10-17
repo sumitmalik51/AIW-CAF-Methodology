@@ -32,7 +32,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/correct1.png "Create")
 
-1. If there is no Log Analytic workspace pre-created then click on ** + Create a new workspace**, else continue from step 8.
+1. If there is no Log Analytic workspace pre-created then click on **+ Create a new workspace**, else continue from step 8.
 
      ![](images/loganalytics.png "log analytics")
      
@@ -71,7 +71,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
      ![](images/log7.png "news-sentinel")
      
-1. Now, click on **Workbooks (1)** from the left pane under Threat management, and search  **WAF (2)** and select **Microsoft Web Application Firewall      (WAF) - Azure WAF (3)** from the search results.
+1. Now, click on **Workbooks (1)** from the left pane under threat management, and search  **WAF (2)** and select **Microsoft Web Application Firewall      (WAF) - Azure WAF (3)** from the search results.
 
     ![](images/log8.png "news-sentinel")
 
@@ -92,7 +92,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/correct2.png "news-sentinel")
 
-1. You will see that the virtual machine is not connected to the Log Analytics Connection. Now, click on **VM Name** to connect with Log Analytics Connection
+1. You will see that the virtual machine is not connected to the Log Analytics Connection. Now, click on **JumpVM-<inject key="Deployment ID" />** to connect with Log Analytics Connection
 
     ![](images/correct3.png "news-sentinel")
       
@@ -112,7 +112,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
      ![](images/analytics1.png)
 
-1. On the  log analytics workspace page, select your **log analytics workspace (1)**,and under settings, click on **Agents management (2)** after that expand **Log Analytics agent                instructions (3)**, and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)**, then save it to notepad for later use.
+1. On the  log analytics workspace page, select **log-analytics (1)**,and under settings, click on **Agents management (2)** after that expand **Log Analytics agent                instructions (3)**, and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)**, then save it to notepad for later use.
 
      ![](images/analytics2.png)
 
@@ -152,7 +152,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
       ![](images/analytics11.png)
 
-1. On the **log analytics workspace** page, click on your **log analytics workspace (1)**, then click on **Agents management (2)** under settings and you will see **1 Windows        computers connected (3)**
+1. On the **log analytics workspace** page, click on **log-analytics (1)**, then click on **Agents management (2)** under settings and you will see **1 Windows        computers connected (3)**
    >**NOTE**: It will takes around 2-3 minutes, for the log analytics agent to connect with virtual machine, wait for it to complete before proceeding with the lab.
 
       ![](images/agents1.png)
@@ -181,7 +181,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
   
      ![](images/microsoft3.png "news-sentinel")
 
-1. Now under **Save as query** blade, enter **VMProcess (1)** as **Query name**, and then click on **Save (2)**.
+1. Now under **Save as query** blade, enter **VMProcess (1)** as Query name, and then click on **Save (2)**.
 
     ![](images/503.png "news-sentinel")
 
