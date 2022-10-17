@@ -338,9 +338,10 @@ In this task, you will create a storage account, this storage account will be us
      
 1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
     
-1. In the same way, you can explore more about **Malicious traffic**, and **Blocked traffic**.
+1. In the same way, you can explore more about **Malicious traffic**, and **Blocked traffic** 
 
-1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
+
+3. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
 
     ![ap](/images1/applicationports.png)
      
