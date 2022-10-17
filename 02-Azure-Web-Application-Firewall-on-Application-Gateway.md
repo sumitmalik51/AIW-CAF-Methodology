@@ -145,19 +145,15 @@ In this task, you will create a storage account, this storage account will be us
      
 1.  On the **Basics** tab of **Storage account** blade, enter the below details:
 
-     - Subscription : Select your **Subscription (1)**
+     - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
 
-     - Resource Group : Select **JumpVM-rg (2)**
+     -  Performace : Select **Standard (2)**
 
-     - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (3)**
-
-     -  Performace : Select **Standard (4)**
-
-     - Redundancy : Select **Geo-redundant storage (GRS) (5)**
+     - Redundancy : Select **Geo-redundant storage (GRS) (3)**
      
-     - Select **Review (6)**
+     - Select **Review (4)**
 
-       ![storage account](/images1/createstacc.png)
+       ![storage account](/images1/staccnew.png)
          
  1.  Review the configuration of the storage account and click on **Create**.
 
@@ -231,57 +227,21 @@ In this task, you will create a storage account, this storage account will be us
       - Under **Instance details**, follow the below steps:
 
 
-         -  Storage Accounts :Select **<inject key="Storageaccount Name" enableCopy="true"/> (1)**
+         -  Storage Accounts :Select **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
 
          - Retention(days) : Enter **7 (2)**
 
          - Select **Configuration (3)**
 
-           ![flow log](../media/instance%20details.png)
+           ![flow log](/images1/flowlog.png)
         
 1. Under the **Configuration** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
 
-     ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/config.png?raw=true)
+     ![create](/images1/reviewcreate.png)
         
 1. Review the configuration of the flow log and select **Create**.
 
-   ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/create3.png?raw=true)
-   
-1. Now navigate back to the Network Watcher, select **NSG flow logs(1)**  and click on **+Create (2)**.
-
-   ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm5.png?raw=true)
-   
-      
-1. On the **Basics** tab of **Create a flow log**, enter the following details:
-
-      - Under **Project details** click on **+ Select NSG**.
-
-         ![](../media/addnsgtoflow.png)
-         
-      - On **Select network security group** page, select **nsg-contoso-weballow-002 (1)** and click on **Confirm selection (2)**.
-
-        ![](../media/confirm%20selection2.png)
-
-      - Under **Instance details**, follow the below steps:
-
-
-         -  Storage Accounts :Select **<inject key="Storageaccount Name" enableCopy="true"/> (1)**
-
-         - Retention(days) : Enter **7 (2)**
-
-         - Select **Configuration (3)**
-
-           ![flow log](../media/instancedetails2.png)
-
-        
-        
-1. Under the **Configuration** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
-
-     ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/config.png?raw=true)
-        
-1. Review the configuration of the flow log and select **Create**.
-
-   ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/crett.png?raw=true)
+   ![create](/images1/createflo.png)
        
 1. You'll be able to see the created NSG flow logs for both virtual machines under **NSG Flow logs** of **Network watcher blade**
 
