@@ -261,11 +261,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/posture.png "secure score")
 
-1. Click on **Security Posture**.
-
-    ![](images/posture.png "security posture")
-
-1. Here you can get an overview of your **security secure, unhealthy resources, and recommendations**.
+1. Click on **Explore your security posture>**. here you can get an overview of your **security secure, unhealthy resources, and recommendations**.
 
     ![](images/securescore2.png "overview security posture")
     
@@ -298,7 +294,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     ![](images/secure6.png)
     
 1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources. 
-1. Under **Affected resources (1)**, **select a resource** (the single **Virtual machine (2)** on the Unhealthy resources) and click on **Fix (3)**. This will  automatically apply the remediation on the selected resource.
+1. Under **Affected resources (1)**, **select a resource** (the single Virtual machine **JumpVM-<inject key="Deployment ID" />(2)** on the Unhealthy resources) and click on **Fix (3)**. This will  automatically apply the remediation on the selected resource.
 
     ![](images/121.png)
     
@@ -328,7 +324,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/posture2.png)
 
-1. From the **Affected resources (1)** tab, select  **JumpVM-DID (2)** virtual machines. Click on **Fix (3)**.
+1. From the **Affected resources (1)** tab, select  **JumpVM-<inject key="Deployment ID" /> (2)** virtual machines. Click on **Fix (3)**.
 
     ![](images/123.png)
 
@@ -401,15 +397,15 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we      enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
-1. Use the **Filter by name (1)** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **JumpVM-DID**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
+1. Use the **Filter by name (1)** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **JumpVM-<inject key="Deployment ID" />**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
 
     ![](images/fix2.png)
 
-1. Open the resource health pane by selecting the resource. Click on **JumpVM-DID (1)**. Alternately. you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
+1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" /> (1)**. Alternately. you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
 
     ![](images/fix3.png)
 
-1. On the resource health pane for **JumpVM-ODL**, review the virtual machine information alongside the recommendation list.
+1. On the resource health pane for **JumpVM-<inject key="Deployment ID" />**, review the virtual machine information alongside the recommendation list.
 
     ![](images/fix4.png)
 
@@ -421,7 +417,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     > **Note:** The list can be filtered and sorted.
     
-1. On the **Inventory** page, Select the **virtual machine** and then from the top menu, click on **Assign tags**
+1. On the **Inventory** page, Select the virtual machine **JumpVM-<inject key="Deployment ID" />** and then from the top menu, click on **Assign tags**
 
     ![](images/126.png)
 
@@ -435,9 +431,9 @@ Azure Security Center by Microsoft is a solution that provides unified security 
     
 1. From the filter pane, select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **JumpVM-rg**        (Unselect remaining) and again click on **Ok**
 
-    ![](images/127.png)
-
 1. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the    resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
+
+    ![](images/127.png)
 
 1. Wait for a notification: ✅ **Your CSV report is ready**.
 
@@ -463,22 +459,22 @@ Azure Security Center by Microsoft is a solution that provides unified security 
     
 1. Select **Definitions (1)** from the left navigation pane.
 
-1. From the top menu, select **+ Initiative definition (2)** to add a new initiative
+1. From the top menu, select **+ Initiative definition (2)** to add a new initiative.
 
     ![](images/benchmark1.png)
  
 1. On the New Initiative definition page, select the following:
-    - Initiative location: Select your Subscription
-    - Name: **Contoso Security Benchmark**
-    - Description: Baseline for security policies to appear alongside the built-in recommendations
-    - Category: Select **Create new** and type: **Contoso**
-    - Version: **1**
-    - Click **Next**
+    - Initiative location: Select your Subscription.
+    - Name: **Contoso Security Benchmark**.
+    - Description: **Baseline for security policies to appear alongside the built-in recommendations**.
+    - Category: Select **Create new** and type: **Contoso**.
+    - Version: **1**.
+    - Click **Next**.
 
     ![](images/benchmark2.png)
 
 1. On the Policies tab, select **Add policy definition(s) (1)**.
-1. The Add policy definition(s) pane open Search **Storage accounts should restrict network access (2)** and select the **Storage accounts should restrict network        access (3)** and click on **Add (4)**. Select **Review + Create (5)**.
+1. The Add policy definition(s) pane open, search **Storage accounts should restrict network access (2)** and select the **Storage accounts should restrict network        access (3)** and click on **Add (4)**. Select **Review + Create (5)**.
 
     ![](images/benchmark3.png)
 
