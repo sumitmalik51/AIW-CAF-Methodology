@@ -306,19 +306,19 @@ In this task, you will create a storage account, this storage account will be us
      
 1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
-    ![env](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/ngs.png?raw=true)
+    ![env](/images1/environment1.png)
       
 1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating to it.
 
-    ![map](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/fgh1.png?raw=true)
+    ![map](/images1/viewmap.png)
      
 1. In the **Traffic Analytics Geo Map View** page, click on the **Green** icon which indicates the Azure region, and observe the resources deployed under the region, to explore more select **More details**.
 
-    ![md](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/more.png?raw=true)
+    ![md](/images1/moredetails.png)
       
 1. Under **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
 
-    ![comm](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/properties.png?raw=true)
+    ![comm](/images1/moreinsights.png)
      
 1. To close the **Traffic Analytics Geo Map View**, click on the cross at the top right corner.
 
@@ -328,7 +328,7 @@ In this task, you will create a storage account, this storage account will be us
       
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across host, subnet, VNet, and VMSS.
 
-    ![tr](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/dirtri.png?raw=true)
+    ![tr](/images1/totaltraffic.png)
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
