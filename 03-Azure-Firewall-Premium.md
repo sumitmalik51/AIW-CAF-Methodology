@@ -108,5 +108,26 @@ In this task you will test IDPS for http traffic
 
 ### Task 4: Implement and Test URL filtering
  
- 1. 
+ 1. In the Azure portal, navigate to your **JumpVM-rg** ressource group and select **firewallpolicy**.
+ 
+ 2. Select **Application Rules (1)** from Settings tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+ 
+ 3. Under **Add a rule collection** page, enter the below details:
+
+    - Name: **firewall-rulecolection (1)**
+    - Rule Collection type: **Application (2)**
+    - Priority: **100 (3)**
+    - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
+    - Under **Rules (5)** mention the below details:
+      - Name: **URLFiltering**
+      - Source type: Select **IP Address** from the drop-down list
+      - Source: Enter *
+      - Protocol: Enter **http,https**
+      - TLS inspection : Check TLS inspection
+      - Destination Type: Select **URL**
+      - Destination: Enter **www.nytimes.com/section/world**
+     
+     - Click on **Add (6)**
+ 
+    
 
