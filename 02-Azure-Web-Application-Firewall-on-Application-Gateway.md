@@ -61,9 +61,22 @@ Azure Application Gateway has a public IP, or front end, and your application us
 
     ![](images1/associateappgateway.png)
     
-1. Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation of the successful deployment. Select **Go to resource (2)**. This action will redirect you to the page.
+    
+1. Back on, under **Associated Application gateway** page, click on **+ Add association (1)** and select **HTTP Listener (2)**
 
-    ![](images1/gotoresource.png)
+    ![](images/image310.png)
+ 
+1. Under, **Associate listeners in an application gateway** page, enter below instructions:
+
+    - **Application Gateway (WAF v2 SKU)** : Select **Aplication Gateway (1)** from drop-down .
+    - **Listeners** : Select **AGListener (2)**.
+    - Click on **Add (3)**
+
+     ![](images/image311.png)
+          
+1.  Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation of the successful deployment.
+
+     ![](images/image312.png)
     
  ## Task 2: Publish your application to the internet with the application gateway
  
@@ -172,6 +185,14 @@ In this task, you will be testing your application for security and perform samp
  
       ![](/images/image307.png)
  
+ 1. Click on **windows (1)** menu then type **cmd (2)** after then right click on **Command Prompt (3)** and then select **Run as adminstrator (4)**.
+ 
+      ![](/images/image313.png)
+ 
+ 1. On the Command Prompt, type **ipconfig (1)** and then copy the **IPv4 Address (2)** and save it to notepad for later use.
+ 
+      ![](/images/image314.png)
+ 
  1. In azure portal, search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
       ![](images/image302.png "select gateway")
@@ -184,7 +205,7 @@ In this task, you will be testing your application for security and perform samp
  
     - Custom rule name : **WAFcustomrule (1)**.
     - Priority : enter **1**.
-    - IP address of JumpVM : **_______(3)**.
+    - IP address or range : Enter **IPv4 Address** that are copied above in step 5
     - Click on **Add (4)**.
  
       ![](images/image304.png "select gateway")
@@ -195,17 +216,18 @@ In this task, you will be testing your application for security and perform samp
 
   1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
-       ![](images/image306.png "select gateway")
+      ![](images/image306.png "select gateway")
  
- 1.  Now, navigate back to the tab where you browsed the IP Address of Frontend public IP address of application gateway earlier and **refresh** the page. You can          observe the **403 Forbidden error**
+ 1.  Now, navigate back to the tab where you browsed the IPv4 Address of Frontend public IP address of application gateway earlier and **refresh** the page. You can          observe the **403 Forbidden error**
  
-     > **Note** : you will see that your website is blocked.
+     > **Note** : you will see that your website is Running.
+
  
+      ![ss](/images/image307.png)
  
+ 1. Now, you can paste the Frontend public IP address of **Application Gateway** in your **Local computer / Personal computer**.You can  observe the **403 Forbidden       error**
  
- 1. Now, you can paste the Frontend public IP address of **Application Gateway** in your **Local computer / Personal computer**.
- 
-      > **Note** : you will see that your website is running.
+      > **Note** : you will see that your website is Blocked.
  
      ![ss](/images/image307.png)
 
