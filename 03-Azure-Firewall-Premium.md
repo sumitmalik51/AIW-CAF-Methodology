@@ -15,7 +15,7 @@ For more information, see https://learn.microsoft.com/en-us/azure/firewall/premi
 
 In this exercise you will explore on Azure Firewall premium features. 
 
-### Add firewall diagnostics settings 
+### Task 1: Add firewall diagnostics settings 
 
 In this task you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -49,7 +49,7 @@ Azure Firewall Premium provides signature-based IDPS to allow rapid detection of
 
 In this task you will test IDPS for http and https traffic
 
-### Test IDPS for HTTP traffic
+### Task 2: Test IDPS for HTTP traffic
 
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open  **Command Prompt (2)** window.
 
