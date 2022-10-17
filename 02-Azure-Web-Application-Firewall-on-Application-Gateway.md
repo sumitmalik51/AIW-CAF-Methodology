@@ -246,7 +246,7 @@ In this task, you will create a storage account, this storage account will be us
 
  In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
-1. Navigate back to the Azure **Home** page, from the search bar search for **Application Gateway (1)** and then select **Application Gateway (2)**.
+1. Navigate back to the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
      ![](images/searchgateway.png "search gateway")
  
