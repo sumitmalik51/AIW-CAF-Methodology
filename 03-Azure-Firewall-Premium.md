@@ -106,7 +106,7 @@ In this task you will test IDPS for http traffic
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
 
-### Implement and Test URL filtering
+### Task 4: Implement and Test URL filtering
  
  1. 
 
