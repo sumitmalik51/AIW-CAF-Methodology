@@ -110,7 +110,11 @@ In this task you will test IDPS for http traffic
  
  1. In the Azure portal, navigate to your **JumpVM-rg** ressource group and select **firewallpolicy**.
  
+    ![](images/firewall17.png "search gateway")
+ 
  2. Select **Application Rules (1)** from Settings tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+ 
+    ![](images/firewall18.png "search gateway")
  
  3. Under **Add a rule collection** page, enter the below details:
 
@@ -128,6 +132,8 @@ In this task you will test IDPS for http traffic
       - Destination: Enter `www.nytimes.com/section/world`
      
      - Click on **Add (6)**
+ 
+     ![](images/firewal19.png "search gateway")
  
     
 
