@@ -290,19 +290,19 @@ In this task, you will create a storage account, this storage account will be us
 
    ![netwat](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/traffic.png?raw=true)
       
-1. On the **Traffic Analytics** page, set the time interval to **Last 1 hour**.
+1. On the **Traffic Analytics** page, set the time interval to **Last 30 minutes**.
 
-   ![time interval](../media/lastonehour.png)
+   ![time interval](/images1/timeinterval.png)
    
    > **Note** : If you observe the **Time interval** is greyed-out, click on **Meanwhile, click here to see just resource data** and perform the above step.
 
-      ![](../media/timeinterval.png)
+      ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
       
 1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**
 
     > **Note**: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and can come back later and check on this
       
-      ![traffic visualization](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/flows.png?raw=true)
+      ![traffic visualization](/images1/traffic%20visualisation.png)
      
 1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
