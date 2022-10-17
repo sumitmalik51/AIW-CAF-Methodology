@@ -439,3 +439,13 @@ In this task, you will be testing your application for security and performing s
  
      ![ss](/images/image308.png)
 
+     
+## Summary
+ 
+In this exercise you have covered the following:
+  
+   - Configured WAF to Protect your web application 
+   - Published an application to the internet with the application gateway 
+   - Monitored attacks against your web application 
+   - Customized WAF rules
+   - Performed Attack simulation
