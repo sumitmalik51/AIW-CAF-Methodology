@@ -139,8 +139,7 @@ In this task you will create an application rule to allow access to sports web s
  
  4. Once the deployment completes open a browser on JumpVM, navigate to `https://www.nfl.com` and verify you are able to see the NFL web page.
  
-    ![](images/firewal22.png "search gateway")
- 
+    ![](images/firewall22.png "search gateway")
  
  5. Now navigate to your log analytics workspace and in Application rule Monitoring logs review the **web Category: Sports rule** was matched and the request was allowed.
  
