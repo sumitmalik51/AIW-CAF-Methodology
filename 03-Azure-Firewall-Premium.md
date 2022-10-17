@@ -114,7 +114,7 @@ In this task you will test IDPS for http traffic
  
  3. Under **Add a rule collection** page, enter the below details:
 
-    - Name: **firewall-rulecolection (1)**
+    - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **100 (3)**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
