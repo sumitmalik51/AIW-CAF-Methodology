@@ -191,11 +191,11 @@ In this task, you will create a storage account, this storage account will be us
 
        - Select **Review + Create (5)**
 
-       ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createlog.png?raw=true)
+       ![create](/images1/loganaly.png)
        
  1. Review the configuration of analytics workspace and select **Create**
 
-    ![createLAW](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createloga1.png?raw=true)
+    ![createLAW](/images1/loganaly1.png)
        
  ### Task 3.3: Create NSG flow logs.
  
