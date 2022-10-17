@@ -14,7 +14,7 @@ For more information, see https://learn.microsoft.com/en-us/azure/firewall/premi
 
 In this exercise you will explore on Azure Firewall premium features. 
 
-### Task 1: Add firewall diagnostics settings 
+# Task 1: Add firewall diagnostics settings 
 
 In this task you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -30,7 +30,7 @@ In this task you will enable diagnostic settings in Azure Firewall to collect fi
 
    ![](images/firewall4.png "search gateway")
 
-4. Now for **Diagnostic setting name** enter **fw-diagnostics**.
+4. Enter **Diagnostic setting name** as **fw-diagnostics**.
 
    ![](images/firewall3.png "search gateway")
 
@@ -42,11 +42,11 @@ In this task you will enable diagnostic settings in Azure Firewall to collect fi
 
    ![](images/firewall6.png "search gateway")
    
-### IDPS Tests
+## IDPS Tests
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
-### Task 2: Test IDPS for HTTP traffic
+# Task 2: Test IDPS for HTTP traffic
 
 In this task you will test IDPS for http traffic
 
@@ -105,7 +105,7 @@ In this task you will test IDPS for http traffic
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
-### Task 4: Web categories testing
+# Task 4: Web categories testing
  
 In this task you will create an application rule to allow access to sports web sites.
 
@@ -144,7 +144,7 @@ In this task you will create an application rule to allow access to sports web s
  
   
 
-### Task 5: Implement and Test URL filtering
+# Task 5: Implement and Test URL filtering
  
  1. In the Azure portal, navigate to your **JumpVM-rg** ressource group and select **firewallpolicy**.
  
@@ -180,7 +180,7 @@ In this task you will create an application rule to allow access to sports web s
  5. In the Azure portal, navigate to your log analytics workspace and in Application rule Monitoring logs review the entire URL.
  
  
- ### Task 6: DDOS protection
+ # Task 6: DDOS protection
 
  
     
