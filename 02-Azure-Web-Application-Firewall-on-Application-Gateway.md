@@ -147,17 +147,21 @@ In this task, you will create a storage account, this storage account will be us
 
      - Subscription : Select your **Subscription (1)**
 
-     - Resource Group : Select **<inject key="Resource Group" enableCopy="false"/> (2)**
+     - Resource Group : Select **JumpVM-rg (2)**
 
-     - Storage account name : Enter **<inject key="Storageaccount Name" enableCopy="true"/> (3)**
+     - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (3)**
 
-     - Select **Review + create (4)**
+     -  Performace : Select **Standard (4)**
 
-       ![storage account](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/storageaccount.png?raw=true)
+     - Redundancy : Select **Geo-redundant storage (GRS) (5)**
+     
+     - Select **Review (4)**
+
+       ![storage account](/images1/createstacc.png)
          
  1.  Review the configuration of the storage account and click on **Create**.
 
-      ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/createst.png?raw=true)
+      ![create](/images1/create.png)
       
  ### Task 3.2: Create Log Analytics Workspace
  
