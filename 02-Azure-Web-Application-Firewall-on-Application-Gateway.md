@@ -17,7 +17,7 @@ Azure Application Gateway has a public IP or front end, and your application use
  
  ## Task 1: Configure WAF to Protect your web application
  
- 1. From the Azure **Home** page, search for **Application gateways (1)** from search bar and select **Application gateways (2)**.
+ 1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
       ![](images/searchgateway.png "search gateway")
     
@@ -45,7 +45,7 @@ Azure Application Gateway has a public IP or front end, and your application use
 
       ![](images1/firewallpolicies.png)
  
- 1. Click on **firewallpolicy** under Web Application Firewall page and click on **Associated application gateways** under **Settings** tab from the Application Gateway WAF policy page.
+ 1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
 
      ![](/images1/firewallpolicy.png)
      
@@ -56,13 +56,13 @@ Azure Application Gateway has a public IP or front end, and your application use
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
     - **Application Gateway (WAF v2 SKU)** : Select **Aplication Gateway (1)** from drop-down 
-    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuation (2)**
+    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**
     - Click on **Add (3)**
 
     ![](images1/associateappgateway.png)
     
     
-1. Navigate abck to the **Associated Application gateway** page, click on **+ Add association (1)** and select **HTTP Listener (2)**
+1. Navigate back to the **Associated Application gateway** page, click on **+ Add association (1)**, and select **HTTP Listener (2)**
 
     ![](images/image310.png)
  
@@ -90,7 +90,7 @@ In this task, you'll publish an application via Application Gateway.
 
    ![firewall](/images1/azurefirewall.png)
      
-1. Select **Firewall Manager (1)** from **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+1. Select **Firewall Manager (1)** from the **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
    ![FM](/images1/firewallmanager.png)
     
@@ -164,7 +164,7 @@ In this task, you will create a storage account, this storage account will be us
  
  In this task, you will create Log Analytics Workspace. This Log Analytics workspace will be used by Traffic Analytics to store the aggregated and indexed data that is then used to generate the analytics.
       
- 1. From the **Home** page of Azure Portal, type **Log Analytics Workspaces (1)** on the search box and then select **Log Analytics Workspaces (2)** . 
+ 1. From the **Home** page of Azure Portal, type **Log Analytics Workspaces (1)** on the search box and then select **Log Analytics Workspaces (2)**. 
 
     ![LAW](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/LAW.png?raw=true)
     
@@ -403,7 +403,7 @@ In this task, you will create a storage account, this storage account will be us
  ## Task 5: Attack simulation 
 
       
-In this task, you will be testing your application for security and perform sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
+In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
    > **Note**: You can perform this task only after finishing task 2 and task 3.
 
@@ -435,7 +435,7 @@ In this task, you will be testing your application for security and perform samp
     
     ![server error](/images1/403.png)
  
- 1. Navigate back to the **firewallpolicy** page, from **Overview (1)** tab click on **Switch to detection mode (2)**.
+ 1. Navigate back to the **firewallpolicy** page, from the **Overview (1)** tab click on **Switch to detection mode (2)**.
  
      ![ss](/images/image308.png)
 
