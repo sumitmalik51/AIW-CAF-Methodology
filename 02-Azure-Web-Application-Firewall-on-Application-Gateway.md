@@ -197,7 +197,7 @@ In this task, you will create a storage account, this storage account will be us
 
      ![](../images1/gotoresource2.png)
        
- ### Task 3.3: Create NSG flow logs.
+### Task 3.3: Create NSG flow logs.
  
  In this task, you will create NSG flow logs in the Network Watcher.
 
@@ -264,6 +264,96 @@ In this task, you will create a storage account, this storage account will be us
 1. Click on **Download**. You can use this file to process, analyze, and visualize Flow Logs using tools like Traffic Analytics, Splunk, Grafana, Stealthwatch, etc.
 
     ![downlaod](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/download1.png?raw=true)
+    
+    
+### Task 3.4: Run Sample traffic and perform traffic analytics, review logs
+
+ In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
+
+1. Navigate to the resource group **<inject key="Resource Group" enableCopy="false"/>**, from **Overview (1)** tab select the Firewall.
+
+   ![loadbalancer](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/afwf.png?raw=true)
+   
+1. Select **Firewall Public IP** from the Overview tab.
+
+    ![pip](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/fip.png?raw=true)
+    
+1. Copy the Public Ip and save it in text editor.
+
+    ![ip](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/copyip.png?raw=true)
+      
+1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
+
+   ![pip](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/CIVMeastus002.png?raw=true)
+
+1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
+
+   ![netwat](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/traffic.png?raw=true)
+      
+1. On the **Traffic Analytics** page, set the time interval to **Last 1 hour**.
+
+   ![time interval](../media/lastonehour.png)
+   
+   > **Note** : If you observe the **Time interval** is greyed-out, click on **Meanwhile, click here to see just resource data** and perform the above step.
+
+      ![](../media/timeinterval.png)
+      
+1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**
+
+    > **Note**: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and can come back later and check on this
+      
+      ![traffic visualization](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/flows.png?raw=true)
+     
+1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
+
+    ![env](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/ngs.png?raw=true)
+      
+1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating to it.
+
+    ![map](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/fgh1.png?raw=true)
+     
+1. In the **Traffic Analytics Geo Map View** page, click on the **Green** icon which indicates the Azure region, and observe the resources deployed under the region, to explore more select **More details**.
+
+    ![md](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/more.png?raw=true)
+      
+1. Under **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
+
+    ![comm](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/properties.png?raw=true)
+     
+1. To close the **Traffic Analytics Geo Map View**, click on the cross at the top right corner.
+
+     ![close](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/close.png?raw=true)
+      
+1. Close the **Ports receiving traffic from Internet** page by clicking the **Cross (X) icon** from the top right corner.
+      
+1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across host, subnet, VNet, and VMSS.
+
+    ![tr](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/dirtri.png?raw=true)
+     
+1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
+
+    ![td](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/seeall1.png?raw=true)
+    
+1. You can observe the graph of **Time trending chart for top 5 talking IPs** from **Traffic distribution across top IPs** page.
+
+    ![see more](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm1.png?raw=true)
+    
+1. Under **Details of top 5 talking IPs**, select VM IP to explore more about traffic distribution.
+
+     ![see more](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm2.png?raw=true)
+     
+1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
+    
+1. In the same way, you can explore more about **Subnets**, **VNet**, **VMSS**.
+
+1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
+
+    ![ap](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm3.png?raw=true)
+     
+1. From the **Most frequent L7 protocols** page, you can explore more about the ports and it's ranging.
+
+    ![l7](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/plm4.png?raw=true)
+     
      
 ## Task 4: Customize WAF rules
  
