@@ -40,7 +40,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
    - Subscription: **Leave it as default (1)**
    - Resource Group: **JumpVM-rg (2)**.
    - Name: Enter **log-analytics (3)**.
-   - Region: Select **East US (4)** from the drop-down list
+   - Region: **<inject key="Region" />**
    - Click on **Tags (5)** to continue.
 
      ![](images/log1.png "create log analytics")
