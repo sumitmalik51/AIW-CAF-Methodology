@@ -155,7 +155,7 @@ In this task, you will create a storage account, this storage account will be us
 
      - Redundancy : Select **Geo-redundant storage (GRS) (5)**
      
-     - Select **Review (4)**
+     - Select **Review (6)**
 
        ![storage account](/images1/createstacc.png)
          
@@ -183,7 +183,7 @@ In this task, you will create a storage account, this storage account will be us
        
        - Subscription : Select your **Subscription (1)**
 
-       - Resource Group : **<inject key="Resource Group" enableCopy="false"/> (2)**
+       - Resource Group : **JumpVM-rg (2)**
 
        - Name : **log-contoso-diagnosticworkspace (3)**
 
