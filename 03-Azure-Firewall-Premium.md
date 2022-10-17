@@ -51,7 +51,7 @@ In this task you will test IDPS for http and https traffic
 
 ### Test IDPS for HTTP traffic
 
-1. On the JumpVM virtual machine, search for command prompt and open administrator command prompt window.
+1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open  **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
 
@@ -82,11 +82,11 @@ In this task you will test IDPS for http and https traffic
  
    ![](images/firewall10.png "search gateway")
  
-6. On the **IDPS** page select **Signature rules** tab and under **Signature ID**, in the open text box type *2032081*.
+6. On the **IDPS** page select **Signature rules (1)** tab and under **Signature ID**, in the open text box type *2032081 (2)*.
  
    ![](images/firewall11.png "search gateway")
  
-7. Select *2032081* signature id  and click on **Edit Rules**.
+7. Select *2032081 (1)* signature id  and click on **Edit Rules (2)**.
  
    ![](images/firewall12png "search gateway")
  
