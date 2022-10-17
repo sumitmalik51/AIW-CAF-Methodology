@@ -81,11 +81,11 @@ In this task you will test IDPS for http traffic
  
    ![](images/firewall10.png "search gateway")
  
-6. On the **IDPS** page select **Signature rules (1)** tab and under **Signature ID**, in the open text box type *2032081 (2)*.
+6. On the **IDPS** page select **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
    ![](images/firewall11.png "search gateway")
  
-7. Select *2032081 (1)* signature id  and click on **Edit Rules (2)**.
+7. Select **2032081 (1)** signature id  and click on **Edit Rules (2)**.
  
    ![](images/firewall12.png "search gateway")
  
