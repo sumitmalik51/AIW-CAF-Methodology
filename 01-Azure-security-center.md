@@ -64,14 +64,14 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
  
      >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
 
-     ![](images/.jpg)
+    ![](images/image315.png)
      
 1. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
      > ❗ Important: <br>
      > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
 
-    ![](images/.jpg)
+    ![](images/image317.png)
     
 1. On the Microsoft Defender for Cloud. Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
 
