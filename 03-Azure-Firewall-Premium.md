@@ -210,7 +210,7 @@ Azure DDoS Protection, combined with application design best practices, provides
    - Resource Group: **JumpVM-rg (2)**.
    - Name: Enter **DDoSprotection (3)**.
    - Region: **<inject key="Region" />**.
-   - Click on **Next-Tags **.
+   - Click on **Next-Tags**.
  
      ![](images/ddos3.png)
  
