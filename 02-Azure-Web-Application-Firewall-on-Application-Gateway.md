@@ -245,15 +245,15 @@ In this task, you will create a storage account, this storage account will be us
        
 1. You'll be able to see the created NSG flow logs for both virtual machines under **NSG Flow logs** of **Network watcher blade**
 
-    ![nsg](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/creatednsg1.png?raw=true)
+    ![nsg](/images1/nsgflow.png)
     
 1. Now click on storage account from NSG flow logs blade.
 
-    ![st](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/selectst.png?raw=true)
+    ![st](/images1/staccflow.png)
     
 1. Click on **Containers (1)** and select **insights-logs-networksecuritygroupflowevent (2)**.
 
-    ![container](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/containers.png?raw=true)
+    ![container](/images1/insights.png)
  
 1. In the container, navigate to the folder hierarchy until you get to a PT1H.json file and select it.
 
