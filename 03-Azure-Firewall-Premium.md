@@ -53,7 +53,7 @@ In this task you will test IDPS for http and https traffic
 
 1. On the JumpVM virtual machine, search for command prompt and open administrator command prompt window.
 
-   ![](images/firewall6.png "search gateway")
+   ![](images/firewall9.png "search gateway")
 
 2. Type the following command at the command prompt:
 
@@ -61,11 +61,11 @@ In this task you will test IDPS for http and https traffic
 
      `curl -A "HaxerMen" <your web server address>`
  
-    ![](images/firewall6.png "search gateway")
+    ![](images/firewall7.png "search gateway")
  
  3. In the custom prompt you will see your Web server response.
  
-    ![](images/firewall6.png "search gateway")
+    ![](images/firewall8.png "search gateway")
  
  4. Navigate to the Firewall Network rule logs on the Azure portal to find an alert similar to the following message:
 
@@ -78,18 +78,18 @@ In this task you will test IDPS for http and https traffic
     > [!NOTE]
     > It can take some time for the data to begin showing in the logs. Give it at least a couple minutes to allow for the logs to begin showing the data.
  
-5. Add a signature rule for signature 2032081:
+5. Now navigate back to firewallpolicy and under **Settings** select **IDPS**.
+ 
+6. On the **IDPS** page select **Signature rules** tab.
+ 
+7. Add a signature rule for signature 2032081:
 
-   1. Select the **DemoFirewallPolicy** and under **Settings** select **IDPS**.
-   1. Select the **Signature rules** tab.
    1. Under **Signature ID**, in the open text box type *2032081*.
    1. Under **Mode**, select **Deny**.
    1. Select **Save**.
    1. Wait for the deployment to complete before proceeding.
 
-
-
-6. On WorkerVM, run the `curl` command again:
+6. Navigate back to WorkerVM, and run the `curl` command again:
 
    `curl -A "HaxerMen" <your web server address>`
 
