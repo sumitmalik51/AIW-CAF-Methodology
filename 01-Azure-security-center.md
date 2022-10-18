@@ -85,7 +85,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/plans1.png "enabled all")
     
-1. Back on **Microsoft Defender for Cloud** page under General Click on **Inventory**.
+1. Navigate back **Microsoft Defender for Cloud** page under General Click on **Inventory**.
 
     ![](images/118.png "inventory")
     
