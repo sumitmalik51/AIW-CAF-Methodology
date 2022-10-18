@@ -8,14 +8,14 @@ In this lab, you will complete the following exercise:
 4. Customize WAF rules
 5. Attack simulation
 
-### What is Azure Web Application Firewall?
+## What is Azure Web Application Firewall?
 Microsoft Azure also has a WAF service that provides centralized protection of your web applications from common exploits and vulnerabilities. The Azure Web Application Firewall is one of the features of Azure Application Gateway (layer 7 load balancer) and its main goal is to protect a web application from common attacks like SQL injections, cross-site scripting, and others. Also, it is following the Open Web Application Security Project (OWASP) Core Rule Set. Azure WAF service offers you to select some or all of the rules from the OWASP Core Rule Set.
 
 Azure Application Gateway has a public IP or front end, and your application users will use this IP address to connect to your application gateway. Application Gateway is going to take the incoming traffic and, based on a few rules, redirect the traffic to the appropriate back end in the backend pool. You can have app services, virtual machines, virtual machine scale sets, or even other IP addresses in the backend pools.
 
  ![](/images1/applicationgateway.png "application gateway")
  
- ## Task 1: Configure WAF to Protect your web application
+ # Task 1: Configure WAF to Protect your web application
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
@@ -41,7 +41,7 @@ Azure Application Gateway has a public IP or front end, and your application use
 
      ![](/images/image309.png)
 
- 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies** **(2)**.
+ 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
 
       ![](images1/firewallpolicies.png)
  
@@ -78,7 +78,7 @@ Azure Application Gateway has a public IP or front end, and your application use
 
      ![](images/image312.png)
     
- ## Task 2: Publish your application to the internet with the application gateway
+ # Task 2: Publish your application to the internet with the application gateway
  
 In this task, you'll publish an application via Application Gateway.
 
@@ -129,9 +129,9 @@ In this task, you'll publish an application via Application Gateway.
        
   > **Note**: This will confirm that you have published the Contoso web application via Application Gateway.
   
-## Task 3: Monitor attacks against your web application 
+# Task 3: Monitor attacks against your web application 
 
-### Task 3.1: Create Storage Account
+## Task 3.1: Create Storage Account
 
 In this task, you will create a storage account, this storage account will be used to store the NSG flow logs
      
@@ -147,7 +147,9 @@ In this task, you will create a storage account, this storage account will be us
 
      - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
 
-     -  Performance: Select **Standard (2)**
+     - Region : Enter **<inject key="Region" /> (2)**
+
+     -  Performance: Select **Standard**
 
      - Redundancy : Select **Geo-redundant storage (GRS) (3)**
      
@@ -160,7 +162,7 @@ In this task, you will create a storage account, this storage account will be us
       ![create](/images1/create.png)
       
       
- ### Task 3.2: Create Log Analytics Workspace
+ ## Task 3.2: Create Log Analytics Workspace
  
  In this task, you will create Log Analytics Workspace. This Log Analytics workspace will be used by Traffic Analytics to store the aggregated and indexed data that is then used to generate the analytics.
       
@@ -180,7 +182,7 @@ In this task, you will create a storage account, this storage account will be us
 
        - Name : **log-contoso-diagnosticworkspace (3)**
 
-       - Region : **East US (4)**
+       - Region : Enter **<inject key="Region" /> (4)**
 
        - Select **Review + Create (5)**
 
@@ -191,7 +193,7 @@ In this task, you will create a storage account, this storage account will be us
     ![createLAW](/images1/loganaly1.png)
     
        
-### Task 3.3: Create NSG flow logs.
+## Task 3.3: Create NSG flow logs.
  
  In this task, you will create NSG flow logs in the Network Watcher.
 
@@ -220,8 +222,7 @@ In this task, you will create a storage account, this storage account will be us
         
       - Under **Instance details**, follow the below steps:
 
-
-         -  Storage Accounts :Select **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
+         - Storage Accounts :Select **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
 
          - Retention(days) : Enter **7 (2)**
 
@@ -242,7 +243,7 @@ In this task, you will create a storage account, this storage account will be us
     ![nsg](/images1/nsgflow.png)
     
     
-### Task 3.4: Run Sample traffic and perform traffic analytics, review logs
+## Task 3.4: Run Sample traffic and perform traffic analytics, review logs
 
  In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
@@ -350,7 +351,7 @@ In this task, you will create a storage account, this storage account will be us
     ![l7](/images1/l7proto.png)
      
      
-## Task 4: Customize WAF rules
+# Task 4: Customize WAF rules
  
  1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
  
@@ -398,19 +399,13 @@ In this task, you will create a storage account, this storage account will be us
  
      ![ss](/images1/site.png)
 
-
-
-
- ## Task 5: Attack simulation 
-
-      
+ # Task 5: Attack simulation 
+     
 In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
    > **Note**: You can perform this task only after finishing task 2 and task 3.
 
 1. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
-    
-    
     
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it. You can observe the web application can be still accessible.
   
