@@ -12,11 +12,11 @@ For more information, see https://learn.microsoft.com/en-us/azure/firewall/premi
  
 ## Test the Firewall
 
-In this exercise you will explore on Azure Firewall premium features. 
+In this exercise, you will explore on Azure Firewall premium features. 
 
 # Task 1: Add firewall diagnostics settings 
 
-In this task you will enable diagnostic settings in Azure Firewall to collect firewall logs.
+In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
 
@@ -48,7 +48,7 @@ Azure Firewall Premium provides signature-based IDPS to allow rapid detection of
 
 # Task 2: Test IDPS for HTTP traffic
 
-In this task you will test IDPS for http traffic
+In this task, you will test IDPS for HTTP traffic
 
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open  **Command Prompt (2)** window.
 
@@ -70,14 +70,14 @@ In this task you will test IDPS for http traffic
 
     ```
     { “msg” : “TCP request from 10.0.100.5:16036 to 10.0.20.10:80. Action: Alert. Rule: 2032081. IDS: 
-    USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Tojan was 
+    USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Trojan was 
     detected”}
     ```
 
     > [!NOTE]
-    > It can take some time for the data to begin showing in the logs. Give it at least a couple minutes to allow for the logs to begin showing the data.
+    > It can take some time for the data to begin showing in the logs. Give it at least a couple of minutes to allow for the logs to begin showing the data.
  
-5. Now navigate back to firewallpolicy and under **Settings** select **IDPS**.
+5. Now navigate back to firewall policy and under **Settings** select **IDPS**.
  
    ![](images/firewall10.png "search gateway")
  
@@ -85,7 +85,7 @@ In this task you will test IDPS for http traffic
  
    ![](images/firewall11.png "search gateway")
  
-7. Select **2032081 (1)** signature id  and click on **Edit Rules (2)**.
+7. Select **2032081 (1)** signature id and click on **Edit Rules (2)**.
  
    ![](images/firewall12.png "search gateway")
  
@@ -107,17 +107,17 @@ In this task you will test IDPS for http traffic
  
 # Task 4: Web categories testing
  
-In this task you will create an application rule to allow access to sports web sites.
+In this task, you will create an application rule to allow access to sports websites.
 
-1. In the Azure portal, navigate to your **JumpVM-rg** ressource group and select **firewallpolicy**.
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **firewallpolicy**.
  
    ![](images/firewall17.png "search gateway")
  
-2. Select **Application Rules (1)** from Settings tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+2. Select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
    
    ![](images/firewall18.png "search gateway")
  
-3. Under **Add a rule collection** page, enter the below details:
+3. Under the **Add a rule collection** page, enter the below details:
  
     - Name: **GeneralWeb (1)**
     - Rule Collection type: **Application (2)**
@@ -128,7 +128,7 @@ In this task you will create an application rule to allow access to sports web s
       - Source type: Select **IP Address** from the drop-down list
       - Source: Enter *
       - Protocol: Enter **http,https**
-      - TLS inspection : Check TLS inspection
+      - TLS inspection: Check TLS inspection
       - Destination Type: Select **Web categories**
       - Destination: Enter `Sports`
      
@@ -140,17 +140,17 @@ In this task you will create an application rule to allow access to sports web s
  
     ![](images/firewall22.png "search gateway")
  
- 5. Now navigate to your log analytics workspace and in Application rule Monitoring logs review the **web Category: Sports rule** was matched and the request was allowed.
+ 5. Now navigate to your log analytics workspace and in the Application rule Monitoring logs review the **web Category: Sports rule** was matched and the request was allowed.
  
   
 
 # Task 5: Implement and Test URL filtering
  
- 1. In the Azure portal, navigate to your **JumpVM-rg** ressource group and select **firewallpolicy**.
+ 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **firewallpolicy**.
  
     ![](images/firewall17.png "search gateway")
  
- 2. Select **Application Rules (1)** from Settings tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+ 2. Select **Application Rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
  
     ![](images/firewall18.png "search gateway")
  
@@ -177,7 +177,7 @@ In this task you will create an application rule to allow access to sports web s
 
     ![](images/firewall20.png "search gateway")
  
- 5. In the Azure portal, navigate to your log analytics workspace and in Application rule Monitoring logs review the entire URL.
+ 5. In the Azure portal, navigate to your log analytics workspace and in Application rule monitoring logs review the entire URL.
  
  
  # Task 6: DDOS protection
