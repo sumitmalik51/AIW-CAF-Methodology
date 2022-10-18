@@ -1,4 +1,4 @@
-# Exercise 01: Azure Security Center/ Microsoft Defender for Cloud
+# Exercise 1: Azure Security Center/ Microsoft Defender for Cloud
 ## Lab objectives
 In this lab, you will complete the following exercise:
 1. Exploring Microsoft Defender for Cloud 
