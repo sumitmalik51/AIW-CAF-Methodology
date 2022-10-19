@@ -1,13 +1,5 @@
-# Exercise 3: Azure Firewall Premium## Lab objectives
-In this lab, you will complete the following exercise:
+# Exercise 3: Azure Firewall Premium
 
-1. Add firewall diagnostics settings
-2.	IDPS tests
-3.	Web categories testing
-4.	Implement and test URL filtering
-5.	DDoS protection 
-
-## What is Azure Firewall?
 Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
 Azure Firewall Premium is a next generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
@@ -74,13 +66,13 @@ In this task, you will test IDPS for HTTP traffic
  
     ![](images/firewall8.png "search gateway")
  
- 4. Navigate to the Firewall Network rule logs on the Azure portal to find an alert similar to the following message:
-
-    ```
-    { “msg” : “TCP request from 10.0.100.5:16036 to 10.0.20.10:80. Action: Alert. Rule: 2032081. IDS: 
-    USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Trojan was 
-    detected”}
-    ```
+ 1. Navigate to your **JumpVM-rg** resource group and select **AzureFirewall**.
+ 
+     ![](images1/firewall.png)
+ 
+ 1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Network rule log data** tab.
+ 
+     ![](images1/networkrulelogdata.pngg)
 
     > [!NOTE]
     > It can take some time for the data to begin showing in the logs. Give it at least a couple of minutes to allow for the logs to begin showing the data.
@@ -113,7 +105,7 @@ In this task, you will test IDPS for HTTP traffic
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
-# Task 3: Web categories testing
+## Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
  
@@ -200,7 +192,9 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images1/run.png)
  
-# Task 4: Implement and Test URL filtering
+
+
+## Task 4: Implement and Test URL filtering
  
  1. Navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
  
@@ -261,7 +255,7 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
  
  
- # Task 5: DDOS protection (Read only Task)
+ # Task 5: DDOS protection
  
  ## What is DDoS protection?
 
@@ -332,15 +326,5 @@ Azure DDoS Protection, combined with application design best practices, provides
 1. Under setting click on **Virtual Network**, and you will see that you are protected.
  
       ![](images/ddos12.png)
- 
- 
- ## Summary
- 
-In this exercise you have covered the following:
-   - Added firewall diagnostics settings
-   - Tested IDPS for HTTP traffic
-   - Tested Web categories
-   - Implemented and Tested URL filtering
-   - Explored DDOS protection
     
 
