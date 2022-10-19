@@ -7,6 +7,14 @@ In this lab, you will complete the following exercise:
 4. Improving your Secure Posture 
 5. Exploring Security Center and Security benchmark 
 
+## Overview
+
+Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all your Azure, on-premises, and multicoloured (Amazon AWS and Google GCP) resources. You can find more references about the virtual network from here: `https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction`
+
+An Azure Policy definition, created in Azure Policy, is a rule about specific security conditions that you want controlled. Built in definitions include things like controlling what type of resources can be deployed or enforcing the use of tags on all resources.
+
+In this exercise, you will explore on Microsoft Defender for Cloud, configuring Security Policies. Then you will fix the resources by Securing the score and Improving the Secure Posture. You will also explore on Security Center and Security benchmark.
+
 # Task 1: Exploring Microsoft Defender for Cloud
 
 ### What is Microsoft Defender for Cloud?
