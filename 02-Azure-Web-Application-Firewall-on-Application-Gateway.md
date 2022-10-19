@@ -473,3 +473,5 @@ In this exercise you have covered the following:
    - Monitored attacks against your web application 
    - Customized WAF rules
    - Performed Attack simulation
+
+ Now you can proceed with the next exercise **[Exercise 3: Azure Firewall Premium](03-Azure-Firewall-Premium.md)** 
