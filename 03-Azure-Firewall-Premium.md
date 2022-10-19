@@ -270,7 +270,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall19.png "search gateway")
 
-  1. Once the deployment completes naviaget back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error conenction page, click on **Advanced**.
+  1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error conenction page, click on **Advanced**.
  
       ![](images1/Advanced1.png)
  
