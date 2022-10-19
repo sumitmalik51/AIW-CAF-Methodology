@@ -416,7 +416,7 @@ In this exercise you have covered the following:
    - Explored on Security Center and Security benchmark
 
 
-Now you can proceed with the next exercise **[Exercise 2: Azure Web Application Firewall on Application Gateway](02-Azure-Web-Application-Firewall-on-Application-Gateway.md)** 
+1. Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
 
 
 
