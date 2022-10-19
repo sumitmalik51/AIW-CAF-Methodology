@@ -415,8 +415,7 @@ In this exercise you have covered the following:
    - Improved the security posture
    - Explored on Security Center and Security benchmark
 
-
-1. Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
+ Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
 
 
 
