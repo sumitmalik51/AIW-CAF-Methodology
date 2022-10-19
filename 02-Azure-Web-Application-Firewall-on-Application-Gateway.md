@@ -147,7 +147,7 @@ In this task, you'll publish an application via Application Gateway.
 
        ![rule](/images1/rulecollection.png)
           
-1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab.
+1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab which you copiend in step 4.
 
    ![ss](/images/image307.png)
        
@@ -169,11 +169,15 @@ In this task, you will create a storage account, this storage account will be us
      
 1.  On the **Basics** tab of the **Storage account** blade, enter the below details:
 
+     - Subscription : **Leave it as default**.
+
+     - Resource group : 
+
      - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
 
      - Region : Enter **<inject key="Region" /> (2)**
 
-     -  Performance: Select **Standard**
+     - Performance: Select **Standard**
 
      - Redundancy : Select **Geo-redundant storage (GRS) (3)**
      
