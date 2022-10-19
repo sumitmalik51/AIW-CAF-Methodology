@@ -221,4 +221,4 @@ In this exercise you have covered the following:
    - Onboarded the Web App – IaaS server to sentinel 
    - Explored on query logs
 
-    
+1. Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
