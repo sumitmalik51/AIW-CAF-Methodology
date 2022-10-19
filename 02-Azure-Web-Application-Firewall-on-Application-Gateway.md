@@ -8,14 +8,17 @@ In this lab, you will complete the following exercise:
 4. Customize WAF rules
 5. Attack simulation
 
-## What is Azure Web Application Firewall?
-Microsoft Azure also has a WAF service that provides centralized protection of your web applications from common exploits and vulnerabilities. The Azure Web Application Firewall is one of the features of Azure Application Gateway (layer 7 load balancer) and its main goal is to protect a web application from common attacks like SQL injections, cross-site scripting, and others. Also, it is following the Open Web Application Security Project (OWASP) Core Rule Set. Azure WAF service offers you to select some or all of the rules from the OWASP Core Rule Set.
+### Overview
 
-Azure Application Gateway has a public IP or front end, and your application users will use this IP address to connect to your application gateway. Application Gateway is going to take the incoming traffic and, based on a few rules, redirect the traffic to the appropriate back end in the backend pool. You can have app services, virtual machines, virtual machine scale sets, or even other IP addresses in the backend pools.
+Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. To learn more about Azure Firewall refer: `https://docs.microsoft.com/en-us/azure/firewall`
 
- ![](/images1/applicationgateway.png "application gateway")
- 
+Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP). To learn more about Application gateway refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
+
+In this exercise, you will deploy an Azure Firewall and Application Gateway with WAF V2 then you will publish an application through it. You'll also test the application for security and perform a sample attack.
+
  # Task 1: Configure WAF to Protect your web application
+ 
+ In this task, you will add Virtual Machine as the Backend pool of Application gateway and also you will configure the DNAT Rules in the firewall policy.
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
@@ -154,6 +157,8 @@ In this task, you'll publish an application via Application Gateway.
   > **Note**: This will confirm that you have published the Contoso web application via Application Gateway.
   
 # Task 3: Monitor attacks against your web application 
+
+In this task, you will Monitor the attacks against the web application.
 
 ## Task 3.1: Create Storage Account
 
@@ -374,6 +379,8 @@ In this task, you will create a storage account, this storage account will be us
      
      
 # Task 4: Customize WAF rules
+ 
+ In this task, you will configure the Custom rules for firewall policy and will publish the web application within the VM and from Local computer to check the application reachability.
  
  1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
  
