@@ -151,7 +151,7 @@ In this task, you will create an application rule to allow access to sports webs
    
    ![](images/firewall17.png "search gateway")
  
-3. Under the **Add a rule collection** page, enter the below details:
+3. Under the **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
  
     - Name: **GeneralWeb (1)**
     - Rule Collection type: **Application (2)**
@@ -174,7 +174,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images1/Advanced.png)
  
- 1. Now click on **Continue to www.nfl.com (unsafe)**.
+ 1. Click on **Continue to www.nfl.com (unsafe)**.
  
     ![](images1/unsafe.png)
  
@@ -196,12 +196,16 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## Task 4: Implement and Test URL filtering
  
- 1. Now, navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
+ 1. Navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
+ 
+    ```
+    www.nytimes.com/section/world
+    ```
  
     ![](images1/error1.png)
  
  
- 1. Navigate back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
+ 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
  
     ![](images/firewall17.png "search gateway")
  
@@ -209,7 +213,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall18.png "search gateway")
  
- 3. Under **Add a rule collection** page, enter the below details:
+ 3. Under **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
 
     - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
@@ -227,12 +231,28 @@ In this task, you will create an application rule to allow access to sports webs
      - Click on **Add (6)**
  
      ![](images/firewall19.png "search gateway")
- 
- 4. Once the deployment completes open a browser on JumpVM, navigate to `https://www.nytimes.com/section/world` and validate that the HTML response is displayed as expected in the browser.
 
-    ![](images/firewall20.png "search gateway")
+  1.  Once the deployment completes naviaget back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error conenction page, click on **Advanced**.
  
- 5. In the Azure portal, navigate to your log analytics workspace and in Application rule monitoring logs review the entire URL.
+     ![](images1/Advanced1.png)
+ 
+ 1. Click on **Continue to www.nfl.com (unsafe)**.
+ 
+    ![](images1/unsafe1.png)
+ 
+ 4. Now you validate that the HTML response is displayed as expected in the browser..
+ 
+    ![](images/firewall22.png "search gateway")
+ 
+ 1. Again navigate to the other tab, where Azure Portal is opened.
+ 
+ 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
+ 
+     ![](images1/firewall.png)
+ 
+ 1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Application rule log data** tab.
+ 
+     ![](images1/run.png)
  
  
  # Task 5: DDOS protection
