@@ -105,7 +105,7 @@ In this task, you will test IDPS for HTTP traffic
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
-# Task 4: Web categories testing
+# Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
 
@@ -144,7 +144,7 @@ In this task, you will create an application rule to allow access to sports webs
  
   
 
-# Task 5: Implement and Test URL filtering
+# Task 4: Implement and Test URL filtering
  
  1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **firewallpolicy**.
  
@@ -180,7 +180,7 @@ In this task, you will create an application rule to allow access to sports webs
  5. In the Azure portal, navigate to your log analytics workspace and in Application rule monitoring logs review the entire URL.
  
  
- # Task 6: DDOS protection
+ # Task 5: DDOS protection
  
  ## What is DDoS protection?
 
