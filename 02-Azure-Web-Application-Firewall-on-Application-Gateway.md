@@ -474,4 +474,4 @@ In this exercise you have covered the following:
    - Customized WAF rules
    - Performed Attack simulation
 
- Now you can proceed with the next exercise **[Exercise 3: Azure Firewall Premium](03-Azure-Firewall-Premium.md)** 
+Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
