@@ -115,27 +115,23 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Select (4)**, followed by          clicking on **Next (5)**
 
-    ![](images/107.png )
-    
-1. Under **Advanced** tab, leave everything to default and then click on **Next**.
+    ![](images/editing1.png )
+        
+1. Now under **Parameters** tab, leave everything to default and then click on **Next**.
 
-    ![](images/108.png "environment details")
-    
-1. Now under **parameters** tab, leave everything to default and then click on **Next**.
-
-    ![](images/109.png "environment details")
+    ![](images/editing2.png "environment details")
     
 1. Now under **Remediation** tab, leave everything to default and then click on **Next**.
 
-    ![](images/110.png "environment details")
+    ![](images/editing3.png "environment details")
     
 1. Now on the **Non-compliance messages** tab, select all **Policy definitions (1)**, then click on **Review + create (2)**.
 
-    ![](images/111.png )
+    ![](images/editing4.png )
     
 1. Now click on **Create**.
 
-    ![](images/fix8.png )
+    ![](images/editing5.png )
 
 1. Once the Policy is assigned you will see another notification which says **Creating initiative assignment succeeded** as shown below.
 
