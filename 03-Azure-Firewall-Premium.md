@@ -113,7 +113,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/selectvm.png)
 
- 1. On the Virtual Machine page, got the **Overview (1)** tab and click on **Connect (2)** then select **Bastion (3)**.
+ 1. On the Virtual Machine page, go to the **Overview (1)** tab and click on **Connect (2)** then select **Bastion (3)**.
  
     ![](images1/connect.png)
  
