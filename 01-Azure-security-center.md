@@ -85,30 +85,6 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
     ![](images/plans1.png "enabled all")
     
-1. Navigate back **Microsoft Defender for Cloud** page under General Click on **Inventory**.
-
-    ![](images/118.png "inventory")
-    
-1. From the **Inventory** tab, under general click on **Add non-Azure servers**.
-
-    ![](images/119.png "add-inventory")
-    
-1. On **Onboard servers to Defender for Cloud** page, click on **Upgrade** next to the existing **log analytics workspace** named  to upgrade. This will allow Azure Defender protection for your resources.
-
-    ![](images/onboard1.png "upgrade-inventory")
-    
-1. Once the Defender plans is added you will see another notification which says **Successfully added Defender plans** as shown below.
-
-    ![](images/onboard2.png "saved-inventory")
-    
-1. Now, close the blade and go back to **Inventory** tab and then you will see few connected resources. If you didn't see any resource, you will have to click on          Refresh button at the top.
-
-    ![](images/onboard.png "Onboard")
-
-1. You can also find the **Virtual machines** enabled available in the resources list because **Log Analytics** agent is already enabled for it and the same Log Analytics workspace is connected to Security Center. 
-
-    ![](images/120.png "installed-inventory")
-
 1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
     
     ![](images/securityposture1.png "overview security posture")
