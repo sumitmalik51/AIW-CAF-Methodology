@@ -176,7 +176,16 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/firewall18.png "search gateway")
  
-2. Select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
+1. Select **TLS inspection (1)** under **Settings** tab and enter the below details under **Key vault** tab:
+ 
+    - Managed Identity : Select **(New) fw-cert-id-ZrNC4l8WLg97D  (2)** from drop-down list
+    - Key Vault : Select **(New) fw-cert-kv-ZrNC4l8WLg97D (3)** from drop-down
+    - Certificate : Select **(New) fw-cert-ZrNC4l8WLg97D (4)** from drop-down
+    - Click on **Save (5)**
+ 
+    ![](images1/tls.png)
+ 
+2. Now, select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
    
    ![](images/firewall17.png "search gateway")
  
