@@ -105,17 +105,51 @@ In this task, you will test IDPS for HTTP traffic
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
-# Task 3: Web categories testing
+## Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
-
-1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **firewallpolicy**.
  
-   ![](images/firewall17.png "search gateway")
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
+ 
+    ![](images1/selectvm.png)
+
+ 1. On the Virtual Machine page, got the **Overview (1)** tab and click on **Connect (2)** then select **Bastion (3)**.
+ 
+    ![](images1/connect.png)
+ 
+1. On the Bastion page, follow the below mentioned instructions to connect into the Virtual Machine using Bastion:
+ 
+    - **Username** : Enter **demouser (1)**
+    - **Authentication Type** : Select **Password (2)** from the drop-down
+    - **Password** Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
+    - Click on **Connect (4)**
+ 
+    ![](images1/bastionconnect.png)
+ 
+1. Now, you will be re-directed to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
+ 
+    ![](images1/allowpopup.png)
+ 
+1. Within the Bastion VM, search for **Edge (1)** and select **Microsoft Edge (2)**.
+ 
+    ![](images1/selectedge.png)
+ 
+1. Navigate to the below mentioned URL and you can see the error **can't reach this page**.
+ 
+   ```
+   https://www.nfl.com
+   ```
+   ![](images1/error.png)
+ 
+1. Navigate back to the other tab, where Azure Portal is opened.
+ 
+1. In the Azure portal, go to your **JumpVM-rg** resource group and select **firewallpolicy**.
+ 
+   ![](images/firewall18.png "search gateway")
  
 2. Select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
    
-   ![](images/firewall18.png "search gateway")
+   ![](images/firewall17.png "search gateway")
  
 3. Under the **Add a rule collection** page, enter the below details:
  
@@ -136,7 +170,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall21.png "search gateway")
  
- 4. Once the deployment completes open a browser on JumpVM, navigate to `https://www.nfl.com` and verify you are able to see the NFL web page.
+ 4. Once the deployment completes naviaget back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com` and verify you are able to see the NFL web page.
  
     ![](images/firewall22.png "search gateway")
  
