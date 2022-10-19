@@ -43,10 +43,15 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 
 1. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
 
-    ![](images/overview-security-posture.jpg)
+    ![](images/editing11.png)
     
     > ⭐ Good to know: <br>
     > The higher the score, the lower the identified risk level.
+
+1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
+    
+    ![](images/securityposture1.png "overview security posture")
+
 
 1. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the Cloud Security section.
 
@@ -55,23 +60,6 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 1. On the **Workload Protections (1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
     ![](images/workload-fully-protected.jpg)
-    
-1. Next, select the **Regulatory Compliance** from the Cloud Security section of the **Microsoft Defender for Cloud** page.
-
-    ![](images/regu-compliance.jpg)
-    
-1. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
- 
-     >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
-
-    ![](images/image315.png)
-     
-1. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
-
-     > ❗ Important: <br>
-     > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
-
-    ![](images/image317.png)
     
 1. On the Microsoft Defender for Cloud. Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
 
