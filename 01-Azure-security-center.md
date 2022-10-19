@@ -1,11 +1,5 @@
 # Exercise 1: Azure Security Center/ Microsoft Defender for Cloud
-## Lab objectives
-In this lab, you will complete the following exercise:
-1. Exploring Microsoft Defender for Cloud 
-2. Configure Security Policies  
-3. Secure Score 
-4. Improving your Secure Posture 
-5. Exploring Security Center and Security benchmark 
+
 
 ## Overview
 
@@ -17,19 +11,7 @@ In this exercise, you will explore on Microsoft Defender for Cloud, configuring 
 
 # Task 1: Exploring Microsoft Defender for Cloud
 
-### What is Microsoft Defender for Cloud?
-
-Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all your Azure, on-premises, and multicoloured (Amazon AWS and Google GCP) resources. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
-
-![image](https://user-images.githubusercontent.com/33771500/187170501-f78beb93-08d6-47f1-8fa7-bb8798b685a5.png)
-
-- Defender for Cloud secure score **Continually Assesses** your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
-- Defender for Cloud recommendations **Secures** your workloads with step-by-step actions that protect your workloads from known security risks.
-- Defender for Cloud alerts **Defends** your workloads in real-time so you can react immediately and prevent security events from developing.
-
-Defender for Cloud secure score continually assesses your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
-Defender for Cloud recommendations secures your workloads with step-by-step actions that protect your workloads from known security risks.
-Defender for Cloud alerts defends your workloads in real time so you can react immediately and prevent security events from developing.
+In this task, you will explore the features of Microsoft Defender for Cloud.
 
 1. If you have not Signed in to Azure portal already, follow the steps from page 1 of the lab guide to sign in.
 
@@ -83,15 +65,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
         
 # Task 2: Configure Security Policies
 
-### What is a security policy?
-
-- An Azure Policy definition, created in Azure Policy, is a rule about specific security conditions that you want to be controlled. Built-in definitions include things like controlling what type of resources can be deployed or enforcing the use of tags on all resources. You can also create your own custom policy definitions.
-
-- To implement these policy definitions (whether built-in or custom), you'll need to assign them. You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. Policies can be disabled or enabled from Azure Policy.
-
-- There are different types of policies in Azure Policy. Defender for Cloud mainly uses 'Audit' policies that check specific conditions and configurations and then report on compliance. There are also "Enforce' policies that can be used to apply security settings.
-
-## Explore Azure Policy
+In this task, you will explore through the security policy and will assign a built-in initiative policy used by Microsoft Defender for Cloud to the JumpVM-rg resource group.
 
 1. Search for **Policy (1)** in Azure portal search bar and then click on **Policy (2)**.
 
@@ -152,12 +126,8 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
     
 # Task 3: Secure Score 
 
-### What is a Secure Score?
-- It helps you understand your current security situation.
-- It helps you improve your security situation by giving recommendations.
-- A secure score is a way to achieve your goal: the higher the score, the lower the risk level.
+In this task, you will explore through Secure Score which helps you understand your current security situation and also helps you to understand the security situation by giving recommendations.
 
-### Access and track your secure score
 
 1. Search **Microsoft Defender for Cloud (1)** and Select **Microsoft Defender for Cloud (2)**.
 
