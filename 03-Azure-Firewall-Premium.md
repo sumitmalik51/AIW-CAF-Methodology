@@ -1,14 +1,5 @@
 # Exercise 3: Azure Firewall Premium
-## Lab objectives
-In this lab, you will complete the following exercise:
 
-1. Add firewall diagnostics settings
-2.	IDPS tests
-3.	Web categories testing
-4.	Implement and test URL filtering
-5.	DDoS protection
-
-## What is Azure Firewall?
 Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
 Azure Firewall Premium is a next generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
@@ -193,13 +184,16 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images1/run.png)
  
- 5. Now navigate to your log analytics workspace and in the Application rule Monitoring logs review the **web Category: Sports rule** was matched and the request was allowed.
- 
-  
 
-# Task 4: Implement and Test URL filtering
+
+## Task 4: Implement and Test URL filtering
  
- 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **firewallpolicy**.
+ 1. Now, navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
+ 
+    ![](images1/error1.png)
+ 
+ 
+ 1. Navigate back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
  
     ![](images/firewall17.png "search gateway")
  
