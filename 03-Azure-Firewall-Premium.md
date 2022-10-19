@@ -94,13 +94,13 @@ In this task, you will test IDPS for HTTP traffic
 
 10. Navigate back to WorkerVM, and run the `curl` command again:
 
-   `curl -A "HaxerMen" <your web server address>`
+    `curl -A "HaxerMen" <your web server address>`
 
-   Since the HTTP request is now blocked by the firewall, you'll see the following output after the connection timeout expires:
+    Since the HTTP request is now blocked by the firewall, you'll see the following output after the connection timeout expires:
 
-   `curl: (56) Recv failure: Connection was reset`
+    `curl: (56) Recv failure: Connection was reset`
  
-    ![](images/firewall14.png "search gateway")
+     ![](images/firewall14.png "search gateway")
 
 11. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
