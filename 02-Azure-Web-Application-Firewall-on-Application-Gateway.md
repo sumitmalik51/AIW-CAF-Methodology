@@ -82,6 +82,19 @@ Azure Application Gateway has a public IP or front end, and your application use
  
 In this task, you'll publish an application via Application Gateway.
 
+1.  In the the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+ 
+     ![](images/searchgateway.png "search gateway")
+ 
+1. Select your **Application Gateway**.
+ 
+     ![](images/appgateway.png "select gateway")
+ 
+1. Copy the **Frontend public IP address** of the application gateway and save it to notepad for later use.
+ 
+      ![](images/image301.png "select gateway")
+
+    
 1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
 
    ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
@@ -89,8 +102,16 @@ In this task, you'll publish an application via Application Gateway.
 1. Click on the **AzureFirewall**.
 
    ![firewall](/images1/azurefirewall.png)
+   
+   1. Select **Firewall Public IP** from the Overview tab.
+
+    ![pip](/images1/firewallIP.png)
+    
+1. Copy the **Public Ip address** and save it to notepad for later use.
+
+    ![ip](/images1/firewallip1.png)  
      
-1. Select **Firewall Manager (1)** from the **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+1. Navigate back on Azure Firewall Select **Firewall Manager (1)** from the **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
    ![FM](/images1/firewallmanager.png)
     
