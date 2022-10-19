@@ -9,7 +9,16 @@ An Azure Policy definition, created in Azure Policy, is a rule about specific se
 
 In this exercise, you will explore on Microsoft Defender for Cloud, configuring Security Policies. Then you will fix the resources by Securing the score and Improving the Secure Posture. You will also explore on Security Center and Security benchmark.
 
-# Task 1: Exploring Microsoft Defender for Cloud
+This exercise includes the following tasks:
+
+  - Task 1: Exploring Microsoft Defender for Cloud
+  - Task 2: Configure Security Policies
+  - Task 3: Secure Score
+  - Task 4: Improving your Secure Posture
+  - Task 5: Exploring Security Center and Security benchmark
+  
+  
+### Task 1: Exploring Microsoft Defender for Cloud
 
 In this task, you will explore the features of Microsoft Defender for Cloud.
 
