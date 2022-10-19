@@ -170,7 +170,15 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall21.png "search gateway")
  
- 4. Once the deployment completes naviaget back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com` and verify you are able to see the NFL web page.
+ 1.  Once the deployment completes naviaget back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On Privacy error conenction page, click on **Advanced**.
+ 
+     ![](images1/Advanced.png)
+ 
+ 1. Now click on **Continue to www.nfl.com (unsafe)**.
+ 
+    ![](images1/unsafe.png)
+ 
+ 4. Now you are able to see the NFL web page.
  
     ![](images/firewall22.png "search gateway")
  
