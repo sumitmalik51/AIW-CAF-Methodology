@@ -18,4 +18,4 @@ In this exercise, you will configure and explore the Azure Firewall premium feat
 
 ## **Exercise 4: Azure Sentinel**
 
-In this exercise, you'll explore Azure Sentinel, learn about onboarding Azure subscriptions, IaaS server that is a web app, and explore query logs. Microsoft Sentinel is a scalable, cloud-native solution that provides SIEM (Security information and event management) and SOAR (Security orchestration, automation, and response).
+In this exercise, you will explore Azure Sentinel, learn about onboarding Azure subscriptions, IaaS server that is a web app, and explore query logs. Microsoft Sentinel is a scalable, cloud-native solution that provides SIEM (Security information and event management) and SOAR (Security orchestration, automation, and response).
