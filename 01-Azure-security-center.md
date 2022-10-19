@@ -408,7 +408,7 @@ In this exercise you have covered the following:
    - Explored on Security Center and Security benchmark
 
 
-Now you can proceed with the [next](02-Azure-Web-Application-Firewall-on-Application-Gateway.md) exercise
+Now you can proceed with the next exercise [02-Azure-Web-Application-Firewall-on-Application-Gateway](02-Azure-Web-Application-Firewall-on-Application-Gateway.md) 
 
 
 
