@@ -397,6 +397,17 @@ Azure Security Center by Microsoft is a solution that provides unified security 
     ![](images/security6.png)
 
 
+## Summary
+ 
+In this exercise you have covered the following:
+  
+   - Configured Microsoft Defender for Cloud 
+   - Configured the Security Policies
+   - Explored on Secure score
+   - Improved the security posture
+   - Explored on Security Center and Security benchmark
+
+
 
 
 
