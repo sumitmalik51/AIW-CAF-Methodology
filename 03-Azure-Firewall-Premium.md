@@ -1,5 +1,14 @@
 # Exercise 3: Azure Firewall Premium
+## Lab objectives
+In this lab, you will complete the following exercise:
 
+1. Add firewall diagnostics settings
+2.	IDPS tests
+3.	Web categories testing
+4.	Implement and test URL filtering
+5.	DDoS protection
+
+## What is Azure Firewall?
 Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
 Azure Firewall Premium is a next generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
