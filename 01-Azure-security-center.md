@@ -285,11 +285,11 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. Use the **Filter by name (1)** box to search for **Virtual machine**. You should now see a filtered view containing your desired resource: **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. Hover on the      red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**. You should expect to see **Active-xx of xx Recommendations**      these are the active recommendations you must attend.
 
-    ![](images/fix2.png)
+    ![](images/editing6.png)
 
 1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" enableCopy="false"/> (1)**. Alternately. you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
 
-    ![](images/fix3.png)
+    ![](images/editing7.png)
 
 1. On the resource health pane for **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**, review the virtual machine information alongside the recommendation list.
 
@@ -305,7 +305,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
     
 1. On the **Inventory** page, Select the virtual machine **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** and then from the top menu, click on **Assign tags**
 
-    ![](images/126.png)
+    ![](images/editing8.png)
 
 1. On the **Assign tags** blade, Assign **Environment** as the name and **Production** as the value and click on **Save**.
 
@@ -315,17 +315,17 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/defender13.png)
     
-1. From the filter pane, select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **JumpVM-rg**        (Unselect remaining) and again click on **Ok**. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the    resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
+1. Select the virtual machine **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** From the top menu bar, click on **Download CSV report (3)**. You will get a      snapshot to work on it offline already filtered. You can also right-click on any of the    resources and upgrade to Microsoft Defender  for Cloud plan (when            applicable).
 
-    ![](images/127.png)
+    ![](images/editing9.png)
 
 1. Wait for a notification: ✅ **Your CSV report is ready**.
 
     ![](images/defender15.png)
 
-1. From the top menu, click on **Open query**.
+1. Select the virtual machine **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** and then from the top menu, click on **Open query**.
 
-    ![](images/128.png)
+    ![](images/editing10.png)
     
 1. On the **Azure Resource Graph Explorer** blade, click on **Run Query (1)**. This query is editable based on the requirement.
 
