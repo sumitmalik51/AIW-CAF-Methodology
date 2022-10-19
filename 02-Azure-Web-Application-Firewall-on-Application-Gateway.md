@@ -139,7 +139,7 @@ In this task, you'll publish an application via Application Gateway.
       - Protocol: Select **TCP** from the drop-down list
       - Destination Ports: **80**
       - Destination type: Select **IP Address** from the drop-down list
-      - Destination: Enter the IP address of **Firewall** which you copied in step 7.
+      - Destination: Enter the IP address of **Firewall** which you copied in step 8.
       - Translated address: Enter the Public IP address of **Application gateway**. which you copied in step 4.
       - Translated port: **80**
      
