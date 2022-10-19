@@ -84,12 +84,7 @@ Defender for Cloud alerts defends your workloads in real time so you can react i
 1. Select **Enable all (1)** to enable all the plans for Defender for Cloud and then click on  **Save (2)**.
 
     ![](images/plans1.png "enabled all")
-    
-1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
-    
-    ![](images/securityposture1.png "overview security posture")
-    
-    
+        
 # Task 2: Configure Security Policies
 
 ### What is a security policy?
