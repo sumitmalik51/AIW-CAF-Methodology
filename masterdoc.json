@@ -8,20 +8,24 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/01-Azure-security-center.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/overview.md",
         "Order": 2
-      },
+      },      
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/02-Azure-Web-Application-Firewall-on-Application-Gateway.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/01-Azure-security-center.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/03-Azure-Firewall-Premium.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/02-Azure-Web-Application-Firewall-on-Application-Gateway.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/04-Azure-Sentinel.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/03-Azure-Firewall-Premium.md",
         "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-CAF-Methodology/main/04-Azure-Sentinel.md",
+        "Order": 6
       }
     ]
   }
