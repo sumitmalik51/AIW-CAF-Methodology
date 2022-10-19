@@ -291,7 +291,7 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
  
  
- ### Task 5: DDOS protection
+ ### Task 5: DDOS protection (Read-Only)
  
  ## What is DDoS protection?
 
