@@ -186,6 +186,8 @@ In this task, you will explore through Secure Score which helps you understand y
 
 # Task 4: Improving your Secure Posture 
 
+In this task, you will explore and fix the security recomendations suggested by Microsoft Defender for cloud.
+
 1. Search **Microsoft Defender for Cloud (1)** and Select **Microsoft Defender for Cloud (2)**.
 
     ![](images/defender.png "Microsoft Defender")
@@ -226,7 +228,7 @@ In this task, you will explore through Secure Score which helps you understand y
 
 # Task 5: Exploring Security Center and Security benchmark
 
-Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centers within both cloud workloads and on-premises.
+Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centers within both cloud workloads and on-premises. In this task, you will explore Security Center and Security benchmark.
 
 ## Explore Security Center
 
