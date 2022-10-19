@@ -90,10 +90,13 @@ In this task, you'll publish an application via Application Gateway.
  
      ![](images/appgateway.png "select gateway")
  
-1. Copy the **Frontend public IP address** of the application gateway and save it to notepad for later use.
+1. Select the **Frontend public IP address** of the application gateway.
  
       ![](images/image301.png "select gateway")
 
+1.  Copy the **Public Ip address** and save it to notepad for later use.
+
+     ![](images/editing12.png )
     
 1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
 
@@ -137,7 +140,7 @@ In this task, you'll publish an application via Application Gateway.
       - Destination Ports: **80**
       - Destination type: Select **IP Address** from the drop-down list
       - Destination: Enter the IP address of **Firewall** which you copied in step 7.
-      - Translated address: Enter the Public IP address of **Application gateway**. which you copied in step 3.
+      - Translated address: Enter the Public IP address of **Application gateway**. which you copied in step 4.
       - Translated port: **80**
      
      - Click on **Add (6)**
