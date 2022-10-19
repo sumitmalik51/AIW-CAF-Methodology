@@ -136,9 +136,9 @@ In this task, you will create an application rule to allow access to sports webs
           - Subnet : Select **jumpvmsubnet (4)** from the drop-down list.
           - Click on **Ok (5)**.
  
-        ![](images1/addsubnet.png)
+           ![](images1/addsubnet.png)
  
-1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
+1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
     ![](images1/selectvm.png)
 
