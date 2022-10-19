@@ -41,12 +41,11 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 6. Under **Destination details**, select **Send to Log Analytics workspace** and then click on **Save**.
 
    ![](images/firewall6.png "search gateway")
-   
-## IDPS Tests
 
-Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
 ### Task 2: Test IDPS for HTTP traffic
+
+Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
 In this task, you will test IDPS for HTTP traffic
 
@@ -66,34 +65,34 @@ In this task, you will test IDPS for HTTP traffic
  
     ![](images/firewall8.png "search gateway")
  
- 1. Navigate to your **JumpVM-rg** resource group and select **AzureFirewall**.
+ 4. Navigate to your **JumpVM-rg** resource group and select **AzureFirewall**.
  
      ![](images1/firewall.png)
  
- 1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Network rule log data** tab.
+ 5. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Network rule log data** tab.
  
     ![](images1/networkrulelogdata.png)
 
     > [!NOTE]
     > It can take some time for the data to begin showing in the logs. Give it at least a couple of minutes to allow for the logs to begin showing the data.
  
-5. Now navigate back to firewall policy and under **Settings** select **IDPS**.
+6. Now navigate back to firewall policy and under **Settings** select **IDPS**.
  
    ![](images/firewall10.png "search gateway")
  
-6. On the **IDPS** page select **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
+7. On the **IDPS** page select **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
    ![](images/firewall11.png "search gateway")
  
-7. Select **2032081 (1)** signature id and click on **Edit Rules (2)**.
+8. Select **2032081 (1)** signature id and click on **Edit Rules (2)**.
  
    ![](images/firewall12.png "search gateway")
  
-8. Under edit rules change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
+9. Under edit rules change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
  
    ![](images/firewall13.png "search gateway")
 
-9. Navigate back to WorkerVM, and run the `curl` command again:
+10. Navigate back to WorkerVM, and run the `curl` command again:
 
    `curl -A "HaxerMen" <your web server address>`
 
@@ -103,7 +102,7 @@ In this task, you will test IDPS for HTTP traffic
  
     ![](images/firewall14.png "search gateway")
 
-10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
+11. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
 ### Task 3: Web categories testing
  
@@ -185,11 +184,11 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/tls.png)
  
-2. Now, select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
+1. Now, select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
    
    ![](images/firewall17.png "search gateway")
  
-3. Under the **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
+1. Under the **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
  
     - Name: **GeneralWeb (1)**
     - Rule Collection type: **Application (2)**
@@ -216,7 +215,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/unsafe.png)
  
- 4. Now you are able to see the NFL web page.
+ 1. Now you are able to see the NFL web page.
  
     ![](images/firewall22.png "search gateway")
  
@@ -231,10 +230,9 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
  
 
-
 ### Task 4: Implement and Test URL filtering
  
- 1. Navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
+1. Navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
  
     ```
     www.nytimes.com/section/world
@@ -243,15 +241,15 @@ In this task, you will create an application rule to allow access to sports webs
     ![](images1/error1.png)
  
  
- 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
+1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
  
     ![](images/firewall17.png "search gateway")
  
- 2. Select **Application Rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+1. Select **Application Rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
  
     ![](images/firewall18.png "search gateway")
  
- 3. Under **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
+1. Under **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
 
     - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
@@ -270,25 +268,25 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall19.png "search gateway")
 
-  1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error conenction page, click on **Advanced**.
+ 1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error conenction page, click on **Advanced**.
  
       ![](images1/Advanced1.png)
  
- 1. Click on **Continue to www.nfl.com (unsafe)**.
+1. Click on **Continue to www.nfl.com (unsafe)**.
  
     ![](images1/unsafe1.png)
  
- 4. Now you validate that the HTML response is displayed as expected in the browser..
+1. Now you validate that the HTML response is displayed as expected in the browser..
  
     ![](images/firewall22.png "search gateway")
  
- 1. Again navigate to the other tab, where Azure Portal is opened.
+1. Again navigate to the other tab, where Azure Portal is opened.
  
- 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
+1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
  
      ![](images1/firewall.png)
  
- 1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Application rule log data** tab.
+1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Application rule log data** tab.
  
      ![](images1/run.png)
  
