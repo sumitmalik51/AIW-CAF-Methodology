@@ -1,12 +1,4 @@
 # Exercise 2: Azure Web Application Firewall on Application Gateway
-## Lab objectives
-In this lab, you will complete the following exercise:
-
-1. Configure WAF to Protect your web application
-2. Publish your application to the internet with the application gateway
-3. Monitor attacks against your web application
-4. Customize WAF rules
-5. Attack simulation
 
 ### Overview
 
@@ -16,7 +8,15 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 In this exercise, you will deploy an Azure Firewall and Application Gateway with WAF V2 then you will publish an application through it. You'll also test the application for security and perform a sample attack.
 
- # Task 1: Configure WAF to Protect your web application
+This exercise includes the following tasks:
+
+    - Configure WAF to Protect your web application
+    - Publish your application to the internet with the application gateway
+    - Monitor attacks against your web application
+    - Customize WAF rules
+    - Attack simulation
+
+ ### Task 1: Configure WAF to Protect your web application
  
  In this task, you will add Virtual Machine as the Backend pool of Application gateway and also you will configure the DNAT Rules in the firewall policy.
  
@@ -81,7 +81,7 @@ In this exercise, you will deploy an Azure Firewall and Application Gateway with
 
      ![](images/image312.png)
     
- # Task 2: Publish your application to the internet with the application gateway
+ ### Task 2: Publish your application to the internet with the application gateway
  
 In this task, you'll publish an application via Application Gateway.
 
@@ -156,11 +156,11 @@ In this task, you'll publish an application via Application Gateway.
        
   > **Note**: This will confirm that you have published the Contoso web application via Application Gateway.
   
-# Task 3: Monitor attacks against your web application 
+### Task 3: Monitor attacks against your web application 
 
 In this task, you will Monitor the attacks against the web application.
 
-## Task 3.1: Create Storage Account
+### Task 3.1: Create Storage Account
 
 In this task, you will create a storage account, this storage account will be used to store the NSG flow logs
      
@@ -220,7 +220,7 @@ In this task, you will create a storage account, this storage account will be us
       
       
 
- ## Task 3.2: Create NSG flow logs.
+ ### Task 3.2: Create NSG flow logs.
  
  In this task, you will create NSG flow logs in the Network Watcher.
 
@@ -270,7 +270,7 @@ In this task, you will create a storage account, this storage account will be us
     ![nsg](/images1/nsgflow.png)
     
     
-## Task 3.3: Run Sample traffic and perform traffic analytics, review logs
+### Task 3.3: Run Sample traffic and perform traffic analytics, review logs
 
  In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
@@ -378,7 +378,7 @@ In this task, you will create a storage account, this storage account will be us
     ![l7](/images1/l7proto.png)
      
      
-# Task 4: Customize WAF rules
+### Task 4: Customize WAF rules
  
  In this task, you will configure the Custom rules for firewall policy and will publish the web application within the VM and from Local computer to check the application reachability.
  
@@ -428,7 +428,7 @@ In this task, you will create a storage account, this storage account will be us
  
      ![ss](/images1/site.png)
 
- # Task 5: Attack simulation 
+ ### Task 5: Attack simulation 
      
 In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
