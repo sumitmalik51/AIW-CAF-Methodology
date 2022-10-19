@@ -169,59 +169,53 @@ In this task, you will create a storage account, this storage account will be us
      
 1.  On the **Basics** tab of the **Storage account** blade, enter the below details:
 
-     - Subscription : **Leave it as default**.
+     - Subscription : **Leave it as default (1)**.
 
-     - Resource group : 
+     - Resource group : **JumpVM-rg (2)**
 
-     - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
+     - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (3)**
 
-     - Region : Enter **<inject key="Region" /> (2)**
+     - Region : Enter **<inject key="Region" /> (4)**
 
      - Performance: Select **Standard**
 
-     - Redundancy : Select **Geo-redundant storage (GRS) (3)**
+     - Redundancy : Select **Geo-redundant storage (GRS) (5)**
      
-     - Select **Review (4)**
+     - Click on **Next (6)**
 
-       ![storage account](/images1/staccnew.png)
+       ![storage account](/images/stacc1.png)
+       
+ 1. Now under **Advanced** tab, leave everything to default and then click on **Next**.
+
+       ![storage account](/images/stacc2.png)
+
+ 
+ 1. Now under **Networking** tab, leave everything to default and then click on **Next**.
+
+       ![storage account](/images/stacc3.png)
+
+
+ 1. Now under **Data protection** tab, leave everything to default and then click on **Next**.
+
+       ![storage account](/images/stacc4.png)
+
+
+ 1. Now under **Encryption** tab, leave everything to default and then click on **Next**.
+
+       ![storage account](/images/stacc5.png)
+
+
+ 1. Now under **Tags** tab, leave everything to default and then click on **Next**.
+
+       ![storage account](/images/stacc6.png)
          
  1.  Review the configuration of the storage account and click on **Create**.
 
-      ![create](/images1/create.png)
+       ![storage account](/images/stacc7.png)
       
       
- ## Task 3.2: Create Log Analytics Workspace
- 
- In this task, you will create Log Analytics Workspace. This Log Analytics workspace will be used by Traffic Analytics to store the aggregated and indexed data that is then used to generate the analytics.
-      
- 1. From the **Home** page of Azure Portal, type **Log Analytics Workspaces (1)** on the search box and then select **Log Analytics Workspaces (2)**. 
 
-    ![LAW](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/LAW.png?raw=true)
-    
- 1. Select **Create**.
-
-     ![create](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/click.png?raw=true)
-      
- 1.  On the **Basics** tab of **Create Log Analytics workspace**, enter the below information:
-       
-       - Subscription : Select your **Subscription (1)**
-
-       - Resource Group: **JumpVM-rg (2)**
-
-       - Name : **log-contoso-diagnosticworkspace (3)**
-
-       - Region : Enter **<inject key="Region" /> (4)**
-
-       - Select **Review + Create (5)**
-
-       ![create](/images1/loganaly.png)
-       
- 1. Review the configuration of the analytics workspace and select **Create**
-
-    ![createLAW](/images1/loganaly1.png)
-    
-       
-## Task 3.3: Create NSG flow logs.
+ ## Task 3.2: Create NSG flow logs.
  
  In this task, you will create NSG flow logs in the Network Watcher.
 
@@ -235,8 +229,8 @@ In this task, you will create a storage account, this storage account will be us
     
       
 1. Now click on **Create NSG flow log**.
-
-   ![flow log](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/creatensgflowlog.png)
+  
+    ![](/images/stacc8.png)
       
 1. On the **Basics** tab of **Create a flow log**, enter the following details:
 
@@ -271,7 +265,7 @@ In this task, you will create a storage account, this storage account will be us
     ![nsg](/images1/nsgflow.png)
     
     
-## Task 3.4: Run Sample traffic and perform traffic analytics, review logs
+## Task 3.3: Run Sample traffic and perform traffic analytics, review logs
 
  In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
