@@ -72,7 +72,7 @@ In this task, you will test IDPS for HTTP traffic
  
  1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Network rule log data** tab.
  
-     ![](images1/networkrulelogdata.pngg)
+    ![](images1/networkrulelogdata.png)
 
     > [!NOTE]
     > It can take some time for the data to begin showing in the logs. Give it at least a couple of minutes to allow for the logs to begin showing the data.
