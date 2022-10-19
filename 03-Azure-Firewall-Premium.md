@@ -329,5 +329,5 @@ Azure DDoS Protection, combined with application design best practices, provides
     
  
  
- Now you can proceed with the next exercise **[Exercise 4: Azure Sentinel](04-Azure-Sentinel.md)** 
+Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
 
