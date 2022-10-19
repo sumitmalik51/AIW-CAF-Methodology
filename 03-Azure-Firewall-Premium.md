@@ -327,4 +327,7 @@ Azure DDoS Protection, combined with application design best practices, provides
  
       ![](images/ddos12.png)
     
+ 
+ 
+ Now you can proceed with the next exercise **[Exercise 4: Azure Sentinel](04-Azure-Sentinel.md)** 
 
