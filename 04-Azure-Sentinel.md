@@ -210,5 +210,15 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 1.  Now under **Logs** page, click on **Run (2)** , Here you will see results of  **union usage** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
      ![](images/microsoft6.png "news-sentinel")
+     
+     
+     
+ ## Summary
+ 
+In this exercise you have covered the following:
+   - Explored Microsoft Sentinel 
+   - Onboarded Azure Subscription to Azure sentinel 
+   - Onboarded the Web App – IaaS server to sentinel 
+   - Explored query logs
 
     
