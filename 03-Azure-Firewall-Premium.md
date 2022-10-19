@@ -14,7 +14,7 @@ For more information, see https://learn.microsoft.com/en-us/azure/firewall/premi
 
 In this exercise, you will explore on Azure Firewall premium features. 
 
-# Task 1: Add firewall diagnostics settings 
+### Task 1: Add firewall diagnostics settings 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -46,7 +46,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
-# Task 2: Test IDPS for HTTP traffic
+### Task 2: Test IDPS for HTTP traffic
 
 In this task, you will test IDPS for HTTP traffic
 
@@ -105,9 +105,38 @@ In this task, you will test IDPS for HTTP traffic
 
 10. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
-## Task 3: Web categories testing
+### Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
+
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the Route Table **firewallroute**. 
+    
+    ![](images1/firewallroute.png)
+ 
+1. On Route table page, select **Routes (1)** under **Settings** and click on **+ Add (2)**.
+ 
+    ![](images1/addroute.png)
+ 
+1. Under **Add Route** page, enter the below information:
+  
+    - Route Name: Enter **firewallroute (1)**
+    - Address prefix destination : Select **IP Address (2)** from drop-down list
+    - Destination IP address/ CIDR ranges: Enter **0.0.0.0/0 (3)**
+    - Next hop type: Select **Virtual appliance (4)** from drop-down list
+    - Next hop address: Enter the** private IP Address** of Firewall **(5)**.
+    - Select **Add (6)**
+ 
+     ![](images1/addrouterule.png)
+ 
+ 1. Now select **Subnets (1)** and Click on **Associate (2)**.
+
+       - Under Associate subnets, enter the following details:
+  
+          - Virtual Network : Select **vnet (3)** from drop-down list.
+          - Subnet : Select **jumpvmsubnet (4)** from the drop-down list.
+          - Click on **Ok (5)**.
+ 
+        ![](images1/addsubnet.png)
  
 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
@@ -194,7 +223,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 
 
-## Task 4: Implement and Test URL filtering
+### Task 4: Implement and Test URL filtering
  
  1. Navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
  
@@ -255,7 +284,7 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
  
  
- # Task 5: DDOS protection
+ ### Task 5: DDOS protection
  
  ## What is DDoS protection?
 
@@ -329,5 +358,5 @@ Azure DDoS Protection, combined with application design best practices, provides
     
  
  
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
+ Now you can proceed with the next exercise **[Exercise 4: Azure Sentinel](04-Azure-Sentinel.md)** 
 
