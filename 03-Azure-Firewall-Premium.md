@@ -174,6 +174,16 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall22.png "search gateway")
  
+ 1. Again navigate to the other tab, where Azure Portal is opened.
+ 
+ 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
+ 
+     ![](images1/firewall.png)
+ 
+ 1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Application rule log data** tab.
+ 
+     ![](images1/run.png)
+ 
  5. Now navigate to your log analytics workspace and in the Application rule Monitoring logs review the **web Category: Sports rule** was matched and the request was allowed.
  
   
