@@ -54,7 +54,7 @@ In this task, you will test IDPS for HTTP traffic
 
 2. Type the following command at the command prompt:
 
-   - Replace <your web server address> with JumpVm IP.
+   - Replace <your web server address> with Firewall IP.
 
      `curl -A "HaxerMen" <your web server address>`
  
