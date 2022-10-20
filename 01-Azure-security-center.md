@@ -24,50 +24,50 @@ In this task, you will explore the features of Microsoft Defender for Cloud like
 
 1. If you have not Signed in to Azure portal already, follow the steps from page 1 of the lab guide to sign in.
 
-1. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
+2. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
     
     ![](images/defender.png "Microsoft Defender")
     
-1. Note that the **Subscriptions** icon on the top menu bar allows you to view and filter **subscriptions**. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
+3. Note that the **Subscriptions** icon on the top menu bar allows you to view and filter **subscriptions**. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
     ![](images/defender-subs.jpg)
     
-1. Click on the **What’s new button** – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
+4. Click on the **What’s new button** – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
 
     ![](images/defender-whats-new.jpg)
     
-1. Note the high-level numbers at the top menu; This view allows you to see a summary of your Azure subscriptions, Assessed resources, Active recommendations and Security alerts.
+5. Note the high-level numbers at the top menu; This view allows you to see a summary of your Azure subscriptions, Assessed resources, Active recommendations and Security alerts.
 
     ![](images/defender-overview.jpg)
 
-1. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
+6. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
 
     ![](images/editing11.png)
     
     > ⭐ Good to know: <br>
     > The higher the score, the lower the identified risk level.
 
-1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
+7. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
     
     ![](images/securityposture1.png "overview security posture")
 
-1. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the Cloud Security section.
+8. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the Cloud Security section.
 
     ![](images/select-workload-protection.jpg)
     
-1. On the **Workload Protections (1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
+9. On the **Workload Protections (1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your    current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**,    color-coded by severity.
 
     ![](images/workload-fully-protected.jpg)
     
-1. On the Microsoft Defender for Cloud. Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
+10. On the Microsoft Defender for Cloud. Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
 
     ![](images/settings.png "environment details")
     
-1. Select the **subscription or workspace** that you want to protect.
+11. Select the **subscription or workspace** that you want to protect.
 
     ![](images/subsciptionss.png "subscriptions")
  
-1. Select **Enable all (1)** to enable all the plans for Defender for Cloud and then click on  **Save (2)**.
+12. Select **Enable all (1)** to enable all the plans for Defender for Cloud and then click on  **Save (2)**.
 
     ![](images/plans1.png "enabled all")
         
