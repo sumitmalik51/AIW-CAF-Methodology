@@ -144,7 +144,7 @@ In this task, you will explore through Secure Score which helps you understand y
 
     ![](images/posture.png "secure score")
 
-1. Click on **Explore your security posture>**. here you can get an overview of your **security secure, unhealthy resources, and recommendations**.
+1. Click on **Explore your security posture>**. Here you can get an overview of your **secure score, unhealthy resources, and recommendations**.
 
     ![](images/securescore2.png "overview security posture")
     
@@ -207,7 +207,7 @@ In this task, you will explore and fix the security recomendations suggested by 
 
     ![](images/123.png)
 
-1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers)**. Click on  **Proceed**.
+1. On the **Choose a vulnerability assessment solution**, select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers)**. Click on  **Proceed**.
 
     ![](images/posture4.png)
 
@@ -215,7 +215,7 @@ In this task, you will explore and fix the security recomendations suggested by 
 
     ![](images/124.png)
 
-1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
+1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you can track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
 1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
@@ -262,7 +262,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/editing6.png)
 
-1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" enableCopy="false"/> (1)**. Alternately. you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
+1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" enableCopy="false"/> (1)**. Alternately, you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
 
     ![](images/editing7.png)
 
