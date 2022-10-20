@@ -418,9 +418,9 @@ In this task, you will create a storage account, this storage account will be us
  
       ![ss](/images1/0.0.png)
  
- 1. Now, you can paste the **IPv4 Address** in your **Local computer / Personal computer**.You can  observe the **This site can’t be reached error**
+ 1. Now, you can paste the **IPv4 Address** in your **Local computer / Personal computer**. You can  observe the **This site can’t be reached error**
  
-      > **Note**: you will see that your website is Blocked outside the Jump VM
+      > **Note**: You will see that your website is Blocked outside the Jump VM
  
      ![ss](/images1/site.png)
 
@@ -471,4 +471,4 @@ In this exercise you have covered the following:
    - Customized WAF rules
    - Performed Attack simulation
 
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
+Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
