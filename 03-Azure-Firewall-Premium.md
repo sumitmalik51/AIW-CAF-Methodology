@@ -1,4 +1,4 @@
-# Exercise 3: Azure Firewall Premium
+# **Exercise 3: Azure Firewall Premium**
 
 Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
@@ -13,7 +13,7 @@ For more information, see `https://learn.microsoft.com/en-us/azure/firewall/prem
 
 In this exercise, you will explore on Azure Firewall premium features and will add diagnostics settings to firewall. You will also perform test IDPS for HTTP traffic which helps in detection of atacks. You will also create Routes, Subnets in the existig Route table and also configure the TLS inspection and Application rules in firewall policy to perform web testing.
 
-### Task 1: Add firewall diagnostics settings 
+## **Task 1: Add firewall diagnostics settings** 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -42,7 +42,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
    ![](images/firewall6.png "search gateway")
 
 
-### Task 2: Test IDPS for HTTP traffic
+## **Task 2: Test IDPS for HTTP traffic**
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
@@ -103,7 +103,7 @@ In this task, you will test IDPS for HTTP traffic
 
 11. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
-### Task 3: Web categories testing
+## **Task 3: Web categories testing**
  
 In this task, you will create an application rule to allow access to sports websites.
 
@@ -229,7 +229,7 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
  
 
-### Task 4: Implement and Test URL filtering
+## **Task 4: Implement and Test URL filtering**
  
 1. Navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
  
@@ -267,7 +267,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall19.png "search gateway")
 
- 1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error conenction page, click on **Advanced**.
+1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error    conenction page, click on **Advanced**.
  
       ![](images1/Advanced1.png)
  
@@ -290,9 +290,9 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
  
  
- ### Task 5: DDOS protection (Read-Only)
+ ## **Task 5: DDOS protection (Read-Only)**
  
- ## What is DDoS protection?
+ ### What is DDoS protection?
 
 Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers that are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
 
@@ -301,7 +301,7 @@ Azure DDoS Protection, combined with application design best practices, provides
   ![](images/ddos.png)
 
 
-## Types of attacks Azure DDoS Protection mitigates
+### Types of attacks Azure DDoS Protection mitigates
 
 - **Volumetric attacks**: These attacks flood the network layer with a substantial amount of seemingly legitimate traffic. They include UDP floods, amplification floods, and other spoofed-packet floods. DDoS Protection mitigates these potential multi-gigabyte attacks by absorbing and scrubbing them, with Azure's global network scale, automatically.
 - **Protocol attacks**: These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
