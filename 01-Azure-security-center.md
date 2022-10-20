@@ -51,7 +51,6 @@ In this task, you will explore the features of Microsoft Defender for Cloud like
     
     ![](images/securityposture1.png "overview security posture")
 
-
 1. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the Cloud Security section.
 
     ![](images/select-workload-protection.jpg)
