@@ -358,7 +358,7 @@ Azure DDoS Protection, combined with application design best practices, provides
  
       ![](images/ddos11.png)
 
-1. Under Deployments, click on **Virtual Network**, and you will see that you are protected.
+1. Under Deployments, click on **Virtual Networks**, and you will see that you are protected.
  
       ![](images/ddos12.png)
     
