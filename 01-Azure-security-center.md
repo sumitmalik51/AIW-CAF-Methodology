@@ -36,23 +36,23 @@ In this task, you will explore the features of Microsoft Defender for Cloud.
 
     ![](images/defender-whats-new.jpg)
     
-1. Note the high-level numbers at the top menu; This view allows you to see a summary of your Azure subscriptions, Assessed resources, Active recommendations and Security alerts.
+1. Note the high-level numbers at the top menu. this view allows you to see a summary of your Azure subscriptions, Assessed resources, Active recommendations and Security alerts.
 
     ![](images/defender-overview.jpg)
 
-1. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
+1. On the **Overview** page, look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
 
     ![](images/editing11.png)
     
     > ⭐ Good to know: <br>
     > The higher the score, the lower the identified risk level.
 
-1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
+1. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your Secure score, unhealthy resources,    and recommendations.
     
     ![](images/securityposture1.png "overview security posture")
 
 
-1. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the Cloud Security section.
+1. From the **Microsoft Defender for Cloud** page, select the **Workload Protections** from the Cloud Security section.
 
     ![](images/select-workload-protection.jpg)
     
@@ -60,7 +60,7 @@ In this task, you will explore the features of Microsoft Defender for Cloud.
 
     ![](images/workload-fully-protected.jpg)
     
-1. On the Microsoft Defender for Cloud. Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
+1. On the Microsoft Defender for Cloud, Under Management section, Click on the **Environment settings**. Here you'll be able see the subscription.
 
     ![](images/settings.png "environment details")
     
@@ -92,7 +92,7 @@ In this task, you will explore through the security policy and will assign a bui
 
     ![](images/106.png )
 
-1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Select (4)**, followed by          clicking on **Next (5)**
+1. On the **Basics** tab, Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Select (4)**, followed by          clicking on **Next (5)**
 
     ![](images/editing1.png )
         
@@ -146,7 +146,7 @@ In this task, you will explore through Secure Score which helps you understand y
 
     ![](images/posture.png "secure score")
 
-1. Click on **Explore your security posture>**. here you can get an overview of your **security secure, unhealthy resources, and recommendations**.
+1. Click on **Explore your security posture>**. Here you can get an overview of your **secure score, unhealthy resources, and recommendations**.
 
     ![](images/securescore2.png "overview security posture")
     
@@ -209,7 +209,7 @@ In this task, you will explore and fix the security recomendations suggested by 
 
     ![](images/123.png)
 
-1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers)**. Click on  **Proceed**.
+1. On the **Choose a vulnerability assessment solution**, select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers)**. Click on  **Proceed**.
 
     ![](images/posture4.png)
 
@@ -217,7 +217,7 @@ In this task, you will explore and fix the security recomendations suggested by 
 
     ![](images/124.png)
 
-1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
+1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you can track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
 1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
@@ -264,7 +264,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/editing6.png)
 
-1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" enableCopy="false"/> (1)**. Alternately. you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
+1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" enableCopy="false"/> (1)**. Alternately, you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
 
     ![](images/editing7.png)
 
@@ -396,7 +396,7 @@ In this exercise you have covered the following:
    - Improved the security posture
    - Explored on Security Center and Security benchmark
 
- Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
+ Click on the **Next** button present in the bottom-right corner of the lab guide to start with the exercise of the lab.
 
 
 
