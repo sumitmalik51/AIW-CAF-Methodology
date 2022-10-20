@@ -262,7 +262,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/editing6.png)
 
-1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" enableCopy="false"/> (1)**. Alternately, you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2) and then select **view               resource (3)**.
+1. Open the resource health pane by selecting the resource. Click on **JumpVM-<inject key="Deployment ID" enableCopy="false"/> (1)**. Alternately, you can also right-click on any resource and select **view           resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on **ellipse(...) (2)** and then select **view               resource (3)**.
 
     ![](images/editing7.png)
 
