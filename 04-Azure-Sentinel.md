@@ -1,18 +1,21 @@
 # Exercise 4: Azure Sentinel
-## Lab objectives
-In this lab, you will complete the following exercise:
-1. What is Microsoft Sentinel
-1. Onboard Azure Subscription to Azure sentinel
-1. Onboard the Web App – IaaS server to sentinel
-1. Explore query logs
 
-# Task 1: What is Microsoft Sentinel?
+In this exercise, you will explore about Microsoft Sentinel, Onboarding Azure Subscriptions and Web App – IaaS server to Sentinel. You will run the queries from Microsoft Sentinal logs and will explore through the results.
+
+This exercise includes the following tasks:
+
+  - What is Microsoft Sentinel
+  - Onboard Azure Subscription to Azure sentinel
+  - Onboard the Web App – IaaS server to sentinel
+  -  Explore query logs
+
+### Task 1: What is Microsoft Sentinel?
 
 Microsoft Sentinel is a scalable, cloud-native solution that provides:
 - Security information and event management (SIEM).
 - Security orchestration, automation, and response (SOAR).
 
- Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise. With Microsoft Sentinel, you get a single solution for attack detection, threat visibility, proactive hunting, and threat response.
+ Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise. With Microsoft Sentinel, you get a single solution for attack detection, threat visibility, proactive hunting, and threat response.  To learn more about Microsoft Sentinel refer: `https://learn.microsoft.com/en-us/azure/sentinel/overview`
 
 Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 1. **Collect data at cloud scale** across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
@@ -22,7 +25,9 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/core-capabilities.png "core-capabilities")
     
-# Task 2: Onboard Azure Subscription to Azure sentinel
+### Task 2: Onboard Azure Subscription to Azure sentinel
+
+In this task, you will onboard the Azure subscription to Azure sentinel by congiguring the new Log Analytics workspace from sentinel.
 
 1. In Azure portal, search **microsoft-sentinel (1)** and select **microsoft-sentinel (2)**.
 
@@ -108,7 +113,9 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     >**NOTE**: Azure sentinel will take around 30 minutes to load and display the data, meanwhile you can continue with the lab and  we will explore the data            collected by log analytics in task 4.    
      
-# Task 3: Onboard the Web App – IIS server to sentinel
+### Task 3: Onboard the Web App – IIS server to sentinel
+
+In this task, you will onboard the web app -  IIS server to sentinal by configuring the log Analytics agent.
 
 1. In Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
 
@@ -167,7 +174,9 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
      ![](images/agents3.png)
 
-# Task 4: Explore query logs
+### Task 4: Explore query logs
+
+In this task, you will run the queries in Microsoft sentinel to check the health status and usage of Network, Logical Disk, Memory, and Processor for VM.
 
 1. Now, go back to **Microsoft Sentinel |Overview** page by clicking on **Overview (1)** under General on the left hand side blade, and then click on **Heartbeat          (2)**.
     
