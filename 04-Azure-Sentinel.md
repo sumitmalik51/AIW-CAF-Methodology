@@ -110,15 +110,15 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
      
 # Task 3: Onboard the Web App – IIS server to sentinel
 
-1. In Azure portal, search **Log Analytics workspace (1)**. and select **Log Analytics workspace (2)** from the search results.
+1. In Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
 
      ![](images/analytics1.png)
 
-1. On the  log analytics workspace page, select **log-analytics (1)**,and under settings, click on **Agents management (2)** after that expand **Log Analytics agent                instructions (3)**, and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)**, then save it to notepad for later use.
+1. On the  log analytics workspace page, select **log-analytics (1)**, and under settings, click on **Agents management (2)** after that expand **Log Analytics agent                instructions (3)**, and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)**, then save it to notepad for later use.
 
      ![](images/analytics2.png)
 
-1. Now, on your we browser, click on three dots **[...] (1)** and, go to **Downloads (2)**.
+1. Now, on your web browser, click on three dots **[...] (1)** and, go to **Downloads (2)**.
 
      ![](images/analytics3.png)
 
@@ -169,11 +169,11 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
 # Task 4: Explore query logs
 
-1. Now, go back to **Microsoft Sentinel |Overview** page by clicking on **Overview (1)** under General on the left hand side blade, and then click on **Heartbeat (2)**.
+1. Now, go back to **Microsoft Sentinel |Overview** page by clicking on **Overview (1)** under General on the left hand side blade, and then click on **Heartbeat          (2)**.
     
     ![](images/microsoft1.png "news-sentinel")
     
- >**NOTE**:Your hearbeat count may varyfrom the screenshot above. 
+    >**NOTE**: Your hearbeat count may varyfrom the screenshot above. 
 
 1. Now under **Logs** page, click on **Run** , Here you will see results of  **union Heartbeat** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
@@ -195,7 +195,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/505.png "news-sentinel")
 
-1. On the **Queries** page, under All Queries, scroll down to **Other (1)**, and then click on **Run (2)** under **VMprocess** to run the saved querie.
+1. On the **Queries** page, under All Queries, scroll down to **Other (1)**, and then click on **Run (2)** under **VMprocess** to run the saved query.
 
     ![](images/506.png "news-sentinel")
 
