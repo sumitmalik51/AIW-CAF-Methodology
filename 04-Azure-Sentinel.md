@@ -45,7 +45,7 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
    - Subscription: **Leave it as default (1)**
    - Resource Group: **JumpVM-rg (2)**.
    - Name: Enter **log-analytics (3)**.
-   - Region: **<inject key="Region" />**
+   - Region: **East US**
    - Click on **Tags (5)** to continue.
 
      ![](images/log1.png "create log analytics")
@@ -56,12 +56,10 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
   
 1. If the validation is passed then  click on **Create**.
 
-    >**NOTE**: It may take a couple of minutes for the workspace to be created.
-
+   >**NOTE**: It may take a couple of minutes for the workspace to be created.
 
      ![](images/log3.png "Passed log analytics")
-    
-  
+      
 1. Once the Log Analytics workspace is added you will see a notification that says **Successfully added Log Analytics workspace**, as shown below.
 
       ![](images/log4.png "Passed log analytics")
