@@ -83,7 +83,7 @@ This exercise includes the following tasks:
     
  # Task 2: Publish your application to the internet with the application gateway
  
-In this task, you'll publish an application via Application Gateway.
+In this task, you'll publish an application via Application Gateway by configuring the DNAT rules from firewall policy.
 
 1.  In the the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
