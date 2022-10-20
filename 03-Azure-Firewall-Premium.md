@@ -11,7 +11,7 @@ Azure Firewall Premium is a next generation firewall with capabilities that are 
 For more information, see https://learn.microsoft.com/en-us/azure/firewall/premium-features
  
 
-In this exercise, you will explore on Azure Firewall premium features and will add diagnostics settings to firewall. You will also perform test IDPS for HTTP traffic which helps in detection of atacks.
+In this exercise, you will explore on Azure Firewall premium features and will add diagnostics settings to firewall. You will also perform test IDPS for HTTP traffic which helps in detection of atacks. You will also create Routes, Subnets in the existig Route table and also configure the TLS inspection and Application rules in firewall policy to perform web testing.
 
 ### Task 1: Add firewall diagnostics settings 
 
