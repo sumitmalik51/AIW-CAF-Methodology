@@ -192,30 +192,28 @@ In this task, you will create a storage account, this storage account will be us
        
  1. Now under **Advanced** tab, leave everything to default and then click on **Next**.
 
-       ![storage account](/images/stacc2.png)
+     ![storage account](/images/stacc2.png)
 
  
  1. Now under **Networking** tab, leave everything to default and then click on **Next**.
 
-      ![storage account](/images/stacc3.png)
+     ![storage account](/images/stacc3.png)
 
 1. Now under **Data protection** tab, leave everything to default and then click on **Next**.
 
-      ![storage account](/images/stacc4.png)
-
+     ![storage account](/images/stacc4.png)
 
 1. Now under **Encryption** tab, leave everything to default and then click on **Next**.
 
-      ![storage account](/images/stacc5.png)
-
+     ![storage account](/images/stacc5.png)
 
 1. Now under **Tags** tab, leave everything to default and then click on **Next**.
 
-      ![storage account](/images/stacc6.png)
+     ![storage account](/images/stacc6.png)
          
 1.  Review the configuration of the storage account and click on **Create**.
 
-      ![storage account](/images/stacc7.png)
+     ![storage account](/images/stacc7.png)
       
       
 
