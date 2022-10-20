@@ -40,16 +40,16 @@ In this task, you will explore the features of Microsoft Defender for Cloud like
 
     ![](images/defender-overview.jpg)
 
-6. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
+6. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of Completed controls and Completed         recommendations. Clicking on this tile will redirect you to drill down view across subscriptions.
 
     ![](images/editing11.png)
-    
-    > ⭐ Good to know: <br>
-    > The higher the score, the lower the identified risk level.
+      
+      > ⭐ Good to know: <br>
+      > The higher the score, the lower the identified risk level.
 
 7. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your security secure, unhealthy resources,    and recommendations.
     
-    ![](images/securityposture1.png "overview security posture")
+   ![](images/securityposture1.png "overview security posture")
 
 8. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the Cloud Security section.
 
