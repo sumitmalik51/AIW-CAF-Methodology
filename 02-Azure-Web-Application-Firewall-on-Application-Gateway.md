@@ -6,7 +6,7 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP). To learn more about Application gateway refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
 
-In this exercise, you will deploy an Azure Firewall and Application Gateway with WAF V2 then you will publish an application through it. You'll also test the application for security and perform a sample attack.
+In this exercise, you will deploy an Azure Firewall and Application Gateway with WAF V2 then you will publish an application through it. You'll also test the security of the application and perform a sample attack.
 
 This exercise includes the following tasks:
 
@@ -18,7 +18,7 @@ This exercise includes the following tasks:
 
  ## **Task 1: Configure WAF to Protect your web application**
  
- In this task, you will add Virtual Machine as the Backend pool of Application gateway and also configure the Application Gateway from irewall policy.
+ In this task, you will add Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
@@ -34,8 +34,8 @@ This exercise includes the following tasks:
      
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
-    - **Target type** : Select **Virtual Machine (1)** from drop-down.
-    - **Target** : Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down
+    - **Target type**: Select **Virtual Machine (1)** from the drop-down.
+    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down
     - Click on **Save (3)**
 
     ![](/images1/editbackendpool.png)
@@ -58,7 +58,7 @@ This exercise includes the following tasks:
     
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
-    - **Application Gateway (WAF v2 SKU)** : Select **Aplication Gateway (1)** from drop-down 
+    - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
     - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**
     - Click on **Add (3)**
 
@@ -71,21 +71,21 @@ This exercise includes the following tasks:
  
 1. Under, the **Associate listeners in an application gateway** page, follow the below instructions:
 
-    - **Application Gateway (WAF v2 SKU)** : Select **Application Gateway (1)** from drop-down .
-    - **Listeners** : Select **AGListener (2)**.
+    - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop-down.
+    - **Listeners**: Select **AGListener (2)**.
     - Click on **Add (3)**
 
      ![](images/image311.png)
           
-1.  Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation stating that **Updated the Application Gateway**.
+1.  Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation stating that you **Updated the Application Gateway**.
 
      ![](images/image312.png)
     
  ## **Task 2: Publish your application to the internet with the application gateway**
  
-In this task, you'll publish an application via Application Gateway by configuring the DNAT rules from firewall policy.
+In this task, you'll publish an application via Application Gateway by configuring the DNAT rules from the firewall policy.
 
-1.  In the the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
      ![](images/searchgateway.png "search gateway")
  
@@ -117,15 +117,15 @@ In this task, you'll publish an application via Application Gateway by configuri
 
     ![ip](/images1/firewallip1.png)  
      
-1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
    ![FM](/images1/firewallmanager.png)
     
-1. Select **Azure Firewall Policies (1)** under **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
+1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
    ![policy](/images1/selectfirewallpolicy.png)
    
-1. Select **DNAT Rules (1)** from **Settings** tab under **Firewall Policy** page and select **+ Add a rule collection (2)**
+1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
    ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
     
@@ -142,15 +142,15 @@ In this task, you'll publish an application via Application Gateway by configuri
       - Protocol: Select **TCP** from the drop-down list
       - Destination Ports: **80**
       - Destination type: Select **IP Address** from the drop-down list
-      - Destination: Enter the IP address of **Firewall** which you copied in step 8.
-      - Translated address: Enter the Public IP address of **Application gateway** which you copied in step 4.
+      - Destination: Enter the IP address of the **Firewall** which you copied in step 8.
+      - Translated address: Enter the Public IP address of the **Application gateway** which you copied in step 4.
       - Translated port: **80**
      
      - Click on **Add (6)**
 
        ![rule](/images1/rulecollection.png)
           
-1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab which you copiend in step 4.
+1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in step 4.
 
    ![ss](/images/image307.png)
        
@@ -174,40 +174,40 @@ In this task, you will create a storage account, this storage account will be us
      
 1.  On the **Basics** tab of the **Storage account** blade, enter the below details:
 
-     - Subscription : **Leave it as default (1)**.
+     - Subscription: **Leave it as default (1)**.
 
-     - Resource group : **JumpVM-rg (2)**
+     - Resource group: **JumpVM-rg (2)**
 
-     - Storage account name : Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (3)**
+     - Storage account name: Enter **stacc<inject key="Deployment ID" enableCopy="false"/> (3)**
 
-     - Region : Enter **<inject key="Region" /> (4)**
+     - Region: Enter **<inject key="Region" /> (4)**
 
      - Performance: Select **Standard**
 
-     - Redundancy : Select **Geo-redundant storage (GRS) (5)**
+     - Redundancy: Select **Geo-redundant storage (GRS) (5)**
      
      - Click on **Next (6)**
 
        ![storage account](/images/stacc1.png)
        
- 1. Now under **Advanced** tab, leave everything to default and then click on **Next**.
+ 1. Now under the **Advanced** tab, leave everything to default and then click on **Next**.
 
      ![storage account](/images/stacc2.png)
 
  
- 1. Now under **Networking** tab, leave everything to default and then click on **Next**.
+ 1. Now under the **Networking** tab, leave everything to default and then click on **Next**.
 
      ![storage account](/images/stacc3.png)
 
-1. Now under **Data protection** tab, leave everything to default and then click on **Next**.
+1. Now under the **Data protection** tab, leave everything to default and then click on **Next**.
 
      ![storage account](/images/stacc4.png)
 
-1. Now under **Encryption** tab, leave everything to default and then click on **Next**.
+1. Now under the **Encryption** tab, leave everything to default and then click on **Next**.
 
      ![storage account](/images/stacc5.png)
 
-1. Now under **Tags** tab, leave everything to default and then click on **Next**.
+1. Now under the **Tags** tab, leave everything to default and then click on **Next**.
 
      ![storage account](/images/stacc6.png)
          
@@ -238,15 +238,15 @@ In this task, you will create a storage account, this storage account will be us
 
          ![](/images1/selectnsg.png)
          
-      - On **Select network security group** page, select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nsg (1)** and click on **Confirm selection (2)**.
+      - On the **Select network security group** page, select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nsg (1)** and click on **Confirm selection (2)**.
 
         ![](/images1/confirmselection.png)
         
       - Under **Instance details**, follow the below steps:
 
-         - Storage Accounts :Select **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
+         - Storage Accounts: select **stacc<inject key="Deployment ID" enableCopy="false"/> (1)**
 
-         - Retention(days) : Enter **7 (2)**
+         - Retention(days): Enter **7 (2)**
 
          - Select **Configuration (3)**
 
@@ -260,7 +260,7 @@ In this task, you will create a storage account, this storage account will be us
 
    ![create](/images1/create1.png)
        
-1. You'll be able to see the created NSG flow logs for both virtual machines under **NSG Flow logs** of **Network watcher blade**
+1. You'll be able to see the created NSG flow logs for both virtual machines under the **NSG Flow logs** of the **Network watcher blade**
 
     ![nsg](/images1/nsgflow.png)
     
@@ -269,7 +269,7 @@ In this task, you will create a storage account, this storage account will be us
 
  In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
-1. Navigate back to the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+1. Navigate back to the Azure **Home** page, from the search bar search for **Application gateways (1)**, and then select **Application gateways (2)**.
  
      ![](images/searchgateway.png "search gateway")
  
@@ -307,7 +307,7 @@ In this task, you will create a storage account, this storage account will be us
 
    ![netwat](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/traffic.png?raw=true)
       
-1. On the **Traffic Analytics** page, set the time interval to **Last 30 minutes**.
+1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
    ![time interval](/images1/timeinterval.png)
    
@@ -341,7 +341,7 @@ In this task, you will create a storage account, this storage account will be us
 
      ![close](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/close.png?raw=true)
       
-1. Close the **Ports receiving traffic from Internet** page by clicking the **Cross (X) icon** from the top right corner.
+1. Close the **Ports receiving traffic from the Internet** page by clicking the **Cross (X) icon** from the top right corner.
       
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
@@ -351,7 +351,7 @@ In this task, you will create a storage account, this storage account will be us
 
     ![td](/images1/ipsee.png)
     
-1. You can observe the graph of **Time trending chart for top 5 talking IPs** from the **Traffic distribution across top IPs** page.
+1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
 
     ![see more](/images1/trafficdistri.png)
     
@@ -374,7 +374,7 @@ In this task, you will create a storage account, this storage account will be us
      
 ## **Task 4: Customize WAF rules**
  
- In this task, you will configure the Custom rules for firewall policy and will publish the web application within the VM and from Local computer to check the application reachability.
+ In this task, you will configure the Custom rules for firewall policy and will publish the web application within the VM and from the Local computer to check the application's reachability.
  
  1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
  
@@ -394,8 +394,8 @@ In this task, you will create a storage account, this storage account will be us
  
  1. On the **Add custom rule** blade, enter the following details
  
-    - Custom rule name : **WAFcustomrule (1)**.
-    - Priority : enter **1 (2)**.
+    - Custom rule name: **WAFcustomrule (1)**.
+    - Priority: Enter **1 (2)**.
     - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2
     - Click on **Add (4)**.
  
@@ -416,7 +416,7 @@ In this task, you will create a storage account, this storage account will be us
  
       ![ss](/images1/0.0.png)
  
- 1. Now, you can paste the **IPv4 Address** in your **Local computer / Personal computer**. You can  observe the **This site can’t be reached error**
+ 1. Now, you can paste the **IPv4 Address** into your **Local computer / Personal computer**. You can  observe the **This site can’t be reached** error
  
       > **Note**: You will see that your website is Blocked outside the Jump VM
  
@@ -432,7 +432,7 @@ In this task, you will be testing your application for security and performing s
     
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it. You can observe the web application can be still accessible.
   
-   > **Note** : Your browsing URL value should look ```http://20.185.224.102/?q=<script>```
+   > **Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
     
    ![ss](/images1/attack.png)
   
