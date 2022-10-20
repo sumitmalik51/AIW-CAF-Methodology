@@ -368,7 +368,7 @@ In this exercise you have covered the following:
   
    - Added firewall diagnostics settings 
    - Tested IDPS for HTTP traffic
-   - Tested  Web categories
+   - Performed Web categories testing 
    - Implemented and Tested URL filtering
    - Explored on DDos protection
 
