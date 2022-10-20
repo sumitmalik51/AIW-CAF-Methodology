@@ -90,11 +90,11 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
 1. On the left hand blade of Microsoft Sentinel page, under configuration, click on **Settings (1)** and then click on **Workspace settings (2)**.
 
-    ![](images/log10.png "news-sentinel")
+   ![](images/log10.png "news-sentinel")
 
 1. On the Log Analytics workspace page, under Connect a data source, click on **Azure virtual machines (VMs)**.
 
-    ![](images/correct2.png "news-sentinel")
+   ![](images/correct2.png "news-sentinel")
 
 1. You will see that the virtual machine is not connected to the Log Analytics Connection. Now, click on **JumpVM-<inject key="Deployment ID" />** to connect with Log Analytics Connection
 
