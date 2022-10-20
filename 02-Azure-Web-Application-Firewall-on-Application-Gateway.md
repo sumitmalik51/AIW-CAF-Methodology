@@ -227,7 +227,7 @@ In this task, you will create a storage account, this storage account will be us
 
    ![network watcher](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/networkwatcher1.1.png?raw=true)
    
-1. On the Network Watcher page select the **NSG flow logs** under Logs.
+1. On the Network Watcher page, select the **NSG flow logs** under Logs.
 
    ![select nsg](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/nsgflow.png?raw=true)
     
