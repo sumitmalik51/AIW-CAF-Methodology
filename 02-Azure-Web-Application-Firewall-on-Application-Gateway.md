@@ -18,7 +18,7 @@ This exercise includes the following tasks:
 
  # Task 1: Configure WAF to Protect your web application
  
- In this task, you will add Virtual Machine as the Backend pool of Application gateway and also you will configure the DNAT Rules in the firewall policy.
+ In this task, you will add Virtual Machine as the Backend pool of Application gateway and also configure the Application Gateway from irewall policy.
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
@@ -158,7 +158,7 @@ In this task, you'll publish an application via Application Gateway by configuri
   
 ### Task 3: Monitor attacks against your web application 
 
-In this task, you will Monitor the attacks against the web application.
+In this task, you will Monitor the attacks against the web application using Network Watcher.
 
 ### Task 3.1: Create Storage Account
 
