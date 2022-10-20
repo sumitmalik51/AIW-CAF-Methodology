@@ -117,7 +117,7 @@ In this task, you'll publish an application via Application Gateway.
 
     ![ip](/images1/firewallip1.png)  
      
-1. Navigate back on Azure Firewall Select **Firewall Manager (1)** from the **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
    ![FM](/images1/firewallmanager.png)
     
