@@ -139,7 +139,7 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
  
     ![](images1/selectedge.png)
     
-1. In the Microsoft edge browser, open the Azure portal with  **portal.azure.com** and sign in with your credentials. You can check your credentials in the                **Environment details**.
+1. In the Microsoft edge browser, open the Azure portal with  **portal.azure.com** and sign in with your login credentials. You can check your credentials in the                **Environment details**.
 
 1. Now, In Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
 
