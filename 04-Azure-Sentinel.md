@@ -1,4 +1,4 @@
-# Exercise 4: Azure Sentinel
+# **Exercise 4: Azure Sentinel**
 
 In this exercise, you will explore about Microsoft Sentinel, Onboarding Azure Subscriptions and Web App – IaaS server to Sentinel. You will run the queries from Microsoft Sentinal logs and will explore through the results.
 
@@ -9,7 +9,7 @@ This exercise includes the following tasks:
   - Onboard the Web App – IaaS server to sentinel
   -  Explore query logs
 
-### Task 1: What is Microsoft Sentinel?
+## **Task 1: What is Microsoft Sentinel?**
 
 Microsoft Sentinel is a scalable, cloud-native solution that provides:
 - Security information and event management (SIEM).
@@ -25,7 +25,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
 
     ![](images/core-capabilities.png "core-capabilities")
     
-### Task 2: Onboard Azure Subscription to Azure sentinel
+## **Task 2: Onboard Azure Subscription to Azure sentinel**
 
 In this task, you will onboard the Azure subscription to Azure sentinel by congiguring the new Log Analytics workspace from sentinel.
 
@@ -110,7 +110,7 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
     >**NOTE**: Azure sentinel will take around 30 minutes to load and display the data, meanwhile you can continue with the lab and  we will explore the data            collected by log analytics in task 4.    
      
-### Task 3: Onboard the Web App – IIS server to sentinel
+## **Task 3: Onboard the Web App – IIS server to sentinel**
 
 In this task, you will onboard the web app -  IIS server to sentinal by configuring the log Analytics agent.
 
@@ -171,7 +171,7 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
 
      ![](images/agents3.png)
 
-### Task 4: Explore query logs
+## **Task 4: Explore query logs**
 
 In this task, you will run the queries in Microsoft sentinel to check the health status and usage of Network, Logical Disk, Memory, and Processor for VM.
 
@@ -216,13 +216,11 @@ In this task, you will run the queries in Microsoft sentinel to check the health
 1.  Now under **Logs** page, click on **Run (2)** , Here you will see results of  **union usage** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
      ![](images/microsoft6.png "news-sentinel")
-     
-     
-     
- ## Summary
+        
+## **Summary**
  
 In this exercise you have covered the following:
-   - Explored Microsoft Sentinel 
+   - Explored on Microsoft Sentinel 
    - Onboarded Azure Subscription to Azure sentinel 
    - Onboarded the Web App – IaaS server to sentinel 
    - Explored on query logs
