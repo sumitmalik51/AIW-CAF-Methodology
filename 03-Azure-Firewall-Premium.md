@@ -88,7 +88,7 @@ In this task, you will test IDPS for HTTP traffic
  
    ![](images/firewall12.png "search gateway")
  
-9. Under edit rules change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
+9. Under edit rules, change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
  
    ![](images/firewall13.png "search gateway")
 
@@ -122,7 +122,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Address prefix destination : Select **IP Address (2)** from drop-down list
     - Destination IP address/ CIDR ranges: Enter **0.0.0.0/0 (3)**
     - Next hop type: Select **Virtual appliance (4)** from drop-down list
-    - Next hop address: Enter the** private IP Address** of Firewall **(5)**.
+    - Next hop address: Enter the **private IP Address** of Firewall **(5)**.
     - Select **Add (6)**
  
      ![](images1/addrouterule.png)
@@ -276,7 +276,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/unsafe1.png)
  
-1. Now you validate that the HTML response is displayed as expected in the browser..
+1. Now you validate that the HTML response is displayed as expected in the browser.
  
     ![](images/firewall22.png "search gateway")
  
@@ -359,11 +359,11 @@ Azure DDoS Protection, combined with application design best practices, provides
  
       ![](images/ddos11.png)
 
-1. Under setting click on **Virtual Network**, and you will see that you are protected.
+1. Under Deployments, click on **Virtual Network**, and you will see that you are protected.
  
       ![](images/ddos12.png)
     
  
  
- Now you can proceed with the next exercise **[Exercise 4: Azure Sentinel](04-Azure-Sentinel.md)** 
+ Click on the **Next** button present in the bottom-right corner of the lab guide to start with the first exercise of the lab.
 
