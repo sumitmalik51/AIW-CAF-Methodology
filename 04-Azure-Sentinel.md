@@ -114,7 +114,34 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
 In this task, you will onboard the web app -  IIS server to sentinal by configuring the log Analytics agent.
 
-1. In Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
+1. In Azure portal, navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
+ 
+    ![](images1/selectvm.png)
+
+1. On the Virtual Machine page, go to the **Overview (1)** tab and click on **Connect (2)** then select **Bastion (3)**.
+ 
+    ![](images1/connect.png)
+ 
+1. On the Bastion page, follow the below mentioned instructions to connect into the Virtual Machine using Bastion:
+ 
+    - **Username** : Enter **demouser (1)**
+    - **Authentication Type** : Select **Password (2)** from the drop-down
+    - **Password** Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
+    - Click on **Connect (4)**
+ 
+    ![](images1/bastionconnect.png)
+ 
+1. Now, you will be re-directed to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
+ 
+    ![](images1/allowpopup.png)
+ 
+1. Within the Bastion VM, search for **Edge (1)** and select **Microsoft Edge (2)**.
+ 
+    ![](images1/selectedge.png)
+    
+1. In the Microsoft edge browser, open the Azure portal with  **portal.azure.com** and sign in with your credentials. You can check your credentials in the                **Environment details**.
+
+1. Now, In Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
 
      ![](images/analytics1.png)
 
@@ -159,7 +186,7 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
       ![](images/analytics11.png)
 
 1. On the **log analytics workspace** page, click on **log-analytics (1)**, then click on **Agents management (2)** under settings and you will see **1 Windows        computers connected (3)**
-   >**NOTE**: It will takes around 2-3 minutes, for the log analytics agent to connect with virtual machine, wait for it to complete before proceeding with the lab.
+   >**NOTE**: It will takes around 5 minutes, for the log analytics agent to connect with virtual machine, wait for it to complete before proceeding with the lab.
 
       ![](images/agents1.png)
 
