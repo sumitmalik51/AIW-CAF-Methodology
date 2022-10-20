@@ -36,7 +36,7 @@ In this task, you will explore the features of Microsoft Defender for Cloud like
 
     ![](images/defender-whats-new.jpg)
     
-5. Note the high-level numbers at the top menu, This view allows you to see a summary of your Azure subscriptions, Assessed resources, Active recommendations and Security alerts.
+5. Note the high-level numbers at the top menu, this view allows you to see a summary of your Azure subscriptions, Assessed resources, Active recommendations and Security alerts.
 
     ![](images/defender-overview.jpg)
 
@@ -91,7 +91,7 @@ In this task, you will explore through the security policy and will assign a bui
 
     ![](images/106.png )
 
-1. On the **Basics** tab. Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Select (4)**, followed by          clicking on **Next (5)**
+1. On the **Basics** tab, Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Select (4)**, followed by          clicking on **Next (5)**
 
     ![](images/editing1.png )
         
