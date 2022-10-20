@@ -16,7 +16,7 @@ This exercise includes the following tasks:
   - Customize WAF rules
   - Attack simulation
 
- ### Task 1: Configure WAF to Protect your web application
+ # Task 1: Configure WAF to Protect your web application
  
  In this task, you will add Virtual Machine as the Backend pool of Application gateway and also you will configure the DNAT Rules in the firewall policy.
  
@@ -81,7 +81,7 @@ This exercise includes the following tasks:
 
      ![](images/image312.png)
     
- ### Task 2: Publish your application to the internet with the application gateway
+ # Task 2: Publish your application to the internet with the application gateway
  
 In this task, you'll publish an application via Application Gateway.
 
@@ -143,7 +143,7 @@ In this task, you'll publish an application via Application Gateway.
       - Destination Ports: **80**
       - Destination type: Select **IP Address** from the drop-down list
       - Destination: Enter the IP address of **Firewall** which you copied in step 8.
-      - Translated address: Enter the Public IP address of **Application gateway**. which you copied in step 4.
+      - Translated address: Enter the Public IP address of **Application gateway** which you copied in step 4.
       - Translated port: **80**
      
      - Click on **Add (6)**
@@ -456,10 +456,6 @@ In this task, you will be testing your application for security and performing s
     
     ![server error](/images1/403.png)
  
- 1. Navigate back to the **firewallpolicy** page, from the **Overview (1)** tab click on **Switch to detection mode (2)**.
- 
-     ![ss](/images/image308.png)
-
      
 ## Summary
  
