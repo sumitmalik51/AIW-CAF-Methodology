@@ -1,7 +1,7 @@
-# Exercise 1: Azure Security Center/ Microsoft Defender for Cloud
+# Exercise 1: **Azure Security Center/ Microsoft Defender for Cloud**
 
 
-## Overview
+### **Overview**
 
 Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all your Azure, on-premises, and multicoloured (Amazon AWS and Google GCP) resources. You can find more references about the virtual network from here: `https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction`
 
@@ -18,7 +18,7 @@ This exercise includes the following tasks:
   - Task 5: Exploring Security Center and Security benchmark
   
   
-### Task 1: Exploring Microsoft Defender for Cloud
+## Task 1: **Exploring Microsoft Defender for Cloud**
 
 In this task, you will explore the features of Microsoft Defender for Cloud like Security posture, Workload Protections, Environment settings 
 
@@ -71,7 +71,7 @@ In this task, you will explore the features of Microsoft Defender for Cloud like
 
     ![](images/plans1.png "enabled all")
         
-# Task 2: Configure Security Policies
+## Task 2: **Configure Security Policies**
 
 In this task, you will explore through the security policy and will assign a built-in initiative policy used by Microsoft Defender for Cloud to the JumpVM-rg resource group.
 
@@ -132,10 +132,9 @@ In this task, you will explore through the security policy and will assign a bui
     ![](images/azure1.png )
     
     
-# Task 3: Secure Score 
+## Task 3: **Secure Score** 
 
 In this task, you will explore through Secure Score which helps you understand your current security situation and also helps you to understand the security situation by giving recommendations.
-
 
 1. Search **Microsoft Defender for Cloud (1)** and Select **Microsoft Defender for Cloud (2)**.
 
@@ -183,7 +182,7 @@ In this task, you will explore through Secure Score which helps you understand y
     
     ![](images/secure9.png)
 
-# Task 4: Improving your Secure Posture 
+## Task 4: **Improving your Secure Posture** 
 
 In this task, you will explore and fix the security recomendations suggested by Microsoft Defender for cloud.
 
@@ -225,11 +224,11 @@ In this task, you will explore and fix the security recomendations suggested by 
    
     ![](images/posture6.png)
 
-# Task 5: Exploring Security Center and Security benchmark
+## Task 5: **Exploring Security Center and Security benchmark**
 
 Azure Security Center by Microsoft is a solution that provides unified security management across hybrid cloud workloads. It offers threat protection for data centers within both cloud workloads and on-premises. In this task, you will explore Security Center and Security benchmark.
 
-## Explore Security Center
+### Task 5.1: **Explore Security Center**
 
 1. In the Azure portal, Search **Azure Security Center (1)** and then click **Azure Security Center (2)**. 
 
@@ -311,7 +310,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
  
    ![](images/defender18.png)
 
-## Explore Security benchmark
+### Task 5.2: **Explore Security benchmark**
 
 1. Search for **Policy (1)** in Azure portal search bar and then click on **Policy (2)**.
 
@@ -346,7 +345,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/benchmark5.png)
 
-## Add a custom initiative to your subscription
+### Task 5.3: **Add a custom initiative to your subscription**
 
 1. Search for **Microsoft Defender for Cloud (1)** in Azure portal search bar and then click on **Microsoft Defender for Cloud (2)**.
     
