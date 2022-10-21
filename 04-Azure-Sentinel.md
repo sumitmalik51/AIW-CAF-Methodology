@@ -1,6 +1,6 @@
 # **Exercise 4: Azure Sentinel**
 
-In this exercise, you will explore about Microsoft Sentinel, Onboarding Azure Subscriptions and Web App – IaaS server to Sentinel. You will run the queries from Microsoft Sentinal logs and will explore through the results.
+In this exercise, you will explore about Microsoft Sentinel, Onboarding Azure Subscriptions and Web App – IaaS server to Sentinel. You will run the queries from Microsoft Sentinel logs and will explore the results.
 
 This exercise includes the following tasks:
 
@@ -19,7 +19,7 @@ Microsoft Sentinel is a scalable, cloud-native solution that provides:
 
 Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 1. **Collect data at cloud scale** across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
-1. **Detect previously undetected threats**, and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
+1. **Detect previously undetected threats** and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
 1. **Investigate threats with artificial intelligence**, and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft.
 1. **Respond to incidents rapidly** with built-in orchestration and automation of common tasks.
 
@@ -27,9 +27,9 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
     
 ## **Task 2: Onboard Azure Subscription to Azure sentinel**
 
-In this task, you will onboard the Azure subscription to Azure sentinel by congiguring the new Log Analytics workspace from sentinel.
+In this task, you will onboard the Azure subscription to Azure sentinel by comfiguring the new Log Analytics workspace from sentinel.
 
-1. In Azure portal, search **microsoft-sentinel (1)** and select **microsoft-sentinel (2)**.
+1. In the Azure portal, search **Microsoft sentinel (1)** and select **Microsoft sentinel (2)**.
 
     ![](images/microsoft-sentinel.png "microsoft-sentinel")
  
@@ -41,7 +41,7 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
      ![](images/loganalytics.png "log analytics")
      
-1. On **Log Analytics workspace** page, provide the information as mentioned below,
+1. On the **Log Analytics workspace** page, provide the information as mentioned below,
    - Subscription: **Leave it as default (1)**
    - Resource Group: **JumpVM-rg (2)**.
    - Name: Enter **log-analytics (3)**.
@@ -54,13 +54,13 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
      ![](images/log2.png "create log analytics")
   
-1. If the validation is passed then  click on **Create**.
+1. If the validation is passed, then  click on **Create**.
 
    >**NOTE**: It may take a couple of minutes for the workspace to be created.
 
      ![](images/log3.png "Passed log analytics")
       
-1. Once the Log Analytics workspace is added you will see a notification that says **Successfully added Log Analytics workspace**, as shown below.
+1. Once the Log Analytics workspace is added you will see the notification that says **Successfully added Log Analytics workspace**, as shown below.
 
       ![](images/log4.png "Passed log analytics")
 
@@ -68,7 +68,7 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
       ![](images/log5.png "click on add")
       
-1. Once the Microsoft Sentinel is added you will see another notification that says **Successfully added Azure Sentinel**, as shown below.
+1. Once the Microsoft Sentinel is added you will see another notification that says **Successfully added Microsoft Sentinel**, as shown below.
 
       ![](images/log6.png)
 
@@ -84,11 +84,11 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
     ![](images/402.png "news-sentinel")
     
-1. Once the **Workbook** is added, you will see notification that says **Workbook 'Microsoft Web Application Firewall (WAF) - Azure WAF saved successfully**, as shown below.
+1. Once the **Workbook** is added, you will see a notification that says **Workbook 'Microsoft Web Application Firewall (WAF) - Azure WAF saved successfully**, as shown below.
 
    ![](images/sentinel4.png "news-sentinel")
 
-1. On the left hand blade of Microsoft Sentinel page, under configuration, click on **Settings (1)** and then click on **Workspace settings (2)**.
+1. On the left-hand blade of the Microsoft Sentinel page, under configuration, click on **Settings (1)** and then click on **Workspace settings (2)**.
 
      ![](images/log10.png "news-sentinel")
 
@@ -112,9 +112,9 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
      
 ## **Task 3: Onboard the Web App – IIS server to sentinel**
 
-In this task, you will onboard the web app -  IIS server to sentinal by configuring the log Analytics agent.
+In this task, you will onboard the web app -  IIS server to sentinel by configuring the log Analytics agent.
 
-1. In Azure portal, navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
     ![](images1/selectvm.png)
 
@@ -122,16 +122,16 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
  
     ![](images1/connect.png)
  
-1. On the Bastion page, follow the below mentioned instructions to connect into the Virtual Machine using Bastion:
+1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
-    - **Username** : Enter **demouser (1)**
-    - **Authentication Type** : Select **Password (2)** from the drop-down
-    - **Password** Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
+    - **Username**: Enter **demouser (1)**
+    - **Authentication Type**: Select **Password (2)** from the drop-down
+    - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
     ![](images1/bastionconnect.png)
  
-1. Now, you will be re-directed to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
+1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
     ![](images1/allowpopup.png)
  
@@ -139,9 +139,9 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
  
     ![](images1/selectedge.png)
     
-1. In the Microsoft edge browser, open the Azure portal with  **portal.azure.com** and sign in with your login credentials. You can check your credentials in the                **Environment details**.
+1. In the Microsoft Edge browser, open the Azure portal with  **portal.azure.com** and sign in with your login credentials. You can check your credentials in the                **Environment details**.
 
-1. Now, In Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
+1. Now, In the Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
 
      ![](images/analytics1.png)
 
@@ -149,7 +149,7 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
 
      ![](images/analytics2.png)
 
-1. Now, on your web browser, click on three dots **[...] (1)** and, go to **Downloads (2)**.
+1. Now, on your web browser, click on three dots **[...] (1)** and go to **Downloads (2)**.
 
      ![](images/analytics3.png)
 
@@ -165,7 +165,7 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
 
       ![](images/analytics6.png)
  
-1. Under Destination Folder page leave the path to default, and Click on **Next**.
+1. Under the Destination Folder page leave the path to default, and Click on **Next**.
 
       ![](images/analytics12.png)
 
@@ -173,11 +173,11 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
 
       ![](images/analytics8.png)
 
-1. Enter the **Workspace ID (1)** and **Workspace key or Primary key (2)** that you are noted in step 2, then click on **Next (3)**.
+1. Enter the **Workspace ID (1)** and **Workspace key or Primary key (2)** that you noted in step 2, then click on **Next (3)**.
 
       ![](images/analytics9.png)
 
-1. Under Ready to Install page, click on **Install**.
+1. Under the Ready to Install page, click on **Install**.
 
       ![](images/analytics10.png)
 
@@ -185,8 +185,8 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
 
       ![](images/analytics11.png)
 
-1. On the **log analytics workspace** page, click on **log-analytics (1)**, then click on **Agents management (2)** under settings and you will see **1 Windows        computers connected (3)**
-   >**NOTE**: It will takes around 5 minutes, for the log analytics agent to connect with virtual machine, wait for it to complete before proceeding with the lab.
+1. On the **log analytics workspace** page, click on **log-analytics (1)**, then click on **Agents management (2)** under settings and you will see **1 Windows        computer connected (3)**
+   >**NOTE**: It will take around 5 minutes, for the log analytics agent to connect with a virtual machine, and wait for it to complete before proceeding with the lab.
 
       ![](images/agents1.png)
 
@@ -200,23 +200,23 @@ In this task, you will onboard the web app -  IIS server to sentinal by configur
 
 ## **Task 4: Explore query logs**
 
-In this task, you will run the queries in Microsoft sentinel to check the health status and usage of Network, Logical Disk, Memory, and Processor for VM.
+In this task, you will run the queries in Microsoft sentinel to check the health status and usage of Network, Logical Disk, Memory, and Processor for the VM.
 
-1. Now, go back to **Microsoft Sentinel |Overview** page by clicking on **Overview (1)** under General on the left hand side blade, and then click on **Heartbeat          (2)**.
+1. Now, go back to **Microsoft Sentinel |Overview** page by clicking on **Overview (1)** under General on the left-hand side blade, and then click on **Heartbeat          (2)**.
     
     ![](images/microsoft1.png "news-sentinel")
     
-    >**NOTE**: Your hearbeat count may vary from the screenshot above. 
+    >**NOTE**: Your heartbeat count may vary from the screenshot above. 
 
-1. Now under **Logs** page, click on **Run** , Here you will see results of  **union Heartbeat** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
+1. Now under the **Logs** page, click on **Run**, here you will see the results of the **union Heartbeat** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
     ![](images/microsoft2.png "news-sentinel")
      
-1. You can save the query for later use by clicking on the **Save (1)** and then select **Save as query (2)**.
+1. You can save the query for later use by clicking on **Save (1)** and then selecting **Save as query (2)**.
   
      ![](images/microsoft3.png "news-sentinel")
 
-1. Now under **Save as query** blade, enter **VMProcess (1)** as Query name, and then click on **Save (2)**.
+1. Now under **Save as query** blade, enter **VMProcess (1)** as the Query name, and then click on **Save (2)**.
 
     ![](images/503.png "news-sentinel")
 
@@ -228,11 +228,11 @@ In this task, you will run the queries in Microsoft sentinel to check the health
 
     ![](images/505.png "news-sentinel")
 
-1. On the **Queries** page, under All Queries, scroll down to **Other (1)**, and then click on **Run (2)** under **VMprocess** to run the saved query.
+1. On the **Queries** page, under All Queries, scroll down to **Other (1)** and then click on **Run (2)** under **VMprocess** to run the saved query.
 
     ![](images/506.png "news-sentinel")
 
-1. Now click on **X** on the top right corner to return to the **Microsoft sentinel** overview page.
+1. Now click on **X** in the top right corner to return to the **Microsoft sentinel** overview page.
 
     ![](images/microsoft4.png "news-sentinel")
      
@@ -240,15 +240,15 @@ In this task, you will run the queries in Microsoft sentinel to check the health
 
     ![](images/microsoft5.png "news-sentinel")
     
-1.  Now under **Logs** page, click on **Run (2)** , Here you will see results of  **union usage** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
+1.  Now under the **Logs** page, click on **Run (2)**, Here you will see results of the **union usage** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
      ![](images/microsoft6.png "news-sentinel")
         
 ## **Summary**
  
 In this exercise you have covered the following:
-   - Explored on Microsoft Sentinel 
+   - Explored Microsoft Sentinel 
    - Onboarded Azure Subscription to Azure sentinel 
    - Onboarded the Web App – IaaS server to sentinel 
-   - Explored on query logs
+   - Explored query logs
 
