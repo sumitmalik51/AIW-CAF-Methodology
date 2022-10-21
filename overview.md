@@ -2,8 +2,6 @@
 
 ## **Lab Context**
 
-In this hands-on lab, you will explore and implement Azure Security features like 
-
 In this hands-on lab, you will explore and implement Azure Security features like Microsoft Defender for Cloud,Web Application Firewall, and Azure sentinal and combining this architecture to configure and protect an IaaS web server hosted on a Windows virtual machine. At the end of the lab, attendees will have knowledge on how to implement and configure these Azure security features.
 
 ## **Exercise 1: Azure Security Center/ Microsoft Defender for Cloud**
