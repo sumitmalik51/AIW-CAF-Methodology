@@ -91,7 +91,7 @@ In this task, you will explore the security policy and will assign a built-in in
 
     ![](images/106.png )
 
-1. On the **Basics** tab, Click on **Scope[...] (1)** and then select **Subscription (2)** and **Resource Group (3)**, then click on **Select (4)**, followed by          clicking on **Next (5)**
+1. On the **Basics** tab, Click on **Scope[...] (1)** and then select **Subscription (2)** and Resource Group **JumpVM-rg (3)**, then click on **Select (4)**, followed by          clicking on **Next (5)**
 
     ![](images/editing1.png )
         
