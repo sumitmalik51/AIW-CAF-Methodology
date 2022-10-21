@@ -222,7 +222,7 @@ In this task, you will explore and fix the security recommendations suggested by
     - Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. next, click on **Extensions + applications** under the **Settings** section.
     - Ensure that **WindowsAgent.AzureSecurityCenter** extension is installed, and the status is **Provisioning succeeded**.
    
-    ![](images/posture6.png)
+    ![](images/last4.png)
 
 ## **Task 5: Exploring Security Center and Security benchmark**
 
@@ -274,7 +274,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
 1. Go back to the Inventory page in the filter menu, select the **Resource Groups (1)** filter and then provide the value **JumpVM-rg (2)** (Unselect remaining),          and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active                    recommendations.
 
-      ![](images/fix5.png)
+      ![](images/last1.png)
 
     > **Note:** The list can be filtered and sorted.
     
@@ -306,9 +306,13 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/defender17.png)
 
-1. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as **asc-filtered-query** and      select **save**.
+1. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. 
+   
+     ![](images/last2.png)
+   
+1. Enter name the report as **asc-filtered-query** and click on **save**.
  
-   ![](images/defender18.png)
+      ![](images/defender18.png)
 
 ### **Task 5.2: Explore Security benchmark**
 
