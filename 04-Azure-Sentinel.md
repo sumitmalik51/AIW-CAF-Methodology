@@ -64,7 +64,7 @@ In this task, you will onboard the Azure subscription to Azure sentinel by congi
 
       ![](images/log4.png "Passed log analytics")
 
-1. now under **add Microsoft Sentinel to a workspace** page, select **log-analytics** workspace Click on **Add**.
+1. Now under **add Microsoft Sentinel to a workspace** page, select **log-analytics** workspace Click on **Add**.
 
       ![](images/log5.png "click on add")
       
@@ -206,7 +206,7 @@ In this task, you will run the queries in Microsoft sentinel to check the health
     
     ![](images/microsoft1.png "news-sentinel")
     
-    >**NOTE**: Your hearbeat count may varyfrom the screenshot above. 
+    >**NOTE**: Your hearbeat count may vary from the screenshot above. 
 
 1. Now under **Logs** page, click on **Run** , Here you will see results of  **union Heartbeat** query in query explorer. Here you can see operations around Network, Logical Disk, Memory, and Processor for VM. If you are not able to see the results, then try to adjust the query editor size and you will be able to see the outcome.
 
