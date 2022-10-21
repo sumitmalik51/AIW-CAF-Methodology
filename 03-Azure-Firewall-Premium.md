@@ -206,7 +206,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall21.png "search gateway")
  
- 1.  Once the deployment completes naviaget back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On Privacy error conenction page, click on **Advanced**.
+ 1.  Once the deployment completes naviagate back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On Privacy error conenction page, click on **Advanced**.
  
      ![](images1/Advanced.png)
  
@@ -242,11 +242,11 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
  
-    ![](images/firewall17.png "search gateway")
+    ![](images/firewall18.png "search gateway")
  
 1. Select **Application Rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
  
-    ![](images/firewall18.png "search gateway")
+    ![](images/firewall17.png "search gateway")
  
 1. Under **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
 
