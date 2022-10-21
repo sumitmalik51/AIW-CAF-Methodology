@@ -1,17 +1,17 @@
 # **Exercise 3: Azure Firewall Premium**
 
-Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
+Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
-Azure Firewall Premium is a next generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
+Azure Firewall Premium is a next-generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
 
 - **TLS Inspection** - decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.
-- **IDPS** - A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
+- **IDPS** - A network intrusion detection and prevention system (IDPS) allow you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
 - **URL filtering** - extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
 - **Web categories** - administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
 For more information, see `https://learn.microsoft.com/en-us/azure/firewall/premium-features`
  
 
-In this exercise, you will explore on Azure Firewall premium features and will add diagnostics settings to firewall. You will also perform test IDPS for HTTP traffic which helps in detection of atacks. You will also create Routes, Subnets in the existig Route table and also configure the TLS inspection and Application rules in firewall policy to perform web testing.
+In this exercise, you will explore Azure Firewall premium features and will add diagnostics settings to the firewall. You will also perform test IDPS for HTTP traffic which helps in the detection of atacks. You will also create Routes, and Subnets in the existing Route table and configure the TLS inspection and Application rules in the firewall policy to perform web testing.
 
 ## **Task 1: Add firewall diagnostics settings** 
 
@@ -29,11 +29,11 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/firewall4.png "search gateway")
 
-4. Enter **Diagnostic setting name** as **fw-diagnostics**.
+4. Enter the **Diagnostic setting name** as **fw-diagnostics**.
 
    ![](images/firewall3.png "search gateway")
 
-5. Under **Logs**, select **AzureFirewallApplicationRule**, and **AzureFirewallNetworkRule**.
+5. Under **Logs**, select **Azure Firewall Application Rule**, and **Azure Firewall Network Rule**.
 
    ![](images/firewall5.png "search gateway")
 
@@ -68,18 +68,18 @@ In this task, you will test IDPS for HTTP traffic
  
      ![](images1/firewall.png)
  
- 5. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Network rule log data** tab.
+ 5. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab and click on **Run (2)** under the **Network rule log data** tab.
  
     ![](images1/networkrulelogdata.png)
 
-    > [!NOTE]
+    > [! NOTE]
     > It can take some time for the data to begin showing in the logs. Give it at least a couple of minutes to allow for the logs to begin showing the data.
  
 6. Now navigate back to firewall policy and under **Settings** select **IDPS**.
  
    ![](images/firewall10.png "search gateway")
  
-7. On the **IDPS** page select **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
+7. On the **IDPS** page select the **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
    ![](images/firewall11.png "search gateway")
  
@@ -111,17 +111,17 @@ In this task, you will create an application rule to allow access to sports webs
     
     ![](images1/firewallroute.png)
  
-1. On Route table page, select **Routes (1)** under **Settings** and click on **+ Add (2)**.
+1. On the Route table page, select **Routes (1)** under **Settings** and click on **+ Add (2)**.
  
     ![](images1/addroute.png)
  
 1. Under **Add Route** page, enter the below information:
   
     - Route Name: Enter **firewallroute (1)**
-    - Address prefix destination : Select **IP Address (2)** from drop-down list
+    - Address prefix destination: Select **IP Address (2)** from the drop-down list
     - Destination IP address/ CIDR ranges: Enter **0.0.0.0/0 (3)**
-    - Next hop type: Select **Virtual appliance (4)** from drop-down list
-    - Next hop address: Enter the **private IP Address** of Firewall **(5)**.
+    - Next hop type: Select **Virtual appliance (4)** from the drop-down list
+    - Next hop address: Enter the **private IP Address** of the Firewall **(5)**.
     - Select **Add (6)**
  
      ![](images1/addrouterule.png)
@@ -130,8 +130,8 @@ In this task, you will create an application rule to allow access to sports webs
 
        - Under Associate subnets, enter the following details:
   
-          - Virtual Network : Select **vnet (3)** from drop-down list.
-          - Subnet : Select **jumpvmsubnet (4)** from the drop-down list.
+          - Virtual Network: Select **vnet (3)** from the drop-down list.
+          - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
           - Click on **Ok (5)**.
  
            ![](images1/addsubnet.png)
@@ -144,16 +144,16 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/connect.png)
  
-1. On the Bastion page, follow the below mentioned instructions to connect into the Virtual Machine using Bastion:
+1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
-    - **Username** : Enter **demouser (1)**
-    - **Authentication Type** : Select **Password (2)** from the drop-down
-    - **Password** Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
+    - **Username**: Enter **demouser (1)**
+    - **Authentication Type**: Select **Password (2)** from the drop-down
+    - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
     ![](images1/bastionconnect.png)
  
-1. Now, you will be re-directed to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
+1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
     ![](images1/allowpopup.png)
  
@@ -161,7 +161,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/selectedge.png)
  
-1. Navigate to the below mentioned URL and you can see the error **can't reach this page**.
+1. Navigate to the below-mentioned URL and you can see the error **can't reach this page**.
  
    ```
    https://www.nfl.com
@@ -174,11 +174,11 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/firewall18.png "search gateway")
  
-1. Select **TLS inspection (1)** under **Settings** tab and enter the below details under **Key vault** tab:
+1. Select **TLS inspection (1)** under the **Settings** tab and enter the below details under the **Key vault** tab:
  
-    - Managed Identity : Select **(New) fw-cert-id-ZrNC4l8WLg97D  (2)** from drop-down list
-    - Key Vault : Select **(New) fw-cert-kv-ZrNC4l8WLg97D (3)** from drop-down
-    - Certificate : Select **(New) fw-cert-ZrNC4l8WLg97D (4)** from drop-down
+    - Managed Identity: Select **(New) fw-cert-id-ZrNC4l8WLg97D  (2)** from the drop-down list
+    - Key Vault: Select **(New) fw-cert-kv-ZrNC4l8WLg97D (3)** from the drop-down
+    - Certificate: Select **(New) fw-cert-ZrNC4l8WLg97D (4)** from the drop-down
     - Click on **Save (5)**
  
     ![](images1/tls.png)
@@ -206,7 +206,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall21.png "search gateway")
  
- 1.  Once the deployment completes naviagate back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On Privacy error conenction page, click on **Advanced**.
+ 1.  Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On the Privacy error connection page, click on **Advanced**.
  
      ![](images1/Advanced.png)
  
@@ -214,24 +214,24 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/unsafe.png)
  
- 1. Now you are able to see the NFL web page.
+ 1. Now you can see the NFL web page.
  
     ![](images/firewall22.png "search gateway")
  
- 1. Again navigate to the other tab, where Azure Portal is opened.
+ 1. Again, navigate to the other tab, where Azure Portal is opened.
  
  1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
  
      ![](images1/firewall.png)
  
- 1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Application rule log data** tab.
+ 1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab and click on **Run (2)** under the **Application rule log data** tab.
  
      ![](images1/run.png)
  
 
 ## **Task 4: Implement and Test URL filtering**
  
-1. Navigate back to tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
+1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
  
     ```
     www.nytimes.com/section/world
@@ -259,7 +259,7 @@ In this task, you will create an application rule to allow access to sports webs
       - Source type: Select **IP Address** from the drop-down list
       - Source: Enter *
       - Protocol: Enter **http,https**
-      - TLS inspection : Check TLS inspection
+      - TLS inspection: Check TLS inspection
       - Destination Type: Select **URL**
       - Destination: Enter `www.nytimes.com/section/world`
      
@@ -267,7 +267,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/firewall19.png "search gateway")
 
-1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On Privacy error    conenction page, click on **Advanced**.
+1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error    connnection page, click on **Advanced**.
  
       ![](images1/Advanced1.png)
  
@@ -279,13 +279,13 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall22.png "search gateway")
  
-1. Again navigate to the other tab, where Azure Portal is opened.
+1. Again, navigate to the other tab, where Azure Portal is opened.
  
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
  
      ![](images1/firewall.png)
  
-1. On **AzureFirewall** page, select on **Logs (1)** under Monitoring tab and click on **Run (2)** under **Application rule log data** tab.
+1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab and click on **Run (2)** under the **Application rule log data** tab.
  
      ![](images1/run.png)
  
@@ -294,7 +294,7 @@ In this task, you will create an application rule to allow access to sports webs
  
  ### What is DDoS protection?
 
-Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers that are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
+Distributed denial of service (DDoS) attacks is some of the largest availability and security concerns facing customers that are moving their applations to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
 
 Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.
 
@@ -305,9 +305,9 @@ Azure DDoS Protection, combined with application design best practices, provides
 
 - **Volumetric attacks**: These attacks flood the network layer with a substantial amount of seemingly legitimate traffic. They include UDP floods, amplification floods, and other spoofed-packet floods. DDoS Protection mitigates these potential multi-gigabyte attacks by absorbing and scrubbing them, with Azure's global network scale, automatically.
 - **Protocol attacks**: These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
-- **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defense against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
+- **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layers 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
 
-1. In Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
+1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
    ![](images/ddos1.png)
  
@@ -315,11 +315,11 @@ Azure DDoS Protection, combined with application design best practices, provides
  
     ![](images/ddos2.png)
  
-1. On **DDos protection** page, provide the information as mentioned below,
+1. On the **DDoS protection** page, provide the information as mentioned below,
    - Subscription: **Leave it as default (1)**.
    - Resource Group: **JumpVM-rg (2)**.
    - Name: Enter **DDoSprotection (3)**.
-   - Region: **<inject key="Region" />**.
+   - Region: **<inject key="Region" />**
    - Click on **Next-Tags**.
  
      ![](images/ddos3.png)
@@ -334,27 +334,27 @@ Azure DDoS Protection, combined with application design best practices, provides
 
       ![](images/ddos5.png)
  
-1. Once the DDoS protection is added you will see a notification that says **Deployment succeded**, as shown below.
+1. Once the DDoS protection is added you will see a notification that says **Deployment succeeded**, as shown below.
 
       ![](images/ddos6.png)
  
-1. On DDoS protection page, under setting click on **Protected resources (1)** and then select the **vnet (2)**, and click on **Add (3)**.
+1. On the DDoS protection page, under setting click on **Protected resources (1)** and then select the **vnet (2)** and click on **Add (3)**.
  
       ![](images/ddos10.png)
 
 1. On the **Add virtual network  to DDoS plan** blade, provide the information as mentioned below,
     - Subscription: **Leave it as default (1)**.
     - Resource Group: **JumpVM-rg (2)**.
-    - Virtual network : Select **vnet (3)**.
+    - Virtual network: Select **vnet (3)**.
     - Click on **Add (4)**
    
       ![](images/ddos8.png)
  
-1. Once the Protected resources is added you will see a notification that says **Successfully updated the virtual network vnet**, as shown below.
+1. Once the Protected resources are added you will see a notification that says **Successfully updated the virtual network vnet**, as shown below.
  
       ![](images/ddos9.png)
  
-1. Now, In Azure portal, search **Firewall Manager (1)** and then select **Firewall Manager (2)**.
+1. Now, In the Azure portal, search **Firewall Manager (1)** and then select **Firewall Manager (2)**.
  
       ![](images/ddos11.png)
 
@@ -368,9 +368,9 @@ In this exercise you have covered the following:
   
    - Added firewall diagnostics settings 
    - Tested IDPS for HTTP traffic
-   - Performed Web categories testing 
+   - Performed Web category testing 
    - Implemented and Tested URL filtering
-   - Explored on DDos protection
+   - Explored on DDoS protection
 
 Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
  
